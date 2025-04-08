@@ -1,17 +1,620 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link href="/style.css" rel="stylesheet" />
+    <title>Home</title>
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+                
   </head>
   <body>
-    <header id="site-header"></header>
-    <main id="site-main">
+    <header id="navbar" class="bg-putih_bg shadow-md py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300">
+      <nav class="container flex justify-between items-center w-full">
+        <a href="/">
+          <div class="flex items-center gap-[10px] font-bold text-hitam text-2xl font-satoshi">
+            <img src="/logo.svg" alt="Logo" class="w-10" />
+            <span>Mpos</span>
+          </div>
+        </a>
+        <ul class="md:hidden hidden lg:flex gap-10 text-hitam text-sm font-satoshi">
+          <li><a href="#" class="hover:text-abu text-hitam font-semibold">Home</a></li>
+          <li><a href="#" class="hover:text-hitam">Aboutus</a></li>
+          <li><a href="#" class="hover:text-hitam">Features</a></li>
+          <li><a href="#" class="hover:text-hitam">Pricing</a></li>
+          <li><a href="#" class="hover:text-hitam">Blog</a></li>
+          <li><a href="#" class="hover:text-hitam">Contact Us</a></li>
+        </ul>
+        
+        <div class="flex gap-6">
+          <p class="py-[14px] text-sm font-satoshi hidden lg:flex md:hidden">Login</p>
+          <button class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda">
+            Get Started
+          </button>
+        </div>
+        
+        <span id="menu-toggle" class="lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer">
+          <span class="block w-7 h-[3px] bg-hitam transition"></span>
+          <span class="block w-7 h-[3px] bg-hitam transition"></span>
+          <span class="block w-7 h-[3px] bg-hitam transition"></span>
+        </span>
+      </nav>
+      
+      <ul id="nav-links" class="lg:hidden fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out">
+        <span id="close-menu" class="absolute top-4 right-6 w-6 h-6 cursor-pointer flex items-center justify-center">
+          <span class="block w-6 h-[3px] bg-hitam rotate-45 absolute"></span>
+          <span class="block w-6 h-[3px] bg-hitam -rotate-45 absolute"></span>
+        </span>
+        
+        <li><a href="#" class="block px-6 py-3 hover:bg-semiPutih font-satoshi">Home</a></li>
+        <li><a href="#" class="block px-6 py-3 hover:bg-semiPutih font-satoshi">Aboutus</a></li>
+        <li><a href="#" class="block px-6 py-3 hover:bg-semiPutih font-satoshi">Features</a></li>
+        <li><a href="#" class="block px-6 py-3 hover:bg-semiPutih font-satoshi">Pricing</a></li>
+        <li><a href="#" class="block px-6 py-3 hover:bg-semiPutih font-satoshi">Blog</a></li>
+        <li><a href="#" class="block px-6 py-3 hover:bg-semiPutih font-satoshi">Contact Us</a></li>
+        
+        <div class="flex gap-6 px-6 py-3">
+          <p class="py-[14px] text-sm font-satoshi">Login</p>
+          <button class="flex font-satoshi items-center gap-1 bg-Biru text-putih px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-biruMuda">
+            Get Started
+          </button>
+        </div>
+      </ul>
+    </header>
 
-    </main>
-    <footer id="site-footer"></footer>
+    <section
+      class="flex text-left relative flex-col  mt-[75px]">
+      <div class="container ">
+        <div
+          class="flex gap-2 md:flex-row flex-col justify-between w-full md:pt-[75px] py-10 md:pb-[81px]  ">
+          <div class="max-w-[634px] gap-5">
+            <h1
+              class="text-5xl lg:text-[64px] md:text-[56px] text-hitam font-normal font-jakarta justify-start "
+            >
+              Manage Restaurant Easier & Faster!
+            </h1>
+          </div>
+          <div class="flex">
+            <div class="flex gap-2 items-start justify-end flex-col">
+              <p
+                class="font-jakarta text-base font-normal leading-[22px] tracking-tight text-abu flex items-end justify-between max-w-[552px]"
+              >
+                MPOS is a complete solution for managing restaurants
+                efficiently. From recording transactions, real-time stock
+                monitoring, to automated reporting—all available in one modern
+                and easy-to-use dashboard.
+              </p>
+              <div class="flex gap-[5px] items-start md:pt-5 pt-2">
+                <button
+                  class="text-hitam text-base font-bold flex flex-row-reverse font-satoshi"
+                >
+                  <img src="/get started.svg" class="items-end" />
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <img
+            src="/Dashboard 1.png"
+            alt="dashboard"
+            class="md:w-full object-cover object-center"
+          />
+        </div>
+      </div>
+      <div class="bg-Biru flex justify-between">
+        <div class="container">
+          <div class="flex justify-between md:flex-row flex-col lg:gap-0 md:gap-4 gap-0">
+            <div class="flex justify-start max-w-[210px] py-[35px]">
+              <h3 class="flex justify-start text-putih text-[28px]">
+                Trusted by 100+ Restaurants
+              </h3>
+            </div>
+            <div class="flex lg:justify-end md:justify-start justify-start items-end gap-10 py-[46px]">
+              <div class="font-jakarta card-info">
+                <h3 class="md:text-2xl text-lg font-medium text-putih">
+                  10,000+
+                </h3>
+                <p class="md:text-sm text-xs text-putih">
+                  Transactions Processed
+                </p>
+              </div>
+              <div class="font-jakarta card-info">
+                <h3 class="md:text-2xl text-lg font-medium text-putih">50%</h3>
+                <p class="md:text-sm text-xs text-putih">
+                  Increased Efficiency
+                </p>
+              </div>
+              <div class="font-jakarta card-info">
+                <h3 class="md:text-2xl text-lg font-medium text-putih">29K+</h3>
+                <p class="md:text-sm text-xs text-putih">Active User</p>
+              </div>
+              <div class="font-jakarta card-info">
+                <h3 class="md:text-2xl text-lg font-medium text-putih pb-4 sm:pb-0">4.7</h3>
+                <p class="md:text-sm text-xs text-putih">Review</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="frame-image swiper container flex justify-center gap-6 md:py-8 py-6">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide flex justify-center"><img src="/frame1.svg" alt="logo1" class="md:w-28 w-24"></div>
+        <div class="swiper-slide flex justify-center"><img src="/frame 2.svg" alt="logo2" class="md:w-28 w-24"></div>
+        <div class="swiper-slide flex justify-center"><img src="/frame 3.svg" alt="logo3" class="md:w-28 w-24"></div>
+        <div class="swiper-slide flex justify-center"><img src="/frame 4.svg" alt="logo4" class="md:w-28 w-24"></div>
+        <div class="swiper-slide flex justify-center"><img src="/frame 5.svg" alt="logo5" class="md:w-28 w-24"></div>
+        <div class="swiper-slide flex justify-center"><img src="/frame 6.svg" alt="logo6" class="md:w-28 w-24"></div>
+      </div>
+    </section>
+
+    <section class="container flex flex-col items-center md:py-[100px] py-[50px]">
+      <div class="max-w-[544px] md:pb-[75px] pb-[60px]">
+        <p class="text-[16px] text-Biru flex font-medium justify-center">
+          Feature
+        </p>
+        <div>
+          <h3 class="flex  text-[32px] font-medium text-center">
+            Featured Features for More Efficient Restaurant Operations
+          </h3>
+          <p class="flex  text-[16px] font-normal text-center">
+            Optimize order, stock and payment management with a complete and
+            easy-to-use MPOS solution.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-start gap-5 mt-10 w-[100%] px-4">
+        <div class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition p-4 group">
+          <div class="pl-[30px] pb-4">
+            <img src="/fea1.svg" alt="icon1" class="w-[52px]" />
+          </div>
+          <div class="px-[30px]">
+            <h3 class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white">
+              Comprehensive Analytics Dashboard
+            </h3>
+            <p
+              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white">
+              Monitor restaurant performance in real-time with order summaries,
+              total revenue, and analytical graphs.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white  transition p-4 group">
+          <div class="pl-[30px] pb-4">
+            <img src="/fea2.svg" alt="icon2" class="w-[52px]" />
+          </div>
+          <div class="px-[30px]">
+            <h3 class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white">
+              Fast & Efficient Ordering System
+            </h3>
+            <p
+              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white">
+              Faster ordering process with easy-to-access product display and quantity adjustment features.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white  transition p-4 group">
+          <div class="pl-[30px] pb-4">
+            <img src="/fea3.svg" alt="icon3" class="w-[52px]" />
+          </div>
+          <div class="px-[30px]">
+            <h3 class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white">
+              Flexible Product Management
+            </h3>
+            <p
+              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white">
+              Easily manage food and beverage menus, including price and stock updates.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white  transition p-4 group">
+          <div class="pl-[30px] pb-4">
+            <img src="/fea4.svg" alt="icon4" class="w-[52px]" />
+          </div>
+          <div class="px-[30px]">
+            <h3 class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white">
+              Automatic Financial Reports
+            </h3>
+            <p
+              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white">
+              Get accurate and automatic financial reports to monitor income and expenses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container flex font-satoshi justify-between lg:flex-row md:flex-col flex-col">
+      <div class="lg:py-[110px]  py-[60px]">
+        <img src="/image1.png" alt="image leptop" class="w-full" />
+      </div>
+      <div class="lg:max-w-[454px] md:w-full w-full lg:py-[100px] md:py-[80px] py-[40px]">
+        <div class="pb-[10px]">
+          <p class="text-Biru text-base">Try It Now!</p>
+        </div>
+        <div class="pt-[10px] md:pb-[28px] pb-4">
+          <h3
+            class="text-semiHitam md:text-[40px] text-3xl font-medium md:leading-[48px] leading-8 pb-4"
+          >
+            Boost Your Productivity with Our High-Speed Platform
+          </h3>
+          <p class="text-base text-abuGelap">
+            Download now and experience seamless access to a platform built for
+            speed and efficiency. Designed to elevate your workflow, it helps
+            you accomplish more in less time—effortlessly.
+          </p>
+        </div>
+        <div class="flex gap-6">
+          <button
+            class="hidden font-satoshi md:flex items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+          >
+            Download Now
+          </button>
+          <div class="py-[14px]">
+            <button
+              class="text-hitam text-sm font-bold flex flex-row-reverse font-satoshi"
+            >
+              <img src="/get started.svg" class="items-end" />
+              Load more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container flex gap-5 md:py-[100px] py-[50px] flex-col overflow-x-hidden">
+      <div class="flex justify-between w-full max-w-[1440px] md:flex-row flex-col">
+        <div class="max-w-[706px]">
+          <p class="text-Biru text-base">Testimonial</p>
+          <div class="pt-[10px] pb-[28px]">
+            <h3
+              class="text-semiHitam md:text-[40px] text-3xl font-medium leading-[48px] md:pb-4 pb-2"
+            >
+              What they say about us
+            </h3>
+            <p class="text-base text-abuGelap">
+              Discover how Xank-MPOS helps restaurants manage stock,
+              transactions and reports easily and accurately.
+            </p>
+          </div>
+        </div>
+        <div class="bottom-0 flex gap-4">
+          <img class="w-12 next-slide" src="/Icon Button(kanan).svg" alt="button right" />
+          <img class="w-12 prev-slide" src="/Icon Button(kiri).svg" alt="button left" />
+        </div>
+      </div>
+
+
+      <div class="features-image">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex font-satoshi bg-abuPudar rounded-[20px] md:flex-row flex-col max-w-[966px] w-full">
+            <img src="/user1.png" alt="image-user" class="object-cover">
+            <img src="/icon-user.svg" alt="icon-user" class="-ml-10 lg:w-[90px] md:w-16 md:flex hidden">
+            <div class="flex flex-col max-w-[457px] py-[25px] pl-8 pr-10">
+              <img src="/rate-user.svg" alt="rate" class="w-[120px]">
+              <p class="text-semiHitam text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
+                Since using Xank-MPOS, the process of recording orders in my restaurant has become much more efficient...
+              </p>
+              <div>
+                <p class="text-hitam text-base font-bold">Alexander Arnold Steven</p>
+                <p class="text-abuGelap text-base font-normal">Restaurant Owner</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex font-satoshi bg-abuPudar rounded-[20px] md:flex-row flex-col max-w-[966px] w-full">
+            <img src="/user2.png" alt="image-user" class="object-cover">
+            <img src="/icon-user.svg" alt="icon-user" class="-ml-10 lg:w-[90px] md:w-16 md:flex hidden">
+            <div class="flex flex-col max-w-[457px] py-[25px] pl-8 pr-10">
+              <img src="/rate-user.svg" alt="rate" class="w-[120px]">
+              <p class="text-semiHitam text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
+                Since using Xank-MPOS, the process of recording orders in my restaurant has become much more efficient...
+              </p>
+              <div>
+                <p class="text-hitam text-base font-bold">Alexander Arnold Steven</p>
+                <p class="text-abuGelap text-base font-normal">Restaurant Owner</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex font-satoshi bg-abuPudar rounded-[20px] md:flex-row flex-col max-w-[966px] w-full">
+            <img src="/user1.png" alt="image-user" class="object-cover">
+            <img src="/icon-user.svg" alt="icon-user" class="-ml-10 lg:w-[90px] md:w-16 md:flex hidden">
+            <div class="flex flex-col max-w-[457px] py-[25px] pl-8 pr-10">
+              <img src="/rate-user.svg" alt="rate" class="w-[120px]">
+              <p class="text-semiHitam text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
+                Since using Xank-MPOS, the process of recording orders in my restaurant has become much more efficient...
+              </p>
+              <div>
+                <p class="text-hitam text-base font-bold">Alexander Arnold Steven</p>
+                <p class="text-abuGelap text-base font-normal">Restaurant Owner</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide flex font-satoshi bg-abuPudar rounded-[20px] md:flex-row flex-col max-w-[966px] w-full">
+            <img src="/user2.png" alt="image-user" class="object-cover">
+            <img src="/icon-user.svg" alt="icon-user" class="-ml-10 lg:w-[90px] md:w-16 md:flex hidden">
+            <div class="flex flex-col max-w-[457px] py-[25px] pl-8 pr-10">
+              <img src="/rate-user.svg" alt="rate" class="w-[120px]">
+              <p class="text-semiHitam text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
+                Since using Xank-MPOS, the process of recording orders in my restaurant has become much more efficient...
+              </p>
+              <div>
+                <p class="text-hitam text-base font-bold">Alexander Arnold Steven</p>
+                <p class="text-abuGelap text-base font-normal">Restaurant Owner</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+    </section>
+
+    <section class="container flex md:py-[100px] py-[50px] justify-between lg:flex-row md:flex-col flex-col lg:gap-0 md:gap-14 gap-14">
+      <div class="lg:max-w-[519px] md:w-full w-full">
+        <p class="text-Biru text-base">FAQ</p>
+        <div class="pt-[10px] md:pb-[28px] pb-5">
+          <h3
+            class="text-semiHitam md:text-[40px] text-[36px] font-medium leading-[48px] pb-4"
+          >
+          All Answers about Xank MPOS in One Place
+          </h3>
+          <p class="text-base text-abuGelap">
+            Still have questions? Here are answers to the most common questions about our platform
+          </p>
+        </div>
+        <div class="flex gap-6 ">
+          <button class="text-hitam text-sm font-bold flex flex-row-reverse font-satoshi">
+            <img src="/get started.svg" class="items-end" /> 
+            Contact Us
+          </button>
+        </div>
+      </div>
+
+      <div class=" max-w-[590px] w-full">
+        <div class="faq-item">
+          <div class="flex justify-between items-center pb-4 cursor-pointer" onclick="toggleFAQ(this)">
+            <h3 class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-hitam">
+             What is Xank MPOS?
+            </h3>
+            <div class="flex items-center ml-4">
+              <img src="/plus.svg" alt="toggle icon" class="w-[14px] transition-all duration-300">
+            </div>
+          </div>
+          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-abuPudar rounded-[10px] ">
+            <p class="text-base font-normal text-hitam px-5 py-[10px]">
+              Xank Mpos is a web-based restaurant management system that makes it easy to record transactions, monitor orders in real-time, and manage data securely in one intuitive dashboard.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item ">
+          <div class="flex justify-between items-center py-4 cursor-pointer" onclick="toggleFAQ(this)">
+            <h3 class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-hitam">
+              Are the available doctors trained and licensed?
+            </h3>
+            <div class="flex items-center ml-4">
+              <img src="/plus.svg" alt="toggle icon" class="w-[14px] transition-all duration-300">
+            </div>
+          </div>
+          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-abuPudar rounded-[10px] ">
+            <p class="text-base font-normal text-hitam px-5 py-[10px]">
+              Xank Mpos is a web-based restaurant management system that makes it easy to record transactions, monitor orders in real-time, and manage data securely in one intuitive dashboard.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="flex justify-between items-center py-4 cursor-pointer" onclick="toggleFAQ(this)">
+            <h3 class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-hitam">
+              Can Xank MPOS be used on various devices?
+            </h3>
+            <div class="flex items-center ml-4">
+              <img src="/plus.svg" alt="toggle icon" class="w-[14px] transition-all duration-300">
+            </div>
+          </div>
+          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-abuPudar rounded-[10px] ">
+            <p class="text-base font-normal text-hitam px-5 py-[10px]">
+              Xank Mpos is a web-based restaurant management system that makes it easy to record transactions, monitor orders in real-time, and manage data securely in one intuitive dashboard.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="faq-item ">
+          <div class="flex justify-between items-center py-4 cursor-pointer" onclick="toggleFAQ(this)">
+            <h3 class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-hitam">
+              How secure is data on Xank MPOS?
+            </h3>
+            <div class="flex items-center ml-4">
+              <img src="/plus.svg" alt="toggle icon" class="w-[14px] transition-all duration-300">
+            </div>
+          </div>
+          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-abuPudar rounded-[10px] ">
+            <p class="text-base font-normal text-hitam px-5 py-[10px]">
+              Xank Mpos is a web-based restaurant management system that makes it easy to record transactions, monitor orders in real-time, and manage data securely in one intuitive dashboard.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item ">
+          <div class="flex justify-between items-center py-4 cursor-pointer" onclick="toggleFAQ(this)">
+            <h3 class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-hitam">
+              How much does a Xank MPOS subscription cost?
+            </h3>
+            <div class="flex items-center ml-4">
+              <img src="/plus.svg" alt="toggle icon" class="w-[14px] transition-all duration-300">
+            </div>
+          </div>
+          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-abuPudar rounded-[10px] ">
+            <p class="text-base font-normal text-hitam px-5 py-[10px]">
+              Xank Mpos is a web-based restaurant management system that makes it easy to record transactions, monitor orders in real-time, and manage data securely in one intuitive dashboard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-Biru flex justify-center">
+        <div class="container flex justify-center">
+          <div class="max-w-[942px] w-full text-putih pt-[78px] pb-[100px]">
+            <h2 class="flex md:text-[40px] text-3xl font-medium justify-center text-center">
+              Optimize Your Restaurant Operations Now!
+            </h2>
+            <p class="flex text-center md:text-base text-sm font-normal pt-6 pb-8">
+              Manage orders, monitor transactions, and improve your business efficiency with Xank MPOS. Start a faster and safer restaurant management experience today!
+            </p>
+            <div class="items-center justify-center flex">
+              <button
+              class="font-satoshi items-center gap-1 bg-putih text-Biru px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-putih_bg">
+              Request a demo
+              </button>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+    </section>
+
+
+    <footer class="bg-hitam">
+      <div class="container mx-auto flex flex-col gap-3 ">
+        <div class="flex flex-col">
+
+          <div 
+            class="flex  border-t pt-[70px] lg:flex-row md:flex-col flex-col justify-between">
+            <div class="flex flex-col gap-4 md:pb-8 pb-9">
+              <div class="flex items-center gap-3">
+                <img src="/logo.svg" alt="Logo Mpos" class="w-10" />
+                <span class="text-2xl font-semibold font-inter text-putih_bg">Mpos</span>
+              </div>
+              <p class="text-putih_bg max-w-md font-jakarta ">
+                Xank Mpos is a web-based restaurant management solution. Facilitates efficient transaction and report management. All in one practical and easy-to-use dashboard.
+              </p>
+              <div class="flex flex-col">
+                <div class="flex gap-1">
+                  <img src="/email.svg" alt="email" class="w-8">
+                  <p class="text-sm font-normal font-satoshi py-1 text-putih_bg" >
+                    Mpos@gmail.com
+                  </p>
+                </div>
+    
+                <div class="flex gap-1">
+                  <img src="/telpon.svg" alt="email" class="w-8">
+                  <p class="text-sm font-normal font-satoshi py-1 text-putih_bg">
+                    (123) 1234567
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex flex-row  md:gap-0 lg:gap-0 gap-7 ">
+              <div class="flex flex-col">
+                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                  Navigation
+                </p>
+                <div class="text-base font-normal font-satoshi text-putih_bg flex flex-col">
+                  <p class="pb-[6px]">
+                    Home
+                  </p>
+                  <p class="py-[6px]">
+                    Features
+                  </p>
+                  <p class="py-[6px]">
+                    Pricing
+                  </p>
+                  <p class="py-[6px]">
+                    Blog
+                  </p>
+                  <p class="pt-[6px]">
+                    Contact
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-col md:px-[128px] px-0">
+                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                  About Us
+                </p>
+                <div class="text-base font-normal font-satoshi text-putih_bg">
+                  <p class="pb-[6px]">
+                    Our Story
+                  </p>
+                  <p class="py-[6px]">
+                    Career
+                  </p>
+                  <p class="py-[6px]">
+                    News & Blog
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                  Social media
+                </p>
+                <div class="flex gap-4 lg:flex-nowrap md:flex-wrap flex-wrap">
+                  <img
+                    src="/instagram.svg"
+                    alt="Instagram"
+                    class="w-6 cursor-pointer"
+                  />
+                  <img
+                    src="/wa.svg"
+                    alt="Instagram"
+                    class="w-6 cursor-pointer"
+                  />
+                  <img
+                    src="/youtube.svg"
+                    alt="Instagram"
+                    class="w-6 cursor-pointer"
+                  />
+                  
+                  <img
+                    src="/linkedin.svg"
+                    alt="Instagram"
+                    class="w-6 cursor-pointer"
+                  />
+                  <img
+                    src="/twiter.svg"
+                    alt="Instagram"
+                    class="w-6 cursor-pointer"
+                  />
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="flex flex-col md:flex-row justify-between text-putih_bg text-sm pt-4 font-satoshi pb-6">
+          <p>&copy; 2022 mpos. All rights reserved.</p>
+          <div class="flex gap-4">
+            <p class="hover:text-putih cursor-pointer">Privacy policy</p>
+            <p class="hover:text-putih cursor-pointer">Term of use</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    
   </body>
 </html>
