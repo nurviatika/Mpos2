@@ -20,5 +20,5 @@ body{
 }
 
 .card-info {
-  @apply flex flex-col justify-between h-full
+  @apply flex flex-col justify-between h-full items-start
 }
