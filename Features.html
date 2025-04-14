@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
+    <title>Home</title>
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header
+      id="navbar"
+      class="bg-putih_bg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
+    >
+      <nav class="container flex justify-between items-center w-full">
+        <a href="/">
+          <div
+            class="flex items-center gap-[10px] font-bold text-hitam text-2xl font-satoshi"
+          >
+            <img src="/logo.svg" alt="Logo" class="w-10" />
+            <span>Mpos</span>
+          </div>
+        </a>
+        <ul
+          class="md:hidden hidden lg:flex gap-10 text-hitam text-sm font-satoshi"
+        >
+          <li>
+            <a
+              href="/index.html"
+              class="hover:text-abu text-hitam font-semibold"
+              >Home</a
+            >
+          </li>
+          <li><a href="/about.html" class="hover:text-hitam">Aboutus</a></li>
+          <li>
+            <a href="/Features.html" class="hover:text-hitam">Features</a>
+          </li>
+          <li><a href="#" class="hover:text-hitam">Pricing</a></li>
+          <li><a href="#" class="hover:text-hitam">Blog</a></li>
+          <li><a href="#" class="hover:text-hitam">Contact Us</a></li>
+        </ul>
+
+        <div class="flex gap-6">
+          <p class="py-[14px] text-sm font-satoshi hidden lg:flex md:hidden">
+            Login
+          </p>
+          <button
+            class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <svg
+          id="menu-toggle"
+          class="lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer"
+          width="16"
+          height="12"
+          viewBox="0 0 16 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.00195 1.20007L14.602 1.20007"
+            stroke="#111111"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+          <path
+            d="M0.800781 6.00006L9.80078 6.00006"
+            stroke="#111111"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+          <path
+            d="M0.8125 10.8H14.4127"
+            stroke="#111111"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+        </svg>
+      </nav>
+
+      <ul
+        id="nav-links"
+        class="lg:hidden fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out"
+      >
+        <span
+          id="close-menu"
+          class="absolute top-4 right-6 w-6 h-6 cursor-pointer flex items-center justify-center"
+        >
+          <span class="block w-6 h-[3px] bg-hitam rotate-45 absolute"></span>
+          <span class="block w-6 h-[3px] bg-hitam -rotate-45 absolute"></span>
+        </span>
+
+        <li>
+          <a
+            href="/index.html"
+            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/about.html"
+            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Aboutus</a
+          >
+        </li>
+        <li>
+          <a
+            href="Features.html"
+            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a href="#" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a href="#" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a href="#" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Contact Us</a
+          >
+        </li>
+
+        <div class="flex gap-6 px-6 py-3">
+          <p class="py-[14px] text-sm font-satoshi">Login</p>
+          <button
+            class="flex font-satoshi items-center gap-1 bg-Biru text-putih px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+          >
+            Get Started
+          </button>
+        </div>
+      </ul>
+    </header>
+
+    <section
+      class="container flex flex-col items-center md:py-[100px] py-[50px]">
+      <div class="max-w-[1146px] pt-[75px]">
+        <p class="text-base text-Biru flex font-medium justify-center font-satoshi">
+          Feature
+        </p>
+        <div class="font-satoshi">
+          <h3
+            class="flex md:text-[64px] text-[32px] font-medium text-center md:leading-[70px] leading-[40px]"
+          >
+            Faster, Accurate, and Efficient Restaurant Operations
+          </h3>
+          <p class="flex text-base font-normal text-center justify-center pt-2 text-abuGelap">
+            We present superior features that make it easier to manage restaurants from ordering to financial reports. Explore each feature in full below:
+          </p>
+        </div>
+        <div class="items-center justify-center flex pt-8">
+          <button
+            class="font-satoshi items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-putih_bg"
+          >
+            Request a demo
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-[100px]">
+      <div class="flex flex-col">
+        <img
+          src="/Dasboard 4-fea.png"
+          alt="dashboard"
+          class="md:w-full object-cover object-center"
+        />
+      </div>
+    </section>
+
+    <section class="container flex font-satoshi justify-between lg:flex-row md:flex-col flex-col lg:gap-[98px] md:gap-0 gap-0">
+      <div class="lg:max-w-[504px] md:w-full w-full lg:py-[193px] md:py-[80px] py-0  ">
+        <div class="pt-[10px] md:pb-[28px] pb-6">
+          <h3
+            class="text-semiHitam md:text-[40px] text-3xl font-medium md:leading-[48px] leading-8 ">
+          Comprehensive Analytics Dashboard
+          </h3>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="flex gap-1">
+            <img src="/ceklis-fea.svg" alt="ceklis">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Real-Time Sales Report: View daily, weekly, and monthly sales data.</p>
+          </div>
+          <div class="flex gap-1">
+            <img src="/ceklis-fea.svg" alt="ceklis" class="pb-[21px]">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Menu Performance Analysis: Know the sales menu and improve sales strategies.</p>
+          </div>
+        </div>
+        <div class="flex gap-[5px] pt-10">
+          <p class="text-base font-bold font-satoshi ">Watch Video</p>
+          <img src="/play-fea.svg" alt="play video" class="w-[18px]">
+        </div>
+      </div>
+
+      <div class="lg:py-[110px] py-[60px]">
+        <img src="/image-fea.png" alt="image fea" class="w-full md:w-[598px]" />
+      </div>
+    </section>
+
+    <section class="container flex font-satoshi justify-between lg:flex-row md:flex-col flex-col lg:gap-[92px] md:gap-0 gap-0">
+      <div class="lg:py-[110px] py-[60px]">
+        <img src="/Product -fea.png" alt="image fea" class="w-full md:w-[598px]" />
+      </div>
+      <div class="lg:max-w-[510px] md:w-full w-full lg:py-[157px] md:py-[80px] py-0  ">
+        <div class="pt-[10px] md:pb-[28px] pb-6">
+          <h3
+            class="text-semiHitam md:text-[40px] text-3xl font-medium md:leading-[48px] leading-8 ">
+            Fast & Efficient Ordering System
+          </h3>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="flex gap-[18px] ">
+            <img src="/ceklis-fea.svg" alt="ceklis" class="pb-[18px]">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Multi-Order Support: Manage dine-in, take-away, and delivery in one system.</p>
+          </div>
+          <div class="flex gap-[18px]">
+            <img src="/ceklis-fea.svg" alt="ceklis" class="pb-[18px]">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Real-Time Status Updates: Monitor orders from start to finish in real time.</p>
+          </div>
+          <div class="flex gap-[18px]">
+            <img src="/ceklis-fea.svg" alt="ceklis" class="pb-[18px]">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Orders Direct to Kitchen: Automate the delivery of orders from the cashier to the kitchen.</p>
+          </div>
+        </div>
+        <div class="flex gap-[5px] pt-10">
+          <p class="text-base font-bold font-satoshi ">Watch Video</p>
+          <img src="/play-fea.svg" alt="play video" class="w-[18px]">
+        </div>
+      </div>
+    </section>
+
+    <section class="container flex font-satoshi justify-between lg:flex-row md:flex-col flex-col lg:gap-[92px] md:gap-0 gap-0">
+      <div class="lg:max-w-[510px] md:w-full w-full lg:py-[157px] md:py-[80px] py-0  ">
+        <div class="pt-[10px] md:pb-[28px] pb-6">
+          <h3
+            class="text-semiHitam md:text-[40px] text-3xl font-medium md:leading-[48px] leading-8 ">
+            Flexible Product Management
+          </h3>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="flex gap-[18px] ">
+            <img src="/ceklis-fea.svg" alt="ceklis" class="pb-[18px]">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Add and Edit Dynamic Products: Update names, prices, and categories in seconds.</p>
+          </div>
+          <div class="flex gap-[18px]">
+            <img src="/ceklis-fea.svg" alt="ceklis" class="pb-[18px]">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Manage Menu Variants: Set up various menu options or special packages.</p>
+          </div>
+          <div class="flex gap-[18px]">
+            <img src="/ceklis-fea.svg" alt="ceklis" class="pb-[18px]">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Integrated Stock: Stock is automatically reduced with each transaction.</p>
+          </div>
+        </div>
+        <div class="flex gap-[5px] pt-10">
+          <p class="text-base font-bold font-satoshi ">Watch Video</p>
+          <img src="/play-fea.svg" alt="play video" class="w-[18px]">
+        </div>
+      </div>
+      <div class="lg:py-[110px] py-[60px]">
+        <img src="/Product -fea.png" alt="image fea" class="w-full md:w-[598px]" />
+      </div>
+    </section>
+
+    <section class="container flex font-satoshi justify-between lg:flex-row md:flex-col flex-col lg:gap-[98px] md:gap-0 gap-0">
+      <div class="lg:py-[110px] py-[60px]">
+        <img src="/image-fea.png" alt="image fea" class="w-full md:w-[598px]" />
+      </div>
+      <div class="lg:max-w-[504px] md:w-full w-full lg:py-[193px] md:py-[80px] py-0  ">
+        <div class="pt-[10px] md:pb-[28px] pb-6">
+          <h3
+            class="text-semiHitam md:text-[40px] text-3xl font-medium md:leading-[48px] leading-8 ">
+            Automatic Financial Reports
+          </h3>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="flex gap-1">
+            <img src="/ceklis-fea.svg" alt="ceklis" class="pb-[18px]">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Daily & Monthly Sales Report: Complete summary to manage cash flow.</p>
+          </div>
+          <div class="flex gap-1">
+            <img src="/ceklis-fea.svg" alt="ceklis" class="pb-[18px]">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Transaction Details: Record all payments automatically</p>
+          </div>
+          <div class="flex gap-1">
+            <img src="/ceklis-fea.svg" alt="ceklis" class="pb-[18px]">
+            <p class="text-base font-normal font-satoshi leading-6 text-abuGelap">Easy Data Export: Download reports in PDF or Excel format with just one click.</p>
+          </div>
+        </div>
+        <div class="flex gap-[5px] pt-10">
+          <p class="text-base font-bold font-satoshi ">Watch Video</p>
+          <img src="/play-fea.svg" alt="play video" class="w-[18px]">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-Biru flex justify-center">
+        <div class="container flex justify-center">
+          <div class="max-w-[942px] w-full text-putih pt-[78px] pb-[100px]">
+            <h2
+              class="flex md:text-[40px] text-3xl font-medium justify-center text-center"
+            >
+              Optimize Your Restaurant Operations Now!
+            </h2>
+            <p
+              class="flex text-center md:text-base text-sm font-normal pt-6 pb-8"
+            >
+              Manage orders, monitor transactions, and improve your business
+              efficiency with Xank MPOS. Start a faster and safer restaurant
+              management experience today!
+            </p>
+            <div class="items-center justify-center flex">
+              <button
+                class="font-satoshi items-center gap-1 bg-putih text-Biru px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-putih_bg"
+              >
+                Request a demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-hitam">
+      <div class="container mx-auto flex flex-col gap-3">
+        <div class="flex flex-col">
+          <div
+            class="flex border-t pt-[70px] lg:flex-row md:flex-col flex-col justify-between"
+          >
+            <div class="flex flex-col gap-4 md:pb-8 pb-9">
+              <div class="flex items-center gap-3">
+                <img src="/logo.svg" alt="Logo Mpos" class="w-10" />
+                <span class="text-2xl font-semibold font-inter text-putih_bg"
+                  >Mpos</span
+                >
+              </div>
+              <p class="text-putih_bg max-w-md font-satoshi">
+                Xank Mpos is a web-based restaurant management solution.
+                Facilitates efficient transaction and report management. All in
+                one practical and easy-to-use dashboard.
+              </p>
+              <div class="flex flex-col">
+                <div class="flex gap-1">
+                  <img src="/email.svg" alt="email" class="w-8" />
+                  <p
+                    class="text-sm font-normal font-satoshi py-1 text-putih_bg"
+                  >
+                    Mpos@gmail.com
+                  </p>
+                </div>
+
+                <div class="flex gap-1">
+                  <img src="/telpon.svg" alt="email" class="w-8" />
+                  <p
+                    class="text-sm font-normal font-satoshi py-1 text-putih_bg"
+                  >
+                    (123) 1234567
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-row md:gap-0 lg:gap-0 gap-7">
+              <div class="flex flex-col">
+                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                  Navigation
+                </p>
+                <ul
+                  class="text-base font-normal font-satoshi text-putih_bg flex flex-col"
+                >
+                  <li><a href="#" class="pb-[6px]">Home</a></li>
+                  <li><a href="#" class="pb-[6px]">Features</a></li>
+                  <li><a href="#" class="pb-[6px]">Pricing</a></li>
+                  <li><a href="#" class="pb-[6px]">Blog</a></li>
+                  <li><a href="#" class="pb-[6px]">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="flex flex-col md:px-[128px] px-0">
+                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                  About Us
+                </p>
+                <ul class="text-base font-normal font-satoshi text-putih_bg">
+                  <li><a href="#" class="pb-[6px]">Our Story</a></li>
+                  <li><a href="#" class="pb-[6px]">Career</a></li>
+                  <li><a href="#" class="pb-[6px]">News & Blog</a></li>
+                </ul>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                  Social media
+                </p>
+                <ul class="flex gap-4 lg:flex-nowrap md:flex-wrap flex-wrap">
+                  <li>
+                    <img
+                      src="/instagram.svg"
+                      alt="Instagram"
+                      class="w-6 cursor-pointer"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/wa.svg"
+                      alt="WhatsApp"
+                      class="w-6 cursor-pointer"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/youtube.svg"
+                      alt="YouTube"
+                      class="w-6 cursor-pointer"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/linkedin.svg"
+                      alt="LinkedIn"
+                      class="w-6 cursor-pointer"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/twiter.svg"
+                      alt="Twitter"
+                      class="w-6 cursor-pointer"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between text-putih_bg text-sm pt-4 font-satoshi pb-6"
+        >
+          <p>&copy; 2022 mpos. All rights reserved.</p>
+          <ul class="flex gap-4">
+            <li>
+              <a href="#" class="hover:text-putih cursor-pointer"
+                >Privacy policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-putih cursor-pointer"
+                >Term of use</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
