@@ -1,4 +1,3 @@
-import './style.css'
 
 function toggleFAQ(element) {
   const content = element.parentElement.querySelector(".faq-content");

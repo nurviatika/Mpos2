@@ -20,7 +20,7 @@ export default {
       colors: {
         hitam: "#050810",
         abu: "#747B8B",
-        semiHitam: "# 000000",
+        semiHitam: "#000000",
         putih_bg: "#FFFFFF",
         semiAbu: "#8B919E",
         Biru: "#2865FF",
