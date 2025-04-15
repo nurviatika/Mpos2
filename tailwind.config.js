@@ -31,7 +31,9 @@ export default {
         neutrayGray: "#FAFAFA",
         hitam_dl: "#3A3E45",
         abuPudar: "#F4F4F4",
-        putih_pudar: "E5E5E5",
+        putih_pudar: "#E5E5E5",
+        abu_bg: "#F8F9FA",
+        hitam_text: "#344346",
       },
       screens: {
         sm: "425px",
