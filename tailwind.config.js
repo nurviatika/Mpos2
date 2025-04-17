@@ -34,6 +34,7 @@ export default {
         putih_pudar: "#E5E5E5",
         abu_bg: "#F8F9FA",
         hitam_text: "#344346",
+        merah: "#FF8682",
       },
       screens: {
         sm: "425px",
