@@ -16,135 +16,135 @@
   <body>
 
     <header
-    id="navbar"
-    class="bg-putih_bg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
-  >
-    <nav class="container flex justify-between items-center w-full">
-      <a href="/">
-        <div
-          class="flex items-center gap-[10px] font-bold text-hitam text-2xl font-satoshi"
+      id="navbar"
+      class="bg-putih_bg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
+    >
+      <nav class="container flex justify-between items-center w-full">
+        <a href="/">
+          <div
+            class="flex items-center gap-[10px] font-bold text-hitam text-2xl font-satoshi"
+          >
+            <img src="/logo.svg" alt="Logo" class="w-10" />
+            <span>Mpos</span>
+          </div>
+        </a>
+        <ul
+          class="md:hidden hidden lg:flex gap-10 text-hitam text-sm font-satoshi"
         >
-          <img src="/logo.svg" alt="Logo" class="w-10" />
-          <span>Mpos</span>
+          <li>
+            <a
+              href="/index.html"
+              class="hover:text-abu text-hitam font-semibold"
+              >Home</a
+            >
+          </li>
+          <li><a href="/src/about.html" class="hover:text-hitam">Aboutus</a></li>
+          <li><a href="/src/features.html" class="hover:text-hitam">Features</a></li>
+          <li><a href="/src/pricing.html" class="hover:text-hitam">Pricing</a></li>
+          <li><a href="/src/blog.html" class="hover:text-hitam">Blog</a></li>
+          <li><a href="/src/contactUs.html" class="hover:text-hitam">Contact Us</a></li>
+        </ul>
+
+        <div class="flex gap-6">
+          <p class="py-[14px] text-sm font-satoshi hidden lg:flex md:hidden">
+            Login
+          </p>
+          <button
+            class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+          >
+            Get Started
+          </button>
         </div>
-      </a>
+
+        <svg
+          id="menu-toggle"
+          class="lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer"
+          width="16"
+          height="12"
+          viewBox="0 0 16 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.00195 1.20007L14.602 1.20007"
+            stroke="#111111"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+          <path
+            d="M0.800781 6.00006L9.80078 6.00006"
+            stroke="#111111"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+          <path
+            d="M0.8125 10.8H14.4127"
+            stroke="#111111"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+        </svg>
+      </nav>
+
       <ul
-        class="md:hidden hidden lg:flex gap-10 text-hitam text-sm font-satoshi"
+        id="nav-links"
+        class="lg:hidden fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out"
       >
+        <span
+          id="close-menu"
+          class="absolute top-4 right-6 w-6 h-6 cursor-pointer flex items-center justify-center"
+        >
+          <span class="block w-6 h-[3px] bg-hitam rotate-45 absolute"></span>
+          <span class="block w-6 h-[3px] bg-hitam -rotate-45 absolute"></span>
+        </span>
+
         <li>
           <a
             href="/index.html"
-            class="hover:text-abu text-hitam font-semibold"
+            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
             >Home</a
           >
         </li>
-        <li><a href="/src/about.html" class="hover:text-hitam">Aboutus</a></li>
-        <li><a href="/src/Features.html" class="hover:text-hitam">Features</a></li>
-        <li><a href="/src/Pricing.html" class="hover:text-hitam">Pricing</a></li>
-        <li><a href="/src/blog.html" class="hover:text-hitam">Blog</a></li>
-        <li><a href="/src/contactUs.html" class="hover:text-hitam">Contact Us</a></li>
+        <li>
+          <a
+            href="/src/about.html"
+            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Aboutus</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/features.html"
+            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a href="/src/pricing.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a href="/src/blog.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a href="/src/contactUs.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Contact Us</a
+          >
+        </li>
+
+        <div class="flex gap-6 px-6 py-3">
+          <p class="py-[14px] text-sm font-satoshi">Login</p>
+          <button
+            class="flex font-satoshi items-center gap-1 bg-Biru text-putih px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+          >
+            Get Started
+          </button>
+        </div>
       </ul>
-
-      <div class="flex gap-6">
-        <p class="py-[14px] text-sm font-satoshi hidden lg:flex md:hidden">
-          Login
-        </p>
-        <button
-          class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
-        >
-          Get Started
-        </button>
-      </div>
-
-      <svg
-        id="menu-toggle"
-        class="lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer"
-        width="16"
-        height="12"
-        viewBox="0 0 16 12"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M1.00195 1.20007L14.602 1.20007"
-          stroke="#111111"
-          stroke-width="1.6"
-          stroke-linecap="round"
-        />
-        <path
-          d="M0.800781 6.00006L9.80078 6.00006"
-          stroke="#111111"
-          stroke-width="1.6"
-          stroke-linecap="round"
-        />
-        <path
-          d="M0.8125 10.8H14.4127"
-          stroke="#111111"
-          stroke-width="1.6"
-          stroke-linecap="round"
-        />
-      </svg>
-    </nav>
-
-    <ul
-      id="nav-links"
-      class="lg:hidden fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out"
-    >
-      <span
-        id="close-menu"
-        class="absolute top-4 right-6 w-6 h-6 cursor-pointer flex items-center justify-center"
-      >
-        <span class="block w-6 h-[3px] bg-hitam rotate-45 absolute"></span>
-        <span class="block w-6 h-[3px] bg-hitam -rotate-45 absolute"></span>
-      </span>
-
-      <li>
-        <a
-          href="/index.html"
-          class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-          >Home</a
-        >
-      </li>
-      <li>
-        <a
-          href="/src/about.html"
-          class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-          >Aboutus</a
-        >
-      </li>
-      <li>
-        <a
-          href="/src/Features.html"
-          class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-          >Features</a
-        >
-      </li>
-      <li>
-        <a href="/src/Pricing.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-          >Pricing</a
-        >
-      </li>
-      <li>
-        <a href="/src/blog.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-          >Blog</a
-        >
-      </li>
-      <li>
-        <a href="/src/contactUs.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-          >CoNTACT Us</a
-        >
-      </li>
-
-      <div class="flex gap-6 px-6 py-3">
-        <p class="py-[14px] text-sm font-satoshi">Login</p>
-        <button
-          class="flex font-satoshi items-center gap-1 bg-Biru text-putih px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
-        >
-          Get Started
-        </button>
-      </div>
-    </ul>
-  </header>
+    </header>
     
     <section
       class="container flex flex-col items-center md:py-[100px] py-[50px]"
