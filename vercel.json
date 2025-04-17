@@ -2,6 +2,10 @@
   "rewrites": [
       { "source": "/", "destination": "/index.html" },
       { "source": "/about", "destination": "/src/about.html" },
-      { "source": "/blog", "destination": "/src/Blog.html" }
+      { "source": "/blog", "destination": "/src/blog.html" },
+      { "source": "/blogDetail", "destination": "/src/blogDetail.html" },
+      { "source": "/contactUs", "destination": "/src/ContactUs.html" },
+      { "source": "/features", "destination": "/src/features.html" },
+      { "source": "/pricing", "destination": "/src/pricing.html" }
   ]
 }
