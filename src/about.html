@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
+    <title>Home</title>
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header
+      id="navbar"
+      class="bg-putih_bg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
+    >
+      <nav class="container flex justify-between items-center w-full">
+        <a href="/">
+          <div
+            class="flex items-center gap-[10px] font-bold text-hitam text-2xl font-satoshi"
+          >
+            <img src="/logo.svg" alt="Logo" class="w-10" />
+            <span>Mpos</span>
+          </div>
+        </a>
+        <ul
+          class="md:hidden hidden lg:flex gap-10 text-hitam text-sm font-satoshi"
+        >
+          <li>
+            <a
+              href="/index.html"
+              class="hover:text-abu text-hitam font-semibold"
+              >Home</a
+            >
+          </li>
+          <li><a href="/about.html" class="hover:text-hitam">Aboutus</a></li>
+          <li><a href="/Features.html" class="hover:text-hitam">Features</a></li>
+          <li><a href="/Pricing.html" class="hover:text-hitam">Pricing</a></li>
+          <li><a href="/Blog.html" class="hover:text-hitam">Blog</a></li>
+          <li><a href="/ContactUs.html" class="hover:text-hitam">Contact Us</a></li>
+        </ul>
+
+        <div class="flex gap-6">
+          <p class="py-[14px] text-sm font-satoshi hidden lg:flex md:hidden">
+            Login
+          </p>
+          <button
+            class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <svg
+          id="menu-toggle"
+          class="lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer"
+          width="16"
+          height="12"
+          viewBox="0 0 16 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.00195 1.20007L14.602 1.20007"
+            stroke="#111111"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+          <path
+            d="M0.800781 6.00006L9.80078 6.00006"
+            stroke="#111111"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+          <path
+            d="M0.8125 10.8H14.4127"
+            stroke="#111111"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+        </svg>
+      </nav>
+
+      <ul
+        id="nav-links"
+        class="lg:hidden fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out"
+      >
+        <span
+          id="close-menu"
+          class="absolute top-4 right-6 w-6 h-6 cursor-pointer flex items-center justify-center"
+        >
+          <span class="block w-6 h-[3px] bg-hitam rotate-45 absolute"></span>
+          <span class="block w-6 h-[3px] bg-hitam -rotate-45 absolute"></span>
+        </span>
+
+        <li>
+          <a
+            href="/index.html"
+            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/about.html"
+            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Aboutus</a
+          >
+        </li>
+        <li>
+          <a
+            href="/Features.html"
+            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a href="/Pricing.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a href="/Blog.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a href="/ContactUs.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            >Contact Us</a
+          >
+        </li>
+
+        <div class="flex gap-6 px-6 py-3">
+          <p class="py-[14px] text-sm font-satoshi">Login</p>
+          <button
+            class="flex font-satoshi items-center gap-1 bg-Biru text-putih px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+          >
+            Get Started
+          </button>
+        </div>
+      </ul>
+    </header>
+
+    <section class="container flex text-left relative flex-col mt-[75px]">
+      <div
+        class="flex gap-2 md:flex-row flex-col justify-between w-full md:pt-[75px] py-10 md:pb-[81px]"
+      >
+        <div class="max-w-[634px] gap-5">
+          <h1
+            class="text-[32px] lg:text-[64px] md:text-5xl text-hitam font-medium font-satoshi justify-start text-center md:text-start lg:text-start"
+          >
+            Modern Solution For Restaurant Management
+          </h1>
+        </div>
+        <div class="flex">
+          <div
+            class="flex gap-2 lg:items-start md:items-start items-center justify-end flex-col"
+          >
+            <p
+              class="font-satoshi md:text-base text-sm font-normal leading-[22px] tracking-tight text-abu flex items-end justify-between max-w-[552px] text-center md:text-start lg:text-start"
+            >
+              We are a dedicated team committed to providing modern solutions to
+              simplify and streamline restaurant operational processes.
+            </p>
+            <div class="flex gap-[5px] items-start md:pt-5 pt-2">
+              <button
+                class="text-hitam md:text-base text-sm font-bold flex flex-row-reverse font-satoshi"
+              >
+                <img src="/get started.svg" class="items-end" />
+                Learn About Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex relative md:flex-row flex-col py-[120px]">
+      <div class="left container">
+        <div class="flex text-left flex-col w-full lg:max-w-[544px]">
+          <p class="text-Biru text-base font-satoshi font-medium">Achievment</p>
+          <h2
+            class="text-[40px] font-satoshi font-medium text-hitam pt-[10px] pb-[16px]"
+          >
+            Achievements That Drive Us Forward
+          </h2>
+          <p class="text-base font-normal text-abuGelap pb-8">
+            Since the beginning, we’ve been committed to simplifying restaurant
+            operations. Our dedication has led us to achieve remarkable
+            milestones, reflecting our passion for delivering efficient and
+            reliable solutions.
+          </p>
+          <div class="flex md:flex-row flex-col gap-6 pb-1">
+            <div
+              class="border-putih_pudar border rounded-xl py-[30px] px-[30px]"
+            >
+              <h3 class="text-lg font-medium text-hitam">
+                500+ Transactions Processed
+              </h3>
+              <p class="text-sm font-normal text-abuGelap">
+                We've successfully handled over 500 restaurant transactions,
+                ensuring smooth and accurate operations.
+              </p>
+            </div>
+
+            <div
+              class="border-putih_pudar border rounded-xl py-[30px] px-[30px]"
+            >
+              <h3 class="text-lg font-medium text-hitam">
+                500+ Transactions Processed
+              </h3>
+              <p class="text-sm font-normal text-abuGelap">
+                We've successfully handled over 500 restaurant transactions,
+                ensuring smooth and accurate operations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:hidden">
+          <img src="/Dashboard 3.png" alt="dashboard about" class="" />
+        </div>
+      </div>
+      <div
+        class="right h-16 hidden lg:block absolute right-0 top-0 translate-x-[70px]"
+      >
+        <img
+          src="/Dashboard 3.png"
+          alt="dashboard about"
+          class="w-[773px] min-h-[500px]"
+        />
+      </div>
+    </section>
+
+    <section
+      class="container flex flex-col items-center md:py-[100px] py-[50px]"
+    >
+      <div class="max-w-[815px] md:pb-[60px]">
+        <p class="text-[16px] text-Biru flex font-medium justify-center">
+          Our Values
+        </p>
+        <div class="flex flex-col items-center">
+          <h3 class="md:text-[40px] text-[27px] font-medium text-center">
+            Principles That Drive Us Forward
+          </h3>
+          <p class="text-[16px] font-normal text-center pt-2">
+            We are a team of experienced professionals in technology and the
+            culinary industry, to provide the best solutions for your
+            restaurant.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-start gap-3 mt-10 w-[100%] px-4"
+      >
+        <div
+          class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition p-4 group"
+        >
+          <div class="pl-[30px] pb-4">
+            <img src="/frame-about1.svg" alt="icon1" class="w-[52px]" />
+          </div>
+          <div class="px-[30px]">
+            <h3
+              class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white"
+            >
+              Innovation First
+            </h3>
+            <p
+              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white"
+            >
+              We are always looking for new ways to improve restaurant
+              efficiency.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition p-4 group"
+        >
+          <div class="pl-[30px] pb-4">
+            <img src="/frame-about2.svg" alt="icon2" class="w-[52px]" />
+          </div>
+          <div class="px-[30px]">
+            <h3
+              class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white"
+            >
+              Transparency & Trust
+            </h3>
+            <p
+              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white"
+            >
+              We build relationships based on openness and trust.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition p-4 group"
+        >
+          <div class="pl-[30px] pb-4">
+            <img src="/frame-about3.svg" alt="icon3" class="w-[52px]" />
+          </div>
+          <div class="px-[30px]">
+            <h3
+              class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white"
+            >
+              Customer - Centric
+            </h3>
+            <p
+              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white"
+            >
+              Customer needs are our top priority at every step we take.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition p-4 group"
+        >
+          <div class="pl-[30px] pb-4">
+            <img src="/frame-about4.svg" alt="icon4" class="w-[52px]" />
+          </div>
+          <div class="px-[30px]">
+            <h3
+              class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white"
+            >
+              Continuous Improvemen
+            </h3>
+            <p
+              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white"
+            >
+              Always learning, growing and adapting to market needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container flex flex-col items-center md:py-[100px] py-[50px] overflow-hidden"
+    >
+      <div class="max-w-[815px] md:pb-[60px]">
+        <p class="text-[16px] text-Biru flex font-medium justify-center">
+          Meet Our Team
+        </p>
+        <div class="flex flex-col items-center">
+          <h3 class="md:text-[40px] text-[27px] font-medium text-center">
+            The People Behind MPOS Restaurant
+          </h3>
+          <p class="text-[16px] font-normal text-center pt-2">
+            We are a team of experienced professionals in technology and the
+            culinary industry, to provide the best solutions for your
+            restaurant.
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper ourteamslider w-full" style="overflow: unset !important;">
+        <div class="swiper-wrapper pt-[60px] md:pt-0 gap-[10px] ">
+          <div class="swiper-slide flex md:flex-row flex-col gap-[10px] hover:scale-110 transition-all duration-150 pl-6 md:pl-0">
+            <div
+              class="relative w-[293px] rounded-[20px] overflow-hidden shadow-lg bg-abuPudar hover:bg-abuGelap "
+            >
+              <img
+                src="/user-about1.png"
+                alt="image-user"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+              >
+                <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
+                  <h3 class="font-bold text-lg font-satoshi text-putih_bg">
+                    Alexander Arnold
+                  </h3>
+                  <p class="text-base text-putih_bg">Manager</p>
+                </div>
+              </div>
+              <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
+                <img src="/github-about.svg" alt="github" class="w-6 h-6" />
+                <img src="/linkedin-about.svg" alt="linkedin" class="w-6 h-6" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex md:flex-row flex-col gap-[10px] hover:scale-110 transition-all duration-150">
+            <div
+              class="relative w-[293px] rounded-[20px] overflow-hidden shadow-lg bg-abuPudar  hover:bg-abuGelap"
+            >
+              <img
+                src="/user-about2.png"
+                alt="image-user"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+              >
+                <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
+                  <h3 class="font-bold text-lg font-satoshi text-putih_bg">
+                    Steven William
+                  </h3>
+                  <p class="text-base text-putih_bg">Frontend Developer</p>
+                </div>
+              </div>
+              <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
+                <img src="/github-about.svg" alt="github" class="w-6 h-6" />
+                <img src="/linkedin-about.svg" alt="linkedin" class="w-6 h-6" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex md:flex-row flex-col gap-[10px] hover:scale-110 transition-all duration-150">
+            <div
+              class="relative w-[293px] rounded-[20px] overflow-hidden shadow-lg bg-abuPudar  hover:bg-abuGelap"
+            >
+              <img
+                src="/user-about3.png"
+                alt="image-user"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+              >
+                <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
+                  <h3 class="font-bold text-lg font-satoshi text-putih_bg">
+                    Justin Hubner
+                  </h3>
+                  <p class="text-base text-putih_bg">Backend Develover</p>
+                </div>
+              </div>
+              <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
+                <img src="/github-about.svg" alt="github" class="w-6 h-6" />
+                <img src="/linkedin-about.svg" alt="linkedin" class="w-6 h-6" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex md:flex-row flex-col gap-[10px] hover:scale-110 transition-all duration-150">
+            <div
+              class="relative w-[293px] rounded-[20px] overflow-hidden shadow-lg bg-abuPudar  hover:bg-abuGelap"
+            >
+              <img
+                src="/user-about4.png"
+                alt="image-user"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+              >
+                <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
+                  <h3 class="font-bold text-lg font-satoshi text-putih_bg">
+                    David Alison
+                  </h3>
+                  <p class="text-base text-putih_bg">UI/UX Design</p>
+                </div>
+              </div>
+              <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
+                <img src="/github-about.svg" alt="github" class="w-6 h-6" />
+                <img src="/linkedin-about.svg" alt="linkedin" class="w-6 h-6" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex md:flex-row flex-col gap-[10px] hover:scale-110 transition-all duration-150">
+            <div
+              class="relative w-[293px] rounded-[20px] overflow-hidden shadow-lg bg-abuPudar hover:bg-abuGelap "
+            >
+              <img
+                src="/user-about1.png"
+                alt="image-user"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+              >
+                <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
+                  <h3 class="font-bold text-lg font-satoshi text-putih_bg">
+                    Alexander Arnold
+                  </h3>
+                  <p class="text-base text-putih_bg">Manager</p>
+                </div>
+              </div>
+              <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
+                <img src="/github-about.svg" alt="github" class="w-6 h-6" />
+                <img src="/linkedin-about.svg" alt="linkedin" class="w-6 h-6" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex md:flex-row flex-col gap-[10px] hover:scale-110 transition-all duration-150">
+            <div
+              class="relative w-[293px] rounded-[20px] overflow-hidden shadow-lg bg-abuPudar  hover:bg-abuGelap"
+            >
+              <img
+                src="/user-about2.png"
+                alt="image-user"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+              >
+                <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
+                  <h3 class="font-bold text-lg font-satoshi text-putih_bg">
+                    Steven William
+                  </h3>
+                  <p class="text-base text-putih_bg">Frontend Developer</p>
+                </div>
+              </div>
+              <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
+                <img src="/github-about.svg" alt="github" class="w-6 h-6" />
+                <img src="/linkedin-about.svg" alt="linkedin" class="w-6 h-6" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <section>
+      <div class="bg-Biru flex justify-center">
+        <div class="container flex justify-center">
+          <div class="max-w-[942px] w-full text-putih pt-[78px] pb-[100px]">
+            <h2
+              class="flex md:text-[40px] text-3xl font-medium justify-center text-center"
+            >
+              Optimize Your Restaurant Operations Now!
+            </h2>
+            <p
+              class="flex text-center md:text-base text-sm font-normal pt-6 pb-8"
+            >
+              Manage orders, monitor transactions, and improve your business
+              efficiency with Xank MPOS. Start a faster and safer restaurant
+              management experience today!
+            </p>
+            <div class="items-center justify-center flex">
+              <button
+                class="font-satoshi items-center gap-1 bg-putih text-Biru px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-putih_bg"
+              >
+                Request a demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-hitam">
+      <div class="container mx-auto flex flex-col gap-3">
+        <div class="flex flex-col">
+          <div
+            class="flex border-t pt-[70px] lg:flex-row md:flex-col flex-col justify-between"
+          >
+            <div class="flex flex-col gap-4 md:pb-8 pb-9">
+              <div class="flex items-center gap-3">
+                <img src="/logo.svg" alt="Logo Mpos" class="w-10" />
+                <span class="text-2xl font-semibold font-inter text-putih_bg"
+                  >Mpos</span
+                >
+              </div>
+              <p class="text-putih_bg max-w-md font-satoshi">
+                Xank Mpos is a web-based restaurant management solution.
+                Facilitates efficient transaction and report management. All in
+                one practical and easy-to-use dashboard.
+              </p>
+              <div class="flex flex-col">
+                <div class="flex gap-1">
+                  <img src="/email.svg" alt="email" class="w-8" />
+                  <p
+                    class="text-sm font-normal font-satoshi py-1 text-putih_bg"
+                  >
+                    Mpos@gmail.com
+                  </p>
+                </div>
+
+                <div class="flex gap-1">
+                  <img src="/telpon.svg" alt="email" class="w-8" />
+                  <p
+                    class="text-sm font-normal font-satoshi py-1 text-putih_bg"
+                  >
+                    (123) 1234567
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-row md:gap-0 lg:gap-0 gap-7">
+              <div class="flex flex-col">
+                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                  Navigation
+                </p>
+                <ul
+                  class="text-base font-normal font-satoshi text-putih_bg flex flex-col"
+                >
+                  <li><a href="#" class="pb-[6px]">Home</a></li>
+                  <li><a href="#" class="pb-[6px]">Features</a></li>
+                  <li><a href="#" class="pb-[6px]">Pricing</a></li>
+                  <li><a href="#" class="pb-[6px]">Blog</a></li>
+                  <li><a href="#" class="pb-[6px]">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="flex flex-col md:px-[128px] px-0">
+                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                  About Us
+                </p>
+                <ul class="text-base font-normal font-satoshi text-putih_bg">
+                  <li><a href="#" class="pb-[6px]">Our Story</a></li>
+                  <li><a href="#" class="pb-[6px]">Career</a></li>
+                  <li><a href="#" class="pb-[6px]">News & Blog</a></li>
+                </ul>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                  Social media
+                </p>
+                <ul class="flex gap-4 lg:flex-nowrap md:flex-wrap flex-wrap">
+                  <li>
+                    <img
+                      src="/instagram.svg"
+                      alt="Instagram"
+                      class="w-6 cursor-pointer"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/wa.svg"
+                      alt="WhatsApp"
+                      class="w-6 cursor-pointer"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/youtube.svg"
+                      alt="YouTube"
+                      class="w-6 cursor-pointer"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/linkedin.svg"
+                      alt="LinkedIn"
+                      class="w-6 cursor-pointer"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/twiter.svg"
+                      alt="Twitter"
+                      class="w-6 cursor-pointer"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between text-putih_bg text-sm pt-4 font-satoshi pb-6"
+        >
+          <p>&copy; 2022 mpos. All rights reserved.</p>
+          <ul class="flex gap-4">
+            <li>
+              <a href="#" class="hover:text-putih cursor-pointer"
+                >Privacy policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-putih cursor-pointer"
+                >Term of use</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script src="about.js"></script>
+  </body>
+</html>
