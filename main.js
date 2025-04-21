@@ -1,3 +1,4 @@
+// import './src/about.js';
 
 function toggleFAQ(element) {
   const content = element.parentElement.querySelector(".faq-content");
