@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (featuresSwiperContainer) {
     const swiper = new Swiper(".features-image", {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 25,
       loop: true,
       speed: 1000,
     });
