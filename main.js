@@ -34,34 +34,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  if (document.querySelector(".frame-image")) {
-    new Swiper(".frame-image", {
-      slidesPerView: 4,
-      spaceBetween: 20,
-      loop: true,
-      centeredSlides: false,
-      initialSlide: 0,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
+  const logoMarquee = new Swiper(".logo-marquee", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    speed: 5000,
+    grabCursor: true,
+    mousewheelControl: true,
+    keyboardControl: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
       },
-      speed: 1000,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      640: {
+        slidesPerView: 3,
       },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      768: {
+        slidesPerView: 4,
       },
-      breakpoints: {
-        375: { slidesPerView: 2, spaceBetween: 15 },
-        640: { slidesPerView: 3, spaceBetween: 10 },
-        768: { slidesPerView: 3, spaceBetween: 10 },
-        1024: { slidesPerView: 4, spaceBetween: 15 },
+      1024: {
+        slidesPerView: 5,
       },
-    });
-  }
+    },
+  });
 
   const featuresSwiperContainer = document.querySelector(".features-image");
   if (featuresSwiperContainer) {
