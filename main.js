@@ -65,11 +65,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const featuresSwiperContainer = document.querySelector(".features-image");
   if (featuresSwiperContainer) {
     const swiper = new Swiper(".features-image", {
-      slidesPerView: 1,
+      slidesPerView: "auto",
       spaceBetween: 25,
       loop: true,
       speed: 1000,
+      slidePerGroup: 2,
+      breakpoints: {
+        1024: {
+          slidePerGroup: 2,
+        },
+      },
     });
+
 
     const nextSlideBtn = document.querySelector(".next-slide");
     const prevSlideBtn = document.querySelector(".prev-slide");
@@ -110,4 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
   }
+
+  
 });
