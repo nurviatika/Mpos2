@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/style.css" rel="stylesheet" />
     <title>pricing</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
   </head>
@@ -143,15 +144,15 @@
     </header>
     
     <section
-      class="container flex flex-col items-center md:py-[100px] py-[50px]"
+      class="container flex flex-col items-center md:py-[100px] py-[50px] overflow-x-hidden"
     >
       <div class="max-w-[1020px] pt-[75px]">
-        <p
+        <p data-aos="zoom-out" data-aos-duration="300" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"
           class="text-base text-Biru flex font-medium justify-center font-satoshi"
         >
           Pricing
         </p>
-        <div class="font-satoshi">
+        <div data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false" class="font-satoshi">
           <h3
             class="flex md:text-[64px] text-[32px] font-medium text-center md:leading-[70px] leading-[40px]"
           >
@@ -167,12 +168,12 @@
         </div>
         <div class="items-center justify-center flex pt-8">
           <div class="bg-abuPudar flex rounded-lg py-[5px] px-[5px]">
-            <button
+            <button data-aos="fade-right" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"
               class="font-satoshi items-center gap-1 bg-Biru text-putih px-5 py-1 rounded-lg text-base font-medium transition hover:bg-putih_bg"
             >
               Montly
             </button>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false">
               <p
                 class="px-5 py-1 text-base font-satoshi font-medium leading-10 text-hitam"
               >
@@ -185,71 +186,11 @@
     </section>
 
     <section class="container py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
-      <div class="group group-hover:text-white text-abuGelap bg-abuPudar rounded-lg w-full lg:max-w-[391px] md:max-w-[300px] pl-5 pr-5 md:pl-[60px] md:pr-[60px] lg:pl-[40px] lg:pr-[35px] hover:bg-Biru hover:text-white transition">
-        <div class="lg:max-w-[316px] md:max-w-[200px] pt-[35px] pb-[106px]">
+      <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"
+         class="group h-[569px] flex flex-col justify-between group-hover:text-white text-abuGelap bg-abuPudar rounded-lg w-full lg:max-w-[391px] md:max-w-[300px] hover:bg-Biru hover:text-white transition py-9 px-10">
+        <div class="lg:max-w-[316px] md:max-w-[200px]">
           <p class="text-base font-normal font-satoshi text-semiHitam">
-            Bussines Plan
-          </p>
-          <h3 class="text-[40px] font-medium text-hitam py-[40px] group-hover:text-white">
-            $30,53 <span class="text-2xl font-normal">/mo</span>
-          </h3>
-          <p class="text-sm font-normal pb-4">
-            Ideal for small restaurants at the beginning of their journey.
-          </p>
-          <div class="flex flex-col gap-2">
-            <div class="flex gap-1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
-              </svg>
-              <p class="text-base font-normal font-satoshi">
-                All Starter features
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
-              </svg>
-              <p class="text-base font-normal font-satoshi leading-6">
-                Multi-location management
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
-              </svg>
-              <p class="text-base font-normal font-satoshi group-hover:text-white">
-                Daily & monthly reports
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
-              </svg>
-              <p class="text-base font-normal font-satoshi">
-                Priority support
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
-              </svg>
-              <p class="text-base font-normal font-satoshi">
-                3 user admins
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="flex pb-[36px] justify-center">
-          <button class="bg-Biru group-hover:bg-putih group-hover:text-Biru text-putih text-center lg:px-[120px] md:px-[79px] px-[79px] py-[14px] text-sm rounded-lg whitespace-nowrap min-w-max">
-            Start Now
-          </button>
-        </div>        
-      </div>
-
-      <div class="group group-hover:text-white text-abuGelap bg-abuPudar rounded-lg w-full lg:max-w-[391px] md:max-w-[300px] pl-5 pr-5 md:pl-[60px] md:pr-[60px] lg:pl-[40px] lg:pr-[35px] hover:bg-Biru hover:text-white transition">
-        <div class="lg:max-w-[316px] md:max-w-[200px] pt-[35px] pb-[106px]">
-          <p class="text-base font-normal font-satoshi text-semiHitam">
-            Starter Plan
+            Starter Plans
           </p>
           <h3 class="text-[40px] font-medium text-hitam py-[40px] group-hover:text-white">
             $15,27<span class="text-2xl font-normal">/mo</span>
@@ -258,6 +199,7 @@
             Perfect for small restaurants taking their first step toward efficient
             operations.
           </p>
+
           <div class="flex flex-col gap-2">
             <div class="flex gap-1">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -301,15 +243,79 @@
             </div>
           </div>
         </div>
-        <div class="flex pb-[36px] justify-center">
-          <button class="bg-Biru group-hover:bg-putih group-hover:text-Biru text-putih text-center lg:px-[120px] md:px-[79px] px-[79px] py-[14px] text-sm rounded-lg whitespace-nowrap min-w-max">
+        <div class="flex justify-center">
+          <button class="bg-Biru group-hover:bg-putih group-hover:text-Biru text-putih text-center py-[14px] text-sm rounded-lg whitespace-nowrap w-full">
             Start Now
           </button>
         </div>        
       </div>
 
-      <div class="group group-hover:text-white text-abuGelap bg-abuPudar rounded-lg w-full lg:max-w-[391px] md:max-w-[300px] pl-5 pr-5 md:pl-[60px] md:pr-[60px] lg:pl-[40px] lg:pr-[35px] hover:bg-Biru hover:text-white transition">
-        <div class="lg:max-w-[316px] md:max-w-[200px] pt-[35px] pb-[106px]">
+      <div data-aos="fade-down" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"
+         class="group h-[569px] flex flex-col justify-between group-hover:text-white text-abuGelap bg-abuPudar rounded-lg w-full lg:max-w-[391px] md:max-w-[300px] hover:bg-Biru hover:text-white transition py-9 px-10">
+        <div class="lg:max-w-[316px] md:max-w-[200px]">
+          <p class="text-base font-normal font-satoshi text-semiHitam">
+            Bussines Plan
+          </p>
+          <h3 class="text-[40px] font-medium text-hitam py-[40px] group-hover:text-white">
+            $30,53 <span class="text-2xl font-normal">/mo</span>
+          </h3>
+          <p class="text-sm font-normal pb-4">
+            Ideal for small restaurants at the beginning of their journey.
+          </p>
+
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
+              </svg>
+              <p class="text-base font-normal font-satoshi">
+                All Starter features
+              </p>
+            </div>
+            <div class="flex gap-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
+              </svg>
+              <p class="text-base font-normal font-satoshi leading-6">
+                Multi-location management
+              </p>
+            </div>
+            <div class="flex gap-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
+              </svg>
+              <p class="text-base font-normal font-satoshi group-hover:text-white">
+                Daily & monthly reports
+              </p>
+            </div>
+            <div class="flex gap-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
+              </svg>
+              <p class="text-base font-normal font-satoshi">
+                Priority support
+              </p>
+            </div>
+            <div class="flex gap-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
+              </svg>
+              <p class="text-base font-normal font-satoshi">
+                3 user admins
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button class="bg-Biru group-hover:bg-putih group-hover:text-Biru text-putih text-center py-[14px] text-sm rounded-lg whitespace-nowrap w-full">
+            Start Now
+          </button>
+        </div>        
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"
+         class="group h-[569px] flex flex-col justify-between group-hover:text-white text-abuGelap bg-abuPudar rounded-lg w-full lg:max-w-[391px] md:max-w-[300px] hover:bg-Biru hover:text-white transition py-9 px-10">
+        <div class="lg:max-w-[316px] md:max-w-[200px]">
           <p class="text-base font-normal font-satoshi text-semiHitam">
             Pro
           </p>
@@ -361,6 +367,7 @@
               24/7 support
               </p>
             </div>
+
             <div class="flex gap-1">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z" class="fill-black group-hover:fill-white"/>
@@ -373,84 +380,85 @@
             </div>
           </div>
         </div>
-        <div class="flex pb-[36px] justify-center">
-          <button class="bg-Biru group-hover:bg-putih group-hover:text-Biru text-putih text-center lg:px-[120px] md:px-[79px] px-[79px] py-[14px] text-sm rounded-lg whitespace-nowrap min-w-max">
+        <div class="flex justify-center">
+          <button class="bg-Biru group-hover:bg-putih group-hover:text-Biru text-putih text-center py-[14px] text-sm rounded-lg whitespace-nowrap w-full">
             Start Now
           </button>
         </div>        
       </div>
+
     </section>
 
     <section class="container mx-auto p-6">
-      <p class="text-[40px] font-medium font-satoshi text-hitam mb-6 pt-[32px]">Starter Plan</p>
+      <p data-aos="fade-right" data-aos-duration="300" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="text-[40px] font-medium font-satoshi text-hitam mb-6 pt-[32px]">Starter Plan</p>
       <div class="w-full space-y-2">
 
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="100" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="200" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <div class="flex gap-3">
             <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
-            <img src="/public/warning-prea.svg" alt="icon warning">
+            <img src="/warning-prea.svg" alt="icon warning">
           </div>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <div class="flex gap-3">
             <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
-            <img src="/public/warning-prea.svg" alt="icon warning">
+            <img src="/warning-prea.svg" alt="icon warning">
           </div>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <div class="flex gap-3">
             <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
-            <img src="/public/warning-prea.svg" alt="icon warning">
+            <img src="/warning-prea.svg" alt="icon warning">
           </div>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
@@ -458,78 +466,78 @@
         </div>
       </div>
  
-      <div class="mt-6 flex justify-end">
+      <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="mt-6 flex justify-end">
         <button class="bg-Biru md:w-[285px] w-full text-white text-sm md:px-[109px] px-[129px] py-[14px] rounded-md font-medium hover:bg-biruMuda transition-all duration-300">Start Now</button>
       </div>
     </section>
 
     <section class="container mx-auto p-6">
-      <p class="text-[40px] font-medium font-satoshi text-hitam mb-6 pt-[32px]">Bussines Plan</p>
+      <p data-aos="fade-right" data-aos-duration="300" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="text-[40px] font-medium font-satoshi text-hitam mb-6 pt-[32px]">Bussines Plan</p>
       <div class="w-full space-y-2">
 
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="100" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="200" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <div class="flex gap-3">
             <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
-            <img src="/public/warning-prea.svg" alt="icon warning">
+            <img src="/warning-prea.svg" alt="icon warning">
           </div>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <div class="flex gap-3">
             <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
-            <img src="/public/warning-prea.svg" alt="icon warning">
+            <img src="/warning-prea.svg" alt="icon warning">
           </div>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
@@ -537,78 +545,78 @@
         </div>
       </div>
  
-      <div class="mt-6 flex justify-end">
+      <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="mt-6 flex justify-end">
         <button class="bg-Biru md:w-[285px] w-full text-white text-sm md:px-[109px] px-[129px] py-[14px] rounded-md font-medium hover:bg-biruMuda transition-all duration-300">Start Now</button>
       </div>
     </section>
 
     <section class="container mx-auto pt-6 pb-[100px]">
-      <p class="text-[40px] font-medium font-satoshi text-hitam mb-6 pt-[32px]">Custom</p>
+      <p data-aos="fade-right" data-aos-duration="300" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="text-[40px] font-medium font-satoshi text-hitam mb-6 pt-[32px]">Custom</p>
       <div class="w-full space-y-2">
 
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="100" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="200" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <div class="flex gap-3">
             <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
-            <img src="/public/warning-prea.svg" alt="icon warning">
+            <img src="/warning-prea.svg" alt="icon warning">
           </div>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
     
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <div class="flex gap-3">
             <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
-            <img src="/public/warning-prea.svg" alt="icon warning">
+            <img src="/warning-prea.svg" alt="icon warning">
           </div>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-putih_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
+        <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex justify-between items-center bg-abu_bg px-6 py-3 rounded">
           <p class="text-sm font-normal font-satoshi text-hitam_text">Feature</p>
           <svg class="relative md:right-[109px] right-[0px]" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8139 7.87549L8.71402 13.9754L5.66406 10.9254" stroke="#050810" stroke-width="0.862787" stroke-linecap="round" stroke-linejoin="round"/>
@@ -616,78 +624,120 @@
         </div>
       </div>
  
-      <div class="mt-6 flex justify-end">
+      <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="mt-6 flex justify-end">
         <button class="bg-Biru md:w-[285px] w-full text-white text-sm md:px-[109px] px-[129px] py-[14px] rounded-md font-medium hover:bg-biruMuda transition-all duration-300">Start Now</button>
       </div>
     </section>
 
     <section>
-      <div class=" flex justify-center relative">
-        <img src="/bg-about.png" alt="" class="bg-cover absolute w-full h-full">
+      <div class="flex justify-center relative">
+        <img
+          src="/bg-about.png"
+          alt=""
+          class="bg-cover absolute w-full h-full"
+        />
         <div class="container flex justify-center z-50">
           <div class="max-w-[942px] w-full text-putih pt-[78px] pb-[100px]">
-            <h2 class="flex md:text-[40px] text-3xl font-medium justify-center text-center">
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="0"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              class="flex md:text-[40px] text-3xl font-medium justify-center text-center"
+            >
               Optimize Your Restaurant Operations Now!
             </h2>
-            <p class="flex text-center md:text-base text-sm font-normal pt-6 pb-8">
-              Manage orders, monitor transactions, and improve your business efficiency with Xank MPOS. Start a faster and safer restaurant management experience today!
+            <p
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-delay="0"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              class="flex text-center md:text-base text-sm font-normal pt-6 pb-8"
+            >
+              Manage orders, monitor transactions, and improve your business
+              efficiency with Xank MPOS. Start a faster and safer restaurant
+              management experience today!
             </p>
-            <div class="items-center justify-center flex">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="0"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              class="items-center justify-center flex"
+            >
               <button
-              class="font-satoshi items-center gap-1 bg-putih text-Biru px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-putih_bg">
-              Request a demo
+                class="font-satoshi items-center gap-1 bg-putih text-Biru px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-putih_bg"
+              >
+                Request a demo
               </button>
             </div>
           </div>
-         
         </div>
       </div>
-
     </section>
 
-
     <footer class="bg-hitam">
-      <div class="container mx-auto flex flex-col gap-3 ">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="400"
+        data-aos-delay="0"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        class="container mx-auto flex flex-col gap-3"
+      >
         <div class="flex flex-col">
-
-          <div 
-            class="flex  border-t pt-[70px] lg:flex-row md:flex-col flex-col justify-between">
+          <div
+            class="flex border-t pt-[70px] lg:flex-row md:flex-col flex-col justify-between"
+          >
             <div class="flex flex-col gap-4 md:pb-8 pb-9">
               <div class="flex items-center gap-3">
                 <img src="/logo.svg" alt="Logo Mpos" class="w-10" />
-                <span class="text-2xl font-semibold font-inter text-putih_bg">Mpos</span>
+                <span class="text-2xl font-semibold font-inter text-putih_bg"
+                  >Mpos</span
+                >
               </div>
-              <p class="text-putih_bg max-w-md font-satoshi ">
-                Xank Mpos is a web-based restaurant management solution. Facilitates efficient transaction and report management. All in one practical and easy-to-use dashboard.
+              <p class="text-putih_bg max-w-md font-satoshi">
+                Xank Mpos is a web-based restaurant management solution.
+                Facilitates efficient transaction and report management. All in
+                one practical and easy-to-use dashboard.
               </p>
               <div class="flex flex-col">
                 <div class="flex gap-1">
-                  <img src="/email.svg" alt="icon email" class="w-8">
-                  <p class="text-sm font-normal font-satoshi py-1 text-putih_bg" >
+                  <img src="/email.svg" alt="icon email" class="w-8" />
+                  <p
+                    class="text-sm font-normal font-satoshi py-1 text-putih_bg"
+                  >
                     Mpos@gmail.com
                   </p>
                 </div>
-    
+
                 <div class="flex gap-1">
-                  <img src="/telpon.svg" alt="icon telpon" class="w-8">
-                  <p class="text-sm font-normal font-satoshi py-1 text-putih_bg">
+                  <img src="/telpon.svg" alt="icon telpon" class="w-8" />
+                  <p
+                    class="text-sm font-normal font-satoshi py-1 text-putih_bg"
+                  >
                     (123) 1234567
                   </p>
                 </div>
               </div>
             </div>
-            
-            <div class="flex flex-row  md:gap-0 lg:gap-0 gap-7 ">
+
+            <div class="flex flex-row md:gap-0 lg:gap-0 gap-7">
               <div class="flex flex-col">
                 <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
                   Navigation
                 </p>
-                <ul class="text-base font-normal font-satoshi text-putih_bg flex flex-col">
-                  <li><a href="#" class="pb-[6px]">Home</a></li> 
-                  <li><a href="#" class="pb-[6px]">Features</a></li> 
-                  <li><a href="#" class="pb-[6px]">Pricing</a></li> 
-                  <li><a href="#" class="pb-[6px]">Blog</a></li> 
-                  <li><a href="#" class="pb-[6px]">Contact</a></li> 
+                <ul
+                  class="text-base font-normal font-satoshi text-putih_bg flex flex-col"
+                >
+                  <li><a href="#" class="pb-[6px]">Home</a></li>
+                  <li><a href="#" class="pb-[6px]">Features</a></li>
+                  <li><a href="#" class="pb-[6px]">Pricing</a></li>
+                  <li><a href="#" class="pb-[6px]">Blog</a></li>
+                  <li><a href="#" class="pb-[6px]">Contact</a></li>
                 </ul>
               </div>
 
@@ -696,9 +746,9 @@
                   About Us
                 </p>
                 <ul class="text-base font-normal font-satoshi text-putih_bg">
-                  <li><a href="#" class="pb-[6px]">Our Story</a></li> 
-                  <li><a href="#" class="pb-[6px]">Career</a></li> 
-                  <li><a href="#" class="pb-[6px]">News & Blog</a></li> 
+                  <li><a href="#" class="pb-[6px]">Our Story</a></li>
+                  <li><a href="#" class="pb-[6px]">Career</a></li>
+                  <li><a href="#" class="pb-[6px]">News & Blog</a></li>
                 </ul>
               </div>
 
@@ -747,17 +797,31 @@
             </div>
           </div>
         </div>
-  
-        <div class="flex flex-col md:flex-row justify-between text-putih_bg text-sm pt-4 font-satoshi pb-6">
+
+        <div
+          class="flex flex-col md:flex-row justify-between text-putih_bg text-sm pt-4 font-satoshi pb-6"
+        >
           <p>&copy; 2022 mpos. All rights reserved.</p>
           <ul class="flex gap-4">
-            <li><a href="#" class="hover:text-putih cursor-pointer">Privacy policy</a></li> 
-            <li><a href="#" class="hover:text-putih cursor-pointer">Term of use</a></li> 
+            <li>
+              <a href="#" class="hover:text-putih cursor-pointer"
+                >Privacy policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-putih cursor-pointer"
+                >Term of use</a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </footer>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
