@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
+    <title>login</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <section
+      class="container pt-[49px] flex lg:justify-end md:justify-center justify-center">
+      <a href="/">
+        <div class="flex flex-row gap-[10px]">
+          <svg
+            width="55"
+            height="55"
+            viewBox="0 0 55 55"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27.5 0C30.7128 2.57703e-07 33.3174 2.60457 33.3174 5.81738V13.4561L38.7188 8.05469C40.9905 5.78295 44.6735 5.78298 46.9453 8.05469C49.2171 10.3265 49.2171 14.0094 46.9453 16.2812L41.5439 21.6826H49.1826C52.3954 21.6826 55 24.2872 55 27.5C55 30.7128 52.3954 33.3174 49.1826 33.3174H41.5439L46.9453 38.7188C49.217 40.9906 49.2171 44.6735 46.9453 46.9453C44.6735 49.217 40.9905 49.217 38.7188 46.9453L33.3174 41.5439V49.1826C33.3174 52.3954 30.7128 55 27.5 55C24.2872 55 21.6826 52.3954 21.6826 49.1826V41.5439L16.2812 46.9453C14.0094 49.217 10.3265 49.2171 8.05469 46.9453C5.78299 44.6735 5.78298 40.9905 8.05469 38.7188L13.4561 33.3174H5.81738C2.60457 33.3174 1.20759e-06 30.7128 0 27.5C1.40436e-07 24.2872 2.60457 21.6826 5.81738 21.6826H13.4561L8.05469 16.2812C5.78295 14.0095 5.78298 10.3265 8.05469 8.05469C10.3265 5.7829 14.0094 5.78293 16.2812 8.05469L21.6826 13.4561V5.81738C21.6826 2.60457 24.2872 0 27.5 0ZM27.5 20.0967C23.411 20.0967 20.0957 23.4119 20.0957 27.501C20.0959 31.5899 23.4111 34.9043 27.5 34.9043C31.5889 34.9043 34.9032 31.5899 34.9033 27.501C34.9033 23.412 31.589 20.0967 27.5 20.0967Z"
+              fill="#2865FF"
+            />
+          </svg>
+          <span class="font-inter text-2xl font-bold text-hitam py-[13px]"
+            >Mpos</span
+          >
+        </div>
+      </a>
+    </section>
+
+    <section class="container flex lg:pt-[11px] md:pt-[100px] pt-[60px] gap-[79px] md:justify-center justify-center">
+        <div class="hidden md:hidden lg:flex justify-center flex-col">
+            <img
+              src="/image-signUp.png"
+              alt="image-signUp"
+              class="w-[551px]"
+            />
+            <div class="flex items-center space-x-2 pt-[76px] justify-center">
+              <span class="w-[32px] h-[10px] rounded-full bg-putih hover:bg-Biru"></span>
+              <span class="w-[10px] h-[10px] rounded-full bg-putih hover:bg-Biru"></span>
+              <span class="w-[10px] h-[10px] rounded-full bg-putih hover:bg-Biru"></span>
+              <span class="w-[10px] h-[10px] rounded-full bg-putih hover:bg-Biru"></span>
+              <span class="w-[10px] h-[10px] rounded-full bg-putih hover:bg-Biru"></span>
+            </div>
+        </div>
+        <div class="max-w-[640px] w-full">
+            <div class="md:text-start text-center">
+                <h3 class="font-satoshi font-bold text-[40px] text-hitam pb-4">
+                  Sign up
+                </h3>
+                <p class="text-base font-satoshi font-normal text-abuGelap">
+                    Let’s get you all st up so you can access your personal account.
+                </p>
+            </div>
+
+            <div class="md:justify-between flex flex-row pt-[48px] justify-center">
+                <div class="flex flex-col gap-8">
+                  <div class="flex md:flex-row flex-col gap-6 justify-center">
+                    <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="relative">
+                      <label
+                        class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
+                      >
+                        First Name
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="mark"
+                        class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi md:pr-[120px] pr-0"
+                      />
+                    </div>
+      
+                    <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="relative">
+                      <label
+                        class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
+                      >
+                        Last Name
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="lee"
+                        class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi md:pr-[120px] pr-0"
+                      />
+                    </div>
+                  </div>
+      
+                  <div class="flex md:flex-row flex-col gap-6 justify-center">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="relative">
+                      <label
+                        class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
+                      >
+                        Email Address
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="buana@gmail.com"
+                        class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi md:pr-[120px] pr-0"
+                      />
+                    </div>
+      
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="relative">
+                      <label
+                        class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
+                      >
+                        Phone Number
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="+62 86773748"
+                        class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi md:pr-[120px] pr-0"
+                      />
+                    </div>
+                  </div>
+      
+                  <div data-aos="fade-up" data-aos-duration="400" class="relative">
+                    <label
+                      class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
+                    >
+                      Password
+                    </label>
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      class="w-full pl-4 py-3 pr-12 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi"
+                    />
+                    <div
+                      class="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.2501 21C20.1516 21.0002 20.054 20.9808 19.963 20.9431C19.872 20.9054 19.7894 20.85 19.7199 20.7802L3.21994 4.28016C3.08522 4.13836 3.01123 3.94955 3.01373 3.75398C3.01624 3.55841 3.09504 3.37155 3.23334 3.23325C3.37164 3.09495 3.5585 3.01615 3.75407 3.01364C3.94964 3.01114 4.13845 3.08513 4.28025 3.21985L20.7803 19.7198C20.8851 19.8247 20.9564 19.9583 20.9854 20.1038C21.0143 20.2492 20.9994 20.4 20.9427 20.537C20.8859 20.674 20.7899 20.7911 20.6666 20.8735C20.5433 20.9559 20.3984 20.9999 20.2501 21ZM11.6251 14.8055L9.19744 12.3778C9.18353 12.364 9.16565 12.3549 9.1463 12.3518C9.12696 12.3487 9.10713 12.3517 9.0896 12.3605C9.07206 12.3692 9.05771 12.3832 9.04855 12.4006C9.03939 12.4179 9.03589 12.4376 9.03853 12.457C9.13654 13.0869 9.43227 13.6692 9.88299 14.1199C10.3337 14.5706 10.916 14.8664 11.5459 14.9644C11.5653 14.967 11.585 14.9635 11.6024 14.9544C11.6197 14.9452 11.6337 14.9308 11.6424 14.9133C11.6512 14.8958 11.6542 14.8759 11.6511 14.8566C11.648 14.8373 11.6389 14.8194 11.6251 14.8055ZM12.3751 9.19453L14.8065 11.625C14.8204 11.639 14.8383 11.6483 14.8577 11.6515C14.8772 11.6547 14.8971 11.6517 14.9148 11.6429C14.9324 11.6342 14.9469 11.6201 14.956 11.6026C14.9652 11.5852 14.9686 11.5653 14.9659 11.5458C14.8681 10.9151 14.5722 10.3319 14.1209 9.88062C13.6696 9.42933 13.0864 9.13339 12.4557 9.03563C12.4362 9.03261 12.4162 9.03585 12.3986 9.04487C12.381 9.05389 12.3668 9.06824 12.3578 9.08586C12.3489 9.10349 12.3457 9.12348 12.3488 9.143C12.3519 9.16252 12.3611 9.18055 12.3751 9.19453Z"
+                          fill="#313131"
+                        />
+                        <path
+                          d="M23.0156 12.8137C23.1708 12.5702 23.2529 12.2872 23.252 11.9984C23.2512 11.7096 23.1675 11.4271 23.0109 11.1844C21.7706 9.26625 20.1614 7.63688 18.3577 6.47203C16.3594 5.18203 14.1562 4.5 11.985 4.5C10.8404 4.50157 9.7035 4.6882 8.61843 5.05266C8.58807 5.06276 8.56079 5.08046 8.5392 5.10409C8.51761 5.12772 8.50242 5.15647 8.49509 5.18763C8.48776 5.21878 8.48853 5.25129 8.49732 5.28207C8.50611 5.31284 8.52263 5.34085 8.54531 5.36344L10.7597 7.57781C10.7827 7.60086 10.8113 7.61752 10.8427 7.62615C10.8741 7.63478 10.9072 7.63508 10.9387 7.62703C11.6893 7.44412 12.4744 7.45752 13.2183 7.66595C13.9622 7.87438 14.6399 8.27082 15.1862 8.8171C15.7325 9.36338 16.1289 10.0411 16.3373 10.785C16.5458 11.5289 16.5592 12.3139 16.3762 13.0645C16.3683 13.096 16.3686 13.129 16.3773 13.1603C16.3859 13.1916 16.4025 13.2202 16.4255 13.2431L19.6106 16.4306C19.6438 16.4638 19.6881 16.4834 19.735 16.4855C19.7819 16.4876 19.8278 16.472 19.8637 16.4419C21.0898 15.3968 22.1522 14.1739 23.0156 12.8137ZM12 16.5C11.3188 16.5 10.6465 16.3454 10.0337 16.0478C9.42094 15.7502 8.88375 15.3173 8.46263 14.7819C8.04151 14.2464 7.74745 13.6223 7.60262 12.9567C7.45779 12.2911 7.46598 11.6012 7.62656 10.9392C7.63452 10.9077 7.63417 10.8747 7.62555 10.8434C7.61692 10.8121 7.60031 10.7836 7.57734 10.7606L4.44422 7.62609C4.41099 7.59283 4.36649 7.57327 4.31952 7.57127C4.27255 7.56927 4.22655 7.58499 4.19062 7.61531C3.04734 8.59078 1.9875 9.77766 1.01859 11.1647C0.84899 11.4081 0.755584 11.6965 0.750243 11.9931C0.744901 12.2897 0.827865 12.5813 0.988591 12.8306C2.22656 14.768 3.81937 16.3997 5.59547 17.5486C7.59656 18.8438 9.74625 19.5 11.985 19.5C13.1412 19.4969 14.2899 19.3143 15.39 18.9586C15.4206 18.9488 15.4482 18.9313 15.4702 18.9078C15.4921 18.8842 15.5076 18.8554 15.5152 18.8242C15.5227 18.7929 15.5222 18.7602 15.5134 18.7293C15.5047 18.6983 15.4882 18.6701 15.4655 18.6473L13.2403 16.4227C13.2174 16.3997 13.1888 16.3831 13.1575 16.3744C13.1262 16.3658 13.0932 16.3655 13.0617 16.3734C12.7141 16.4577 12.3577 16.5002 12 16.5Z"
+                          fill="#313131"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div data-aos="fade-up" data-aos-duration="400" class="relative">
+                    <label
+                      class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
+                    >
+                      Confirm Password
+                    </label>
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      class="w-full pl-4 py-3 pr-12 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi"
+                    />
+                    <div
+                      class="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.2501 21C20.1516 21.0002 20.054 20.9808 19.963 20.9431C19.872 20.9054 19.7894 20.85 19.7199 20.7802L3.21994 4.28016C3.08522 4.13836 3.01123 3.94955 3.01373 3.75398C3.01624 3.55841 3.09504 3.37155 3.23334 3.23325C3.37164 3.09495 3.5585 3.01615 3.75407 3.01364C3.94964 3.01114 4.13845 3.08513 4.28025 3.21985L20.7803 19.7198C20.8851 19.8247 20.9564 19.9583 20.9854 20.1038C21.0143 20.2492 20.9994 20.4 20.9427 20.537C20.8859 20.674 20.7899 20.7911 20.6666 20.8735C20.5433 20.9559 20.3984 20.9999 20.2501 21ZM11.6251 14.8055L9.19744 12.3778C9.18353 12.364 9.16565 12.3549 9.1463 12.3518C9.12696 12.3487 9.10713 12.3517 9.0896 12.3605C9.07206 12.3692 9.05771 12.3832 9.04855 12.4006C9.03939 12.4179 9.03589 12.4376 9.03853 12.457C9.13654 13.0869 9.43227 13.6692 9.88299 14.1199C10.3337 14.5706 10.916 14.8664 11.5459 14.9644C11.5653 14.967 11.585 14.9635 11.6024 14.9544C11.6197 14.9452 11.6337 14.9308 11.6424 14.9133C11.6512 14.8958 11.6542 14.8759 11.6511 14.8566C11.648 14.8373 11.6389 14.8194 11.6251 14.8055ZM12.3751 9.19453L14.8065 11.625C14.8204 11.639 14.8383 11.6483 14.8577 11.6515C14.8772 11.6547 14.8971 11.6517 14.9148 11.6429C14.9324 11.6342 14.9469 11.6201 14.956 11.6026C14.9652 11.5852 14.9686 11.5653 14.9659 11.5458C14.8681 10.9151 14.5722 10.3319 14.1209 9.88062C13.6696 9.42933 13.0864 9.13339 12.4557 9.03563C12.4362 9.03261 12.4162 9.03585 12.3986 9.04487C12.381 9.05389 12.3668 9.06824 12.3578 9.08586C12.3489 9.10349 12.3457 9.12348 12.3488 9.143C12.3519 9.16252 12.3611 9.18055 12.3751 9.19453Z"
+                          fill="#313131"
+                        />
+                        <path
+                          d="M23.0156 12.8137C23.1708 12.5702 23.2529 12.2872 23.252 11.9984C23.2512 11.7096 23.1675 11.4271 23.0109 11.1844C21.7706 9.26625 20.1614 7.63688 18.3577 6.47203C16.3594 5.18203 14.1562 4.5 11.985 4.5C10.8404 4.50157 9.7035 4.6882 8.61843 5.05266C8.58807 5.06276 8.56079 5.08046 8.5392 5.10409C8.51761 5.12772 8.50242 5.15647 8.49509 5.18763C8.48776 5.21878 8.48853 5.25129 8.49732 5.28207C8.50611 5.31284 8.52263 5.34085 8.54531 5.36344L10.7597 7.57781C10.7827 7.60086 10.8113 7.61752 10.8427 7.62615C10.8741 7.63478 10.9072 7.63508 10.9387 7.62703C11.6893 7.44412 12.4744 7.45752 13.2183 7.66595C13.9622 7.87438 14.6399 8.27082 15.1862 8.8171C15.7325 9.36338 16.1289 10.0411 16.3373 10.785C16.5458 11.5289 16.5592 12.3139 16.3762 13.0645C16.3683 13.096 16.3686 13.129 16.3773 13.1603C16.3859 13.1916 16.4025 13.2202 16.4255 13.2431L19.6106 16.4306C19.6438 16.4638 19.6881 16.4834 19.735 16.4855C19.7819 16.4876 19.8278 16.472 19.8637 16.4419C21.0898 15.3968 22.1522 14.1739 23.0156 12.8137ZM12 16.5C11.3188 16.5 10.6465 16.3454 10.0337 16.0478C9.42094 15.7502 8.88375 15.3173 8.46263 14.7819C8.04151 14.2464 7.74745 13.6223 7.60262 12.9567C7.45779 12.2911 7.46598 11.6012 7.62656 10.9392C7.63452 10.9077 7.63417 10.8747 7.62555 10.8434C7.61692 10.8121 7.60031 10.7836 7.57734 10.7606L4.44422 7.62609C4.41099 7.59283 4.36649 7.57327 4.31952 7.57127C4.27255 7.56927 4.22655 7.58499 4.19062 7.61531C3.04734 8.59078 1.9875 9.77766 1.01859 11.1647C0.84899 11.4081 0.755584 11.6965 0.750243 11.9931C0.744901 12.2897 0.827865 12.5813 0.988591 12.8306C2.22656 14.768 3.81937 16.3997 5.59547 17.5486C7.59656 18.8438 9.74625 19.5 11.985 19.5C13.1412 19.4969 14.2899 19.3143 15.39 18.9586C15.4206 18.9488 15.4482 18.9313 15.4702 18.9078C15.4921 18.8842 15.5076 18.8554 15.5152 18.8242C15.5227 18.7929 15.5222 18.7602 15.5134 18.7293C15.5047 18.6983 15.4882 18.6701 15.4655 18.6473L13.2403 16.4227C13.2174 16.3997 13.1888 16.3831 13.1575 16.3744C13.1262 16.3658 13.0932 16.3655 13.0617 16.3734C12.7141 16.4577 12.3577 16.5002 12 16.5Z"
+                          fill="#313131"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="flex items-start gap-2">
+                    <input type="checkbox" class="w-5 h-5 text-Biru border-hitam rounded focus:to-biruMuda" />
+                    <label class="text-sm text-hitam  font-medium font-satoshi">
+                      I agree to all the 
+                      <a href="#" class="text-merah font-medium">Terms</a> and 
+                      <a href="#" class="text-merah font-medium">Privacy Policies</a>
+                    </label>
+                  </div>
+
+                  <div class="flex flex-col gap-4">
+                    <button
+                      data-aos="fade-up"
+                      data-aos-duration="800"
+                      type="submit"
+                      class="w-full bg-Biru hover:bg-biruMuda text-putih py-3 rounded-lg font-semibold">
+                      Create Account
+                    </button>
+                    <p class="text-sm text-hitam font-satoshi text-center">
+                        Already have an account?
+                      <a href="/src/login.html">
+                        <span class="text-merah">Login</span>
+                      </a>
+                    </p>
+                  </div>
+
+                  <div class="flex items-center justify-center gap-2">
+                    <div class="h-px bg-gray-300 w-[108px] md:w-[200px]"></div>
+                    <span class="text-sm text-gray-400">Or login with</span>
+                    <div class="h-px bg-gray-300 w-[108px] md:w-[200px]"></div>
+                  </div>
+      
+                  <div class="flex justify-between gap-4 md:flex-row flex-col">
+                    <button class="flex-1 border border-Biru rounded-lg py-2 flex justify-center items-center hover:bg-gray-100">
+                      <svg
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24 12.0733C24 5.40546 18.6274 0 12 0C5.37262 0 0 5.40536 0 12.0733C0 18.0994 4.38825 23.0943 10.125 24V15.5633H7.07812V12.0733H10.125V9.41343C10.125 6.38755 11.9166 4.71615 14.6575 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3398 7.92313 13.875 8.85381 13.875 9.80864V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6117 23.0943 24 18.0995 24 12.0733Z"
+                          fill="#2865FF"
+                        />
+                      </svg>
+                    </button>
+      
+                    <button
+                      class="flex-1 border border-Biru rounded-lg py-2 flex justify-center items-center hover:bg-gray-100"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21.8055 10.0415H21V10H12V14H17.6515C16.827 16.3285 14.6115 18 12 18C8.6865 18 6 15.3135 6 12C6 8.6865 8.6865 6 12 6C13.5295 6 14.921 6.577 15.9805 7.5195L18.809 4.691C17.023 3.0265 14.634 2 12 2C6.4775 2 2 6.4775 2 12C2 17.5225 6.4775 22 12 22C17.5225 22 22 17.5225 22 12C22 11.3295 21.931 10.675 21.8055 10.0415Z"
+                          fill="#FFC107"
+                        />
+                        <path
+                          d="M3.15332 7.3455L6.43882 9.755C7.32782 7.554 9.48082 6 12.0003 6C13.5298 6 14.9213 6.577 15.9808 7.5195L18.8093 4.691C17.0233 3.0265 14.6343 2 12.0003 2C8.15932 2 4.82832 4.1685 3.15332 7.3455Z"
+                          fill="#FF3D00"
+                        />
+                        <path
+                          d="M12.0002 22C14.5832 22 16.9302 21.0115 18.7047 19.404L15.6097 16.785C14.5719 17.5742 13.3039 18.001 12.0002 18C9.39916 18 7.19066 16.3415 6.35866 14.027L3.09766 16.5395C4.75266 19.778 8.11366 22 12.0002 22Z"
+                          fill="#4CAF50"
+                        />
+                        <path
+                          d="M21.8055 10.0415H21V10H12V14H17.6515C17.2571 15.1082 16.5467 16.0766 15.608 16.7855L15.6095 16.7845L18.7045 19.4035C18.4855 19.6025 22 17 22 12C22 11.3295 21.931 10.675 21.8055 10.0415Z"
+                          fill="#1976D2"
+                        />
+                      </svg>
+                    </button>
+      
+                    <button
+                      class="flex-1 border border-Biru rounded-lg py-2 flex justify-center items-center hover:bg-gray-100"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.5172 12.5555C17.5078 10.957 18.232 9.75234 19.6945 8.86406C18.8766 7.69219 17.6391 7.04766 16.0078 6.92344C14.4633 6.80156 12.7734 7.82344 12.1547 7.82344C11.5008 7.82344 10.0055 6.96563 8.82891 6.96563C6.40078 7.00313 3.82031 8.90156 3.82031 12.7641C3.82031 13.9055 4.02891 15.0844 4.44609 16.2984C5.00391 17.8969 7.01484 21.8133 9.1125 21.75C10.2094 21.7242 10.9852 20.9719 12.4125 20.9719C13.7977 20.9719 14.5148 21.75 15.7383 21.75C17.8547 21.7195 19.6734 18.1594 20.2031 16.5563C17.3648 15.218 17.5172 12.6375 17.5172 12.5555ZM15.0539 5.40703C16.2422 3.99609 16.1344 2.71172 16.0992 2.25C15.0492 2.31094 13.8352 2.96484 13.1437 3.76875C12.382 4.63125 11.9344 5.69766 12.0305 6.9C13.1648 6.98672 14.2008 6.40313 15.0539 5.40703Z"
+                          fill="#313131"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

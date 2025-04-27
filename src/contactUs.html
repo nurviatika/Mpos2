@@ -13,135 +13,140 @@
   <body>
 
     <header
-      id="navbar"
-      class="bg-putih_bg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
-    >
-      <nav class="container flex justify-between items-center w-full">
-        <a href="/">
-          <div
-            class="flex items-center gap-[10px] font-bold text-hitam text-2xl font-satoshi"
-          >
-            <img src="/logo.svg" alt="Logo" class="w-10" />
-            <span>Mpos</span>
-          </div>
-        </a>
-        <ul
-          class="md:hidden hidden lg:flex gap-10 text-hitam text-sm font-satoshi"
+    id="navbar"
+    class="bg-putih_bg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
+  >
+    <nav class="container flex justify-between items-center w-full">
+      <a href="/">
+        <div
+          class="flex items-center gap-[10px] font-bold text-hitam text-2xl font-satoshi"
         >
-          <li>
-            <a
-              href="/index.html"
-              class="hover:text-hitam"
-              >Home</a
-            >
-          </li>
-          <li><a href="/src/about.html" class="hover:text-hitam">Aboutus</a></li>
-          <li><a href="/src/features.html" class="hover:text-hitam">Features</a></li>
-          <li><a href="/src/pricing.html" class="hover:text-hitam">Pricing</a></li>
-          <li><a href="/src/blog.html" class="hover:text-hitam">Blog</a></li>
-          <li><a href="/src/contactUs.html" class=" hover:text-abu text-hitam font-semibold">Contact Us</a></li>
-        </ul>
-
-        <div class="flex gap-6">
-          <p class="py-[14px] text-sm font-satoshi hidden lg:flex md:hidden">
-            Login
-          </p>
-          <button
-            class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
-          >
-            Get Started
-          </button>
-        </div>
-
-        <svg
-          id="menu-toggle"
-          class="lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer"
-          width="16"
-          height="12"
-          viewBox="0 0 16 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.00195 1.20007L14.602 1.20007"
-            stroke="#111111"
-            stroke-width="1.6"
-            stroke-linecap="round"
-          />
-          <path
-            d="M0.800781 6.00006L9.80078 6.00006"
-            stroke="#111111"
-            stroke-width="1.6"
-            stroke-linecap="round"
-          />
-          <path
-            d="M0.8125 10.8H14.4127"
-            stroke="#111111"
-            stroke-width="1.6"
-            stroke-linecap="round"
-          />
+        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.5C17.6634 0.5 15.7692 2.39418 15.7692 4.73077V10.2859L11.8411 6.3578C10.1889 4.70558 7.51013 4.70558 5.85791 6.3578C4.2057 8.01002 4.20569 10.6888 5.85791 12.341L9.78613 16.2692H4.23077C1.89418 16.2692 0 18.1634 0 20.5C0 22.8366 1.89418 24.7308 4.23077 24.7308H9.78613L5.85793 28.659C4.20571 30.3112 4.20571 32.99 5.85793 34.6422C7.51015 36.2944 10.1889 36.2944 11.8411 34.6422L15.7692 30.7141V36.2692C15.7692 38.6058 17.6634 40.5 20 40.5C22.3366 40.5 24.2308 38.6058 24.2308 36.2692V30.7139L28.159 34.6421C29.8112 36.2943 32.49 36.2943 34.1422 34.6421C35.7944 32.9899 35.7944 30.3111 34.1422 28.6589L30.2141 24.7308H35.7692C38.1058 24.7308 40 22.8366 40 20.5C40 18.1634 38.1058 16.2692 35.7692 16.2692H30.2141L34.1422 12.3411C35.7944 10.6889 35.7944 8.01013 34.1422 6.35791C32.49 4.70569 29.8112 4.70569 28.159 6.35791L24.2308 10.2861V4.73077C24.2308 2.39418 22.3366 0.5 20 0.5ZM19.9997 25.8851C22.9735 25.8851 25.3843 23.4743 25.3843 20.5005C25.3843 17.5267 22.9735 15.1159 19.9997 15.1159C17.0258 15.1159 14.6151 17.5267 14.6151 20.5005C14.6151 23.4743 17.0258 25.8851 19.9997 25.8851Z" fill="#2865FF"/>
         </svg>
-      </nav>
-
+          
+          <span>Mpos</span>
+        </div>
+      </a>
       <ul
-        id="nav-links"
-        class="container lg:hidden fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out"
+        class="md:hidden hidden lg:flex gap-10 text-hitam text-sm font-satoshi"
       >
-        <span
-          id="close-menu"
-          class="absolute top-4 right-6 w-6 h-6 cursor-pointer flex items-center justify-center"
-        >
-          <span class="block w-6 h-[3px] bg-hitam rotate-45 absolute"></span>
-          <span class="block w-6 h-[3px] bg-hitam -rotate-45 absolute"></span>
-        </span>
-
         <li>
           <a
             href="/index.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+            class="hover:text-abu text-hitam font-semibold"
             >Home</a
           >
         </li>
-        <li>
-          <a
-            href="/src/about.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Aboutus</a
-          >
-        </li>
-        <li>
-          <a
-            href="/src/features.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Features</a
-          >
-        </li>
-        <li>
-          <a href="/src/pricing.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Pricing</a
-          >
-        </li>
-        <li>
-          <a href="/src/blog.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Blog</a
-          >
-        </li>
-        <li>
-          <a href="/src/contactUs.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Contact Us</a
-          >
-        </li>
-
-        <div class="flex gap-6 px-6 py-3">
-          <p class="py-[14px] text-sm font-satoshi">Login</p>
-          <button
-            class="flex font-satoshi items-center gap-1 bg-Biru text-putih px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
-          >
-            Get Started
-          </button>
-        </div>
+        <li><a href="/src/about.html" class="hover:text-hitam">Aboutus</a></li>
+        <li><a href="/src/features.html" class="hover:text-hitam">Features</a></li>
+        <li><a href="/src/pricing.html" class="hover:text-hitam">Pricing</a></li>
+        <li><a href="/src/blog.html" class="hover:text-hitam">Blog</a></li>
+        <li><a href="/src/contactUs.html" class="hover:text-hitam">Contact Us</a></li>
       </ul>
-    </header>
+
+      <div class="flex gap-6">
+        <a href="/src/login.html">
+          <p class="py-[14px] text-sm font-satoshi hidden lg:flex md:hidden">
+            Login
+          </p>
+        </a>
+        <button
+          class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+        >
+          Get Started
+        </button>
+      </div>
+
+      <svg
+        id="menu-toggle"
+        class="lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer"
+        width="16"
+        height="12"
+        viewBox="0 0 16 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.00195 1.20007L14.602 1.20007"
+          stroke="#111111"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+        <path
+          d="M0.800781 6.00006L9.80078 6.00006"
+          stroke="#111111"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+        <path
+          d="M0.8125 10.8H14.4127"
+          stroke="#111111"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+      </svg>
+    </nav>
+
+    <ul
+      id="nav-links"
+      class="container lg:hidden fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out"
+    >
+      <span
+        id="close-menu"
+        class="absolute top-4 right-6 w-6 h-6 cursor-pointer flex items-center justify-center"
+      >
+        <span class="block w-6 h-[3px] bg-hitam rotate-45 absolute"></span>
+        <span class="block w-6 h-[3px] bg-hitam -rotate-45 absolute"></span>
+      </span>
+
+      <li>
+        <a
+          href="/index.html"
+          class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/src/about.html"
+          class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+          >Aboutus</a
+        >
+      </li>
+      <li>
+        <a
+          href="/src/features.html"
+          class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+          >Features</a
+        >
+      </li>
+      <li>
+        <a href="/src/pricing.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+          >Pricing</a
+        >
+      </li>
+      <li>
+        <a href="/src/blog.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+          >Blog</a
+        >
+      </li>
+      <li>
+        <a href="/src/contactUs.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+          >Contact Us</a
+        >
+      </li>
+
+      <div class="flex gap-6 px-6 py-3">
+        <p class="py-[14px] text-sm font-satoshi">Login</p>
+        <button
+          class="flex font-satoshi items-center gap-1 bg-Biru text-putih px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+        >
+          Get Started
+        </button>
+      </div>
+    </ul>
+  </header>
 
     <section
       class="container flex flex-col items-center justify-center py-[80px] "
@@ -177,7 +182,7 @@
                 </label>
                 <input
                   type="text"
-                  value="buana@gmail.com"
+                  placeholder="mark"
                   class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi md:pr-[120px] pr-0"
                 />
               </div>
@@ -190,7 +195,7 @@
                 </label>
                 <input
                   type="text"
-                  value="buana@gmail.com"
+                  placeholder="lee"
                   class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi md:pr-[120px] pr-0"
                 />
               </div>
@@ -205,7 +210,7 @@
                 </label>
                 <input
                   type="text"
-                  value="buana@gmail.com"
+                  placeholder="buana@gmail.com"
                   class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi md:pr-[120px] pr-0"
                 />
               </div>
@@ -218,14 +223,14 @@
                 </label>
                 <input
                   type="text"
-                  value="buana@gmail.com"
+                  placeholder="buana@gmail.com"
                   class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi md:pr-[120px] pr-0"
                 />
               </div>
             </div>
 
             <div class="flex md:flex-row flex-col gap-6 justify-center">
-              <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="relative w-full">
+              <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="relative w-full">
                 <label
                   class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
                 >
@@ -233,9 +238,11 @@
                 </label>
                 <textarea
                   class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi px-5"
-                  rows="3">I'm interested in learning more about your services. Could you please provide additional details?</textarea>
+                  rows="3"
+                  placeholder="I'm interested in learning more about your services. Could you please provide additional details?"></textarea>
               </div>
             </div>
+            
 
             <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="flex md:flex-row flex-col gap-6 justify-center">
               <div class="relative w-full">
@@ -246,7 +253,8 @@
                 </label>
                 <textarea
                   class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi px-5"
-                  rows="3">MPOS Restaurant Headquarters, Jl. Raya Cibadak No. 123, Kecamatan Cibadak, Kabupaten Sukabumi, Jawa Barat, Indonesia 43351.</textarea>
+                  rows="3"
+                  placeholder="MPOS Restaurant Headquarters, Jl. Raya Cibadak No. 123, Kecamatan Cibadak, Kabupaten Sukabumi, Jawa Barat, Indonesia 43351."></textarea>
               </div>
             </div>
 

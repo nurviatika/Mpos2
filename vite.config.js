@@ -9,6 +9,8 @@ export default {
         contactUs: "/src/contactUs.html",
         features: "/src/features.html",
         pricing: "/src/pricing.html",
+        login: "/src/login.html",
+        signUp: "/src/signUp.html",
       },
     },
   },
