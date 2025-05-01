@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/style.css" rel="stylesheet" />
     <title>login</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
     <link
@@ -64,23 +63,27 @@
                 </p>
             </div>
 
+            <!-- <form action="about.html">
+
+               -->
             <div class="md:justify-between flex flex-row pt-[48px] justify-center">
                 <div class="flex flex-col gap-8">
                   <div class="flex md:flex-row flex-col gap-6 justify-center">
-                    <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="relative">
+                    <div class="relative">
                       <label
                         class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
                       >
                         First Name
                       </label>
                       <input
+                        name="fn"
                         type="text"
                         placeholder="mark"
                         class="w-full pl-4 py-3 border border-abuGelap rounded-xl outline-none focus:ring-2 focus:ring-Biru font-satoshi md:pr-[120px] pr-0"
                       />
                     </div>
       
-                    <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="relative">
+                    <div class="relative">
                       <label
                         class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
                       >
@@ -95,7 +98,7 @@
                   </div>
       
                   <div class="flex md:flex-row flex-col gap-6 justify-center">
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="relative">
+                    <div class="relative">
                       <label
                         class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
                       >
@@ -108,7 +111,7 @@
                       />
                     </div>
       
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="relative">
+                    <div class="relative">
                       <label
                         class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
                       >
@@ -122,7 +125,7 @@
                     </div>
                   </div>
       
-                  <div data-aos="fade-up" data-aos-duration="400" class="relative">
+                  <div class="relative">
                     <label
                       class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
                     >
@@ -155,7 +158,7 @@
                     </div>
                   </div>
 
-                  <div data-aos="fade-up" data-aos-duration="400" class="relative">
+                  <div class="relative">
                     <label
                       class="absolute -top-2 left-3 px-1 bg-white text-sm font-bold font-satoshi text-black"
                     >
@@ -188,7 +191,7 @@
                     </div>
                   </div>
                   
-                  <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="false"  class="flex items-start gap-2">
+                  <div class="flex items-start gap-2">
                     <input type="checkbox" class="w-5 h-5 text-Biru border-hitam rounded focus:to-biruMuda" />
                     <label class="text-sm text-hitam  font-medium font-satoshi">
                       I agree to all the 
@@ -199,8 +202,6 @@
 
                   <div class="flex flex-col gap-4">
                     <button
-                      data-aos="fade-up"
-                      data-aos-duration="800"
                       type="submit"
                       class="w-full bg-Biru hover:bg-biruMuda text-putih py-3 rounded-lg font-semibold">
                       Create Account
@@ -220,7 +221,7 @@
                   </div>
       
                   <div class="flex justify-between gap-4 md:flex-row flex-col">
-                    <button class="flex-1 border border-Biru rounded-lg py-2 flex justify-center items-center hover:bg-gray-100">
+                    <button type="submit" class="flex-1 border border-Biru rounded-lg py-2 flex justify-center items-center hover:bg-gray-100">
                       <svg
                         width="24"
                         height="24"
@@ -283,13 +284,12 @@
                   </div>
                 </div>
             </div>
+
+            
+          </form>
         </div>
     </section>
 
     <script type="module" src="../main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-</body>
+  </body>
 </html>
