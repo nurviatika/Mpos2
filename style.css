@@ -34,3 +34,33 @@ body{
   justify-content: center;
 }
 
+.container {
+  overflow: hidden;
+}
+
+.latest-blog li {
+  position: relative;
+
+}
+.latest-blog li::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background:#050810;
+  /* opacity: 0; */
+  transform: scaleY(0);
+  transition: all 500ms ease;
+}
+
+.latest-blog li:hover::before {
+  transform: scaleY(1);
+  /* opacity: 1; */
+}
+
+.swiper-pagination-bullet-active {
+  width: 32px !important;
+  border-radius: 12px !important;
+}

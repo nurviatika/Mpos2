@@ -12,29 +12,20 @@
   </head>
   <body>
     <header
-      id="navbar"
-      class="bg-putih_bg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
     >
-      <nav class="container flex justify-between items-center w-full">
+    <nav
+    id="navbar"
+    class="bg-putih_bg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
+    >
+      <div class="container flex justify-between items-center w-full">
         <a href="/">
           <div
             class="flex items-center gap-[10px] font-bold text-hitam text-2xl font-satoshi"
           >
-            <svg
-              width="40"
-              height="41"
-              viewBox="0 0 40 41"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M20 0.5C17.6634 0.5 15.7692 2.39418 15.7692 4.73077V10.2859L11.8411 6.3578C10.1889 4.70558 7.51013 4.70558 5.85791 6.3578C4.2057 8.01002 4.20569 10.6888 5.85791 12.341L9.78613 16.2692H4.23077C1.89418 16.2692 0 18.1634 0 20.5C0 22.8366 1.89418 24.7308 4.23077 24.7308H9.78613L5.85793 28.659C4.20571 30.3112 4.20571 32.99 5.85793 34.6422C7.51015 36.2944 10.1889 36.2944 11.8411 34.6422L15.7692 30.7141V36.2692C15.7692 38.6058 17.6634 40.5 20 40.5C22.3366 40.5 24.2308 38.6058 24.2308 36.2692V30.7139L28.159 34.6421C29.8112 36.2943 32.49 36.2943 34.1422 34.6421C35.7944 32.9899 35.7944 30.3111 34.1422 28.6589L30.2141 24.7308H35.7692C38.1058 24.7308 40 22.8366 40 20.5C40 18.1634 38.1058 16.2692 35.7692 16.2692H30.2141L34.1422 12.3411C35.7944 10.6889 35.7944 8.01013 34.1422 6.35791C32.49 4.70569 29.8112 4.70569 28.159 6.35791L24.2308 10.2861V4.73077C24.2308 2.39418 22.3366 0.5 20 0.5ZM19.9997 25.8851C22.9735 25.8851 25.3843 23.4743 25.3843 20.5005C25.3843 17.5267 22.9735 15.1159 19.9997 15.1159C17.0258 15.1159 14.6151 17.5267 14.6151 20.5005C14.6151 23.4743 17.0258 25.8851 19.9997 25.8851Z"
-                fill="#2865FF"
-              />
-            </svg>
-
+          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.5C17.6634 0.5 15.7692 2.39418 15.7692 4.73077V10.2859L11.8411 6.3578C10.1889 4.70558 7.51013 4.70558 5.85791 6.3578C4.2057 8.01002 4.20569 10.6888 5.85791 12.341L9.78613 16.2692H4.23077C1.89418 16.2692 0 18.1634 0 20.5C0 22.8366 1.89418 24.7308 4.23077 24.7308H9.78613L5.85793 28.659C4.20571 30.3112 4.20571 32.99 5.85793 34.6422C7.51015 36.2944 10.1889 36.2944 11.8411 34.6422L15.7692 30.7141V36.2692C15.7692 38.6058 17.6634 40.5 20 40.5C22.3366 40.5 24.2308 38.6058 24.2308 36.2692V30.7139L28.159 34.6421C29.8112 36.2943 32.49 36.2943 34.1422 34.6421C35.7944 32.9899 35.7944 30.3111 34.1422 28.6589L30.2141 24.7308H35.7692C38.1058 24.7308 40 22.8366 40 20.5C40 18.1634 38.1058 16.2692 35.7692 16.2692H30.2141L34.1422 12.3411C35.7944 10.6889 35.7944 8.01013 34.1422 6.35791C32.49 4.70569 29.8112 4.70569 28.159 6.35791L24.2308 10.2861V4.73077C24.2308 2.39418 22.3366 0.5 20 0.5ZM19.9997 25.8851C22.9735 25.8851 25.3843 23.4743 25.3843 20.5005C25.3843 17.5267 22.9735 15.1159 19.9997 15.1159C17.0258 15.1159 14.6151 17.5267 14.6151 20.5005C14.6151 23.4743 17.0258 25.8851 19.9997 25.8851Z" fill="#2865FF"/>
+          </svg>
+            
             <span>Mpos</span>
           </div>
         </a>
@@ -42,29 +33,17 @@
           class="md:hidden hidden lg:flex gap-10 text-hitam text-sm font-satoshi"
         >
           <li>
-            <a href="/index.html" class="hover:text-hitam">Home</a>
-          </li>
-          <li>
-            <a href="/src/about.html" class="hover:text-hitam">Aboutus</a>
-          </li>
-          <li>
-            <a href="/src/features.html" class="hover:text-hitam">Features</a>
-          </li>
-          <li>
-            <a href="/src/pricing.html" class="hover:text-hitam">Pricing</a>
-          </li>
-          <li>
             <a
-              href="/src/blog.html"
-              class="hover:text-abu text-hitam font-semibold"
-              >Blog</a
+              href="/index.html"
+              class="hover:text-hitam"
+              >Home</a
             >
           </li>
-          <li>
-            <a href="/src/contactUs.html" class="hover:text-hitam"
-              >Contact Us</a
-            >
-          </li>
+          <li><a href="/src/about.html" class="hover:text-hitam">Aboutus</a></li>
+          <li><a href="/src/features.html" class="hover:text-hitam">Features</a></li>
+          <li><a href="/src/pricing.html" class="hover:text-hitam">Pricing</a></li>
+          <li><a href="/src/blog.html" class="hover:text-abu text-hitam font-semibold">Blog</a></li>
+          <li><a href="/src/contactUs.html" class="hover:text-hitam">Contact Us</a></li>
         </ul>
 
         <div class="flex gap-6">
@@ -108,11 +87,11 @@
             stroke-linecap="round"
           />
         </svg>
-      </nav>
-
+      </div>
+    </nav>
       <ul
         id="nav-links"
-        class="container lg:hidden fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out"
+        class="lg:hidden z-[99999999] fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out"
       >
         <span
           id="close-menu"
@@ -144,23 +123,17 @@
           >
         </li>
         <li>
-          <a
-            href="/src/pricing.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+          <a href="/src/pricing.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
             >Pricing</a
           >
         </li>
         <li>
-          <a
-            href="/src/blog.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+          <a href="/src/blog.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
             >Blog</a
           >
         </li>
         <li>
-          <a
-            href="/src/contactUs.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
+          <a href="/src/contactUs.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
             >Contact Us</a
           >
         </li>
@@ -178,7 +151,7 @@
 
     <section class="container flex md:flex-col flex-col py-[75px]md:py-[100px] py-[50px]">
       <div class="flex flex-col items-center md:pt-[75px] pt-10 lg:pb-[60px] md:pb-[55px] pb-8 ">
-        <div class="max-w-[768px]">
+        <div class="lg:max-w-[768px] md:max-w-[728px]">
           <div
             data-aos="zoom-in"
             data-aos-duration="400"
@@ -207,48 +180,73 @@
       <h3 data-aos="fade-right" data-aos-duration="300" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex text-start font-satoshi md:text-5xl text-2xl font-medium pb-[60px]">
         Lates Article
       </h3>
-      <div class="grid grid-cols-12 gap-6">
-        <div class="col-span-12 lg:col-span-6 md:flex-row flex-col">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div class="md:col-span-6">
           <div class="text-left">
-            <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" 
+            <img 
+              data-aos="fade-right" 
+              data-aos-offset="300" 
+              data-aos-easing="ease-in-sine" 
+              data-aos-duration="500" 
+              data-aos-delay="0" 
+              data-aos-mirror="true" 
+              data-aos-once="false" 
               src="/blog_image1.png"
               alt="image_blog"
               class="w-full rounded-lg"
             />
             <div class="mt-8 mb-[61px]">
-              <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex gap-2 items-start flex-col">
+              <div 
+                data-aos="fade-up" 
+                data-aos-duration="500" 
+                data-aos-delay="0" 
+                data-aos-mirror="true" 
+                data-aos-once="false" 
+                class="flex gap-2 items-start flex-col"
+              >
                 <p class="text-abuGelap md:text-sm text-xs font-satoshi font-normal">
-                  Bussiness Insights,Feb 07,2025 | 8 min read
+                  Bussiness Insights, Feb 07, 2025 | 8 min read
                 </p>
-                <h3
-                  class="md:text-[32px] text-lg font-medium font-satoshi md:leading-10 leading-none text-hitam pt-2 pb-4">
+                <h3 class="lg:text-[32px] md:text-[26px] text-lg font-medium font-satoshi lg:leading-10 md:leading-8 leading-none text-hitam pt-2 pb-4">
                   How to Manage Inventory Efficiently in Small Restaurant Businesses
                 </h3>
               </div>
-              <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" >
+              <div 
+                data-aos="fade-right" 
+                data-aos-easing="ease-in-sine" 
+                data-aos-duration="500" 
+                data-aos-delay="0" 
+                data-aos-mirror="true" 
+                data-aos-once="false"
+              >
                 <p class="text-base font-satoshi text-abu leading-6 font-normal hidden md:hidden lg:flex">
                   Managing inventory efficiently is one of the keys to a successful small restaurant operation. Without a good inventory management system, restaurants can experience shortages, waste, or even loss of revenue.
                 </p>
-                <p class="text-base font-satoshi text-abu leading-6 font-normal  md:flex lg:hidden">
-                  Managing inventory efficiently is one of the keys to a successful small restaurant operation. 
+                <p class="text-base font-satoshi text-abu leading-6 font-normal md:flex lg:hidden">
+                  Managing inventory efficiently is one of the keys to a successful small restaurant operation.
                 </p>
-
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-span-12 lg:col-span-6 flex flex-col md:flex-col">
+    
+        <div class="md:col-span-6 flex flex-col">
           <a href="/src/blogDetail.html">
-            <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex md:flex-row flex-col gap-5 mb-10">
-              <img src="/Frame 1.png" alt="image-frameBlog" class="rounded md:w-[181px] w-full md:h-[181px] h-full">
+            <div 
+              data-aos="fade-left" 
+              data-aos-duration="500" 
+              data-aos-delay="0" 
+              data-aos-mirror="true" 
+              data-aos-once="false" 
+              class="flex md:flex-row flex-col gap-5 mb-10"
+            >
+              <img src="/Frame 1.png" alt="image-frameBlog" class="rounded lg:w-[181px] md:w-[133px] w-full lg:h-[181px] md:h-[133px] h-full">
               <div class="flex-row flex">
                 <div class="flex items-start flex-col gap-2 justify-center">
                   <p class="text-abuGelap md:text-sm text-xs font-satoshi font-normal">
-                    Bussiness Insights,Feb 07,2025 | 8 min read
+                    Bussiness Insights, Feb 07, 2025 | 8 min read
                   </p>
-                  <h3
-                    class="md:text-2xl text-lg font-medium font-satoshi text-hitam">
+                  <h3 class="lg:text-2xl md:text-lg text-lg font-medium font-satoshi text-hitam">
                     Effective Strategies for Streamlining Inventory Management in Small Restaurants
                   </h3>
                 </div>
@@ -257,15 +255,21 @@
           </a>
 
           <a href="/src/blogDetail.html">
-            <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex md:flex-row flex-col gap-5 mb-10">
-              <img src="/Frame 2.png" alt="image-frameBlog" class="rounded md:w-[181px] w-full md:h-[181px] h-full">
+            <div 
+              data-aos="fade-left" 
+              data-aos-duration="500" 
+              data-aos-delay="0" 
+              data-aos-mirror="true" 
+              data-aos-once="false" 
+              class="flex md:flex-row flex-col gap-5 mb-10"
+            >
+              <img src="/Frame 2.png" alt="image-frameBlog" class="rounded lg:w-[181px] md:w-[133px] w-full lg:h-[181px] md:h-[133px] h-full">
               <div class="flex-row flex">
                 <div class="flex items-start flex-col gap-2 justify-center">
                   <p class="text-abuGelap md:text-sm text-xs font-satoshi font-normal">
-                    Bussiness Insights,Feb 07,2025 | 8 min read
+                    Bussiness Insights, Feb 07, 2025 | 8 min read
                   </p>
-                  <h3
-                    class="md:text-2xl text-lg font-medium font-satoshi text-hitam">
+                  <h3 class="lg:text-2xl md:text-lg text-lg font-medium font-satoshi text-hitam">
                     Effective Strategies for Streamlining Inventory Management in Small Restaurants
                   </h3>
                 </div>
@@ -274,15 +278,21 @@
           </a>
 
           <a href="/src/blogDetail.html">
-            <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex md:flex-row flex-col gap-5 mb-10">
-              <img src="/Frame 4.png" alt="image-frameBlog" class="rounded md:w-[181px] w-full md:h-[181px] h-full">
+            <div 
+              data-aos="fade-left" 
+              data-aos-duration="500" 
+              data-aos-delay="0" 
+              data-aos-mirror="true" 
+              data-aos-once="false" 
+              class="flex md:flex-row flex-col gap-5 mb-10"
+            >
+              <img src="/Frame 3.png" alt="image-frameBlog" class="rounded lg:w-[181px] md:w-[133px] w-full lg:h-[181px] md:h-[133px] h-full">
               <div class="flex-row flex">
                 <div class="flex items-start flex-col gap-2 justify-center">
                   <p class="text-abuGelap md:text-sm text-xs font-satoshi font-normal">
-                    Bussiness Insights,Feb 07,2025 | 8 min read
+                    Bussiness Insights, Feb 07, 2025 | 8 min read
                   </p>
-                  <h3
-                    class="md:text-2xl text-lg font-medium font-satoshi text-hitam">
+                  <h3 class="lg:text-2xl md:text-lg text-lg font-medium font-satoshi text-hitam">
                     Effective Strategies for Streamlining Inventory Management in Small Restaurants
                   </h3>
                 </div>
@@ -291,21 +301,28 @@
           </a>
 
           <a href="/src/blogDetail.html">
-            <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex md:flex-row flex-col gap-5 mb-10">
-              <img src="/Frame 3.png" alt="image-frameBlog" class="rounded md:w-[181px] w-full md:h-[181px] h-full">
+            <div 
+              data-aos="fade-left" 
+              data-aos-duration="500" 
+              data-aos-delay="0" 
+              data-aos-mirror="true" 
+              data-aos-once="false" 
+              class="flex md:flex-row flex-col gap-5 mb-10"
+            >
+              <img src="/Frame 4.png" alt="image-frameBlog" class="rounded lg:w-[181px] md:w-[133px] w-full lg:h-[181px] md:h-[133px] h-full">
               <div class="flex-row flex">
                 <div class="flex items-start flex-col gap-2 justify-center">
                   <p class="text-abuGelap md:text-sm text-xs font-satoshi font-normal">
-                    Bussiness Insights,Feb 07,2025 | 8 min read
+                    Bussiness Insights, Feb 07, 2025 | 8 min read
                   </p>
-                  <h3
-                    class="md:text-2xl text-lg font-medium font-satoshi text-hitam">
+                  <h3 class="lg:text-2xl md:text-lg text-lg font-medium font-satoshi text-hitam">
                     Effective Strategies for Streamlining Inventory Management in Small Restaurants
                   </h3>
                 </div>
               </div>
             </div>
           </a>
+
         </div>
       </div>
     </section>
@@ -319,58 +336,58 @@
       </div>
 
       <div class="flex flex-col gap-8">
-        <div class="flex lg:flex-row md:flex-col flex-col-reverse justify-between">
+        <div class="flex md:flex-row flex-col-reverse justify-between gap-6">
           <div class="lg:max-w-[726px] md:max-w-[560px] w-full">
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex pt-4 items-start  flex-col">
               <p class="text-abuGelap text-sm font-satoshi font-normal">
                 Bussiness Insights,Feb 07,2025 | 8 min read
               </p>
               <h3
-                class="md:text-[32px] text-lg font-medium font-satoshi md:leading-10 text-hitam pt-2 pb-4">
+                class="lg:text-[32px] md:text-[28px] text-lg font-medium font-satoshi md:leading-10 text-hitam pt-2 pb-4">
                 Optimizing Restaurant Operations with Modern Inventory Systems
               </h3>
-              <p class="md:text-base text-sm font-satoshi text-abu leading-6 font-normal">
+              <p class="lg:text-base md:text-sm text-sm font-satoshi text-abu leading-6 font-normal">
                 This title discusses how modern inventory technology can improve restaurant efficiency. The main focus is on more accurate, faster and integrated stock management. Suitable for restaurants looking to reduce waste and improve operational flow.
               </p>
             </div>
           </div>
-          <img data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" src="/Image 1.png" alt="" class="lg:w-[422px] w-[350px] lg:h-[268px] h-[223px]">
+          <img data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" src="/Image 1.png" alt="" class="lg:w-[422px] md:w-[250px] lg:h-[268px] md:h-[223px]">
         </div>
 
-        <div class="flex lg:flex-row md:flex-col flex-col-reverse justify-between">
-          <div class="lg:max-w-[726px] md:max-w-[560px] w-full">
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false"  class="flex pt-4 items-start  flex-col">
-              <p class="text-abuGelap text-sm font-satoshi font-normal">
-                Bussiness Insights,Feb 07,2025 | 8 min read
-              </p>
-              <h3
-                class="md:text-[32px] text-lg font-medium font-satoshi md:leading-10 text-hitam pt-2 pb-4">
-                Why Cloud-Based POS is a Game Changer for Modern Restaurants
-              </h3>
-              <p class="md:text-base text-sm font-satoshi text-abu leading-6 font-normal">
-                Cloud-based POS system allows data access anytime, anywhere. With real-time integration, order and stock management becomes more efficient. This solution is ideal for restaurants that want to grow faster and more flexibly.
-              </p>
-            </div>
-          </div>
-          <img data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" src="/Image2.png" alt="" class="lg:w-[422px] w-[350px] lg:h-[268px] h-[223px]">
-        </div>
-
-        <div class="flex lg:flex-row md:flex-col flex-col-reverse justify-between">
+        <div class="flex md:flex-row flex-col-reverse justify-between gap-6">
           <div class="lg:max-w-[726px] md:max-w-[560px] w-full">
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex pt-4 items-start  flex-col">
               <p class="text-abuGelap text-sm font-satoshi font-normal">
                 Bussiness Insights,Feb 07,2025 | 8 min read
               </p>
               <h3
-                class="md:text-[32px] text-lg font-medium font-satoshi md:leading-10 text-hitam pt-2 pb-4">
-                How Smart POS Systems Improve Customer Experience in Restaurants
+                class="lg:text-[32px] md:text-[28px] text-lg font-medium font-satoshi md:leading-10 text-hitam pt-2 pb-4">
+                Optimizing Restaurant Operations with Modern Inventory Systems
               </h3>
-              <p class="md:text-base text-sm font-satoshi text-abu leading-6 font-normal">
-                Smart POS speeds up the ordering and payment process in restaurants. Features like split billing, ereceipts, and order tracking increase customer satisfaction. Restaurants become more responsive, modern, and easy to operate.
+              <p class="lg:text-base md:text-sm text-sm font-satoshi text-abu leading-6 font-normal">
+                This title discusses how modern inventory technology can improve restaurant efficiency. The main focus is on more accurate, faster and integrated stock management. Suitable for restaurants looking to reduce waste and improve operational flow.
               </p>
             </div>
           </div>
-          <img data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" src="/Image 3.png" alt="" class="lg:w-[422px] w-[350px] lg:h-[268px] h-[223px]">
+          <img data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" src="/Image 1.png" alt="" class="lg:w-[422px] md:w-[250px] lg:h-[268px] md:h-[223px]">
+        </div>
+
+        <div class="flex md:flex-row flex-col-reverse justify-between gap-6">
+          <div class="lg:max-w-[726px] md:max-w-[560px] w-full">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" class="flex pt-4 items-start  flex-col">
+              <p class="text-abuGelap text-sm font-satoshi font-normal">
+                Bussiness Insights,Feb 07,2025 | 8 min read
+              </p>
+              <h3
+                class="lg:text-[32px] md:text-[28px] text-lg font-medium font-satoshi md:leading-10 text-hitam pt-2 pb-4">
+                Optimizing Restaurant Operations with Modern Inventory Systems
+              </h3>
+              <p class="lg:text-base md:text-sm text-sm font-satoshi text-abu leading-6 font-normal">
+                This title discusses how modern inventory technology can improve restaurant efficiency. The main focus is on more accurate, faster and integrated stock management. Suitable for restaurants looking to reduce waste and improve operational flow.
+              </p>
+            </div>
+          </div>
+          <img data-aos="fade-left" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="false" src="/Image 1.png" alt="" class="lg:w-[422px] md:w-[250px] lg:h-[268px] md:h-[223px]">
         </div>
 
       </div>
@@ -392,9 +409,9 @@
           data-aos-delay="0"
           data-aos-mirror="true"
           data-aos-once="false"
-          class="font-satoshi text-center mt-2 max-w-[540px] justify-center flex flex-col"
+          class="font-satoshi text-center mt-2 lg:max-w-[540px] md:max-w-[514px] justify-center flex flex-col"
         >
-          <h3 class="text-[32px] md:text-[64px] font-medium leading-tight">
+          <h3 class="text-[40px] lg:text-[64px] font-medium leading-tight">
             Browse All Posts
           </h3>
           <p class="text-base text-abuGelap mt-4 max-w-2xl mx-auto font-normal">
@@ -403,18 +420,20 @@
             operations.
           </p>
 
-          <div class="mt-10 flex justify-center">
-            <select
-              class="font-satoshi bg-abu_bg border border-gray-300 text-hitam text-sm rounded-lg block w-full max-w-md px-4 py-2 focus:ring-Biru focus:border-Biru"
-            >
-              <option selected>All</option>
-              <option>Business Insights</option>
-              <option>Inventory Management</option>
-              <option>Tips & Tricks</option>
-              <option>Product Updates</option>
-              <option>Success Stories</option>
-              <option>Financial Management</option>
-            </select>
+          <div class="flex justify-center mt-6">
+            <div class="flex items-center border border-gray-300 rounded-lg px-4 py-3 w-full max-w-lg font-satoshi ">
+              <input
+                type="text"
+                placeholder="Search news...."
+                class="flex-grow bg-transparent outline-none text-sm font-satoshi text-hitam placeholder-gray-500"
+              />
+              <button class="ml-2 text-hitam">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11.9886" cy="10.9886" r="8.98856" stroke="#050810" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.2422 17.707L21.7662 21.2219" stroke="#050810" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+              </button>
+            </div>
           </div>
         </div>
 
@@ -455,40 +474,12 @@
           <div
             class="bg-abu_bg text-hitam px-4 py-2 rounded-lg hover:bg-Biru hover:text-putih text-sm md:text-base cursor-pointer"
           >
-            Success Stories
-          </div>
-          <div
-            class="bg-abu_bg text-hitam px-4 py-2 rounded-lg hover:bg-Biru hover:text-putih text-sm md:text-base cursor-pointer"
-          >
             Financial Management
           </div>
         </div>
       </div>
 
       <div id="bloglist" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-7">
-        <!-- <div
-          data-aos="fade-up"
-          data-aos-duration="700"
-          data-aos-delay="0"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          class="flex-col gap-5 flex mb-10"
-        >
-          <img src="/blog-frame5.png" alt="blog image 6" class="rounded-lg" />
-          <div
-            class="md:max-w-[368px] lg:max-w-[380px] max-w-[368px] w-full font-jakarta"
-          >
-            <h3
-              class="text-base font-medium font-satoshi leading-5 pt-[15px] pb-[8px]"
-            >
-              Effective Strategies for Streamlining Inventory Management in
-              Small Restaurants
-            </h3>
-            <p class="text-abuGelap md:text-sm text-xs">
-              By Damar Buana | Business Insights | 8 min read
-            </p>
-          </div>
-        </div> -->
       </div>
 
       <div id="pagination" class="flex items-center justify-center space-x-3 pt-10">
