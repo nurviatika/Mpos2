@@ -1,7 +1,8 @@
 const blogs = [
   {
     id: 1,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame1.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -9,7 +10,8 @@ const blogs = [
   },
   {
     id: 2,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame2.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -17,7 +19,8 @@ const blogs = [
   },
   {
     id: 3,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame3.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -25,7 +28,8 @@ const blogs = [
   },
   {
     id: 4,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame4.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -33,7 +37,8 @@ const blogs = [
   },
   {
     id: 5,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame1.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -41,7 +46,8 @@ const blogs = [
   },
   {
     id: 6,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame5.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -49,7 +55,8 @@ const blogs = [
   },
   {
     id: 7,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame1.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -57,7 +64,8 @@ const blogs = [
   },
   {
     id: 8,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame2.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -65,7 +73,8 @@ const blogs = [
   },
   {
     id: 9,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame3.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -73,7 +82,8 @@ const blogs = [
   },
   {
     id: 10,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame4.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -81,7 +91,8 @@ const blogs = [
   },
   {
     id: 11,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame1.png",
     author: "Damar Buana",
     category: "Business Insights",
@@ -89,13 +100,13 @@ const blogs = [
   },
   {
     id: 12,
-    title: "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
+    title:
+      "Effective Strategies for Streamlining Inventory Management in Small Restaurants",
     img: "/blog-frame5.png",
     author: "Damar Buana",
     category: "Business Insights",
     created_at: "8 min read",
   },
- 
 ];
 
 const blogContainer = document.getElementById("bloglist");
@@ -117,7 +128,7 @@ function displayBlogs(page) {
         data-aos-duration="700"
         data-aos-delay="0"
         data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-once="true"
         class="flex-col gap-5 flex mb-10"
       >
         <img src="${blog.img}" alt="blog image ${blog.id}" class="rounded-lg" />
@@ -139,7 +150,8 @@ function setupPagination() {
 
   const prevBtn = document.createElement("button");
   prevBtn.innerHTML = "←";
-  prevBtn.className = "w-7 h-7 border-none hover:border rounded-full text-sm hover:bg-Biru hover:text-white";
+  prevBtn.className =
+    "w-7 h-7 border-none hover:border rounded-full text-sm hover:bg-Biru hover:text-white";
   prevBtn.disabled = currentPage === 1;
   prevBtn.addEventListener("click", () => {
     if (currentPage > 1) {
@@ -168,7 +180,8 @@ function setupPagination() {
 
   const nextBtn = document.createElement("button");
   nextBtn.innerHTML = "→";
-  nextBtn.className = "w-7 h-7 border-none hover:border rounded-full text-sm hover:bg-Biru hover:text-white";
+  nextBtn.className =
+    "w-7 h-7 border-none hover:border rounded-full text-sm hover:bg-Biru hover:text-white";
   nextBtn.disabled = currentPage === pageCount;
   nextBtn.addEventListener("click", () => {
     if (currentPage < pageCount) {

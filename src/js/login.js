@@ -13,26 +13,25 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const passwordInput = document.getElementById("passwordInput");
-    const eyeIcon = document.getElementById("eyeSlashIcon");
-    const eyeSlashIcon = document.getElementById("eyeIcon");
-  
-    eyeIcon.addEventListener("click", togglePassword);
-    eyeSlashIcon.addEventListener("click", togglePassword);
-  
-    eyeIcon.style.display = "block"; 
-    eyeSlashIcon.style.display = "none"; 
-    function togglePassword() {
-      if (passwordInput.type === "password") {
-        passwordInput.type = "text"; 
-        eyeIcon.style.display = "none"; 
-        eyeSlashIcon.style.display = "block";
-      } else {
-        passwordInput.type = "password"; 
-        eyeIcon.style.display = "block";
-        eyeSlashIcon.style.display = "none"; 
-      }
+document.addEventListener("DOMContentLoaded", function () {
+  const passwordInput = document.getElementById("passwordInput");
+  const eyeIcon = document.getElementById("eyeSlashIcon");
+  const eyeSlashIcon = document.getElementById("eyeIcon");
+
+  eyeIcon.addEventListener("click", togglePassword);
+  eyeSlashIcon.addEventListener("click", togglePassword);
+
+  eyeIcon.style.display = "block";
+  eyeSlashIcon.style.display = "none";
+  function togglePassword() {
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      eyeIcon.style.display = "none";
+      eyeSlashIcon.style.display = "block";
+    } else {
+      passwordInput.type = "password";
+      eyeIcon.style.display = "block";
+      eyeSlashIcon.style.display = "none";
     }
-  });
-  
+  }
+});
