@@ -19,20 +19,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menu-toggle");
   const closeMenu = document.getElementById("close-menu");
   const navLinks = document.getElementById("nav-links");
+  const navbar = document.getElementById("navbar");
+  console.log();
 
   if (menuToggle && navLinks) {
     menuToggle.addEventListener("click", function () {
       navLinks.classList.toggle("-translate-y-full");
-      navLinks.classList.toggle("translate-y-0");
+      navLinks.classList.toggle("translate-y-[4rem]");
+      navbar.classList.toggle("menu-active");
+      navLinks.classList.toggle("opacity-0");
+      navLinks.classList.toggle("opacity-100");
+      navLinks.classList.toggle("pointer-events-none");
+      navLinks.classList.toggle("pointer-events-auto");
     });
   }
 
-  if (closeMenu && navLinks) {
-    closeMenu.addEventListener("click", function () {
-      navLinks.classList.add("-translate-y-full");
-      navLinks.classList.remove("translate-y-0");
-    });
-  }
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("open");
+  });
 
   const logoMarquee = new Swiper(".logo-marquee", {
     slidesPerView: "auto",
@@ -77,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
 
-
     const nextSlideBtn = document.querySelector(".next-slide");
     const prevSlideBtn = document.querySelector(".prev-slide");
 
@@ -101,14 +104,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const navbar = document.getElementById("navbar");
   if (navbar) {
     let lastScrollTop = 0;
 
     window.addEventListener("scroll", function () {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
 
-      if (scrollTop > lastScrollTop) {
+      if (
+        scrollTop > lastScrollTop &&
+        !navbar.classList.contains("menu-active")
+      ) {
         navbar.style.transform = "translateY(-100%)";
       } else {
         navbar.style.transform = "translateY(0)";
@@ -117,6 +123,4 @@ document.addEventListener("DOMContentLoaded", function () {
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
   }
-
-  
 });

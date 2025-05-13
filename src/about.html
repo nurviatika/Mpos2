@@ -18,12 +18,12 @@
     <header>
       <nav
         id="navbar"
-        class="bg-putih_bg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
+        class="bg-whiteBg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
       >
         <div class="container flex justify-between items-center w-full">
           <a href="/">
             <div
-              class="flex items-center gap-[10px] font-bold text-hitam text-2xl font-satoshi"
+              class="flex items-center gap-[10px] font-bold text-black text-2xl font-satoshi"
             >
               <svg
                 width="40"
@@ -44,32 +44,28 @@
             </div>
           </a>
           <ul
-            class="md:hidden hidden lg:flex gap-10 text-hitam text-sm font-satoshi"
+            class="md:hidden hidden lg:flex gap-10 text-black text-sm font-satoshi"
           >
-            <li>
-              <a href="/index.html" class="hover:text-hitam">Home</a>
-            </li>
             <li>
               <a
                 href="/src/about.html"
-                class="hover:text-abu text-hitam font-semibold"
+                class="hover:text-mediumGray text-black font-semibold"
                 >Aboutus</a
               >
             </li>
             <li>
-              <a href="/src/features.html" class="hover:text-hitam">Features</a>
+              <a href="/src/features.html" class="hover:text-black">Features</a>
             </li>
             <li>
-              <a href="/src/pricing.html" class="hover:text-hitam">Pricing</a>
+              <a href="/src/pricing.html" class="hover:text-black">Pricing</a>
             </li>
-            <li><a href="/src/blog.html" class="hover:text-hitam">Blog</a></li>
+            <li><a href="/src/blog.html" class="hover:text-black">Blog</a></li>
             <li>
-              <a href="/src/contactUs.html" class="hover:text-hitam"
+              <a href="/src/contactUs.html" class="hover:text-black"
                 >Contact Us</a
               >
             </li>
           </ul>
-
           <div class="flex gap-6">
             <a href="/src/login.html">
               <p
@@ -79,106 +75,100 @@
               </p>
             </a>
             <button
-              class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+              class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-blue text-white px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-lightBlue"
             >
               Get Started
             </button>
           </div>
-
           <svg
             id="menu-toggle"
-            class="lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer"
-            width="16"
-            height="12"
+            class="menu-icon lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer"
             viewBox="0 0 16 12"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M1.00195 1.20007L14.602 1.20007"
-              stroke="#111111"
+              id="line1"
+              d="M1 1H15"
+              class="transition-all duration-300"
+              stroke="#111"
               stroke-width="1.6"
               stroke-linecap="round"
             />
             <path
               d="M0.800781 6.00006L9.80078 6.00006"
+              id="line2"
+              class="transition-all duration-300"
               stroke="#111111"
               stroke-width="1.6"
               stroke-linecap="round"
             />
             <path
-              d="M0.8125 10.8H14.4127"
-              stroke="#111111"
+              id="line3"
+              d="M1 11H15"
+              class="transition-all duration-300"
+              stroke="#111"
               stroke-width="1.6"
               stroke-linecap="round"
             />
           </svg>
         </div>
       </nav>
-      <ul
+      <div
+        class="lg:hidden z-[99999999] fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-mediumGray text-sm font-medium transform -translate-y-full opacity-0 pointer-events-none transition-all duration-700 ease-in-out"
         id="nav-links"
-        class="lg:hidden z-[99999999] fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out"
       >
-        <span
-          id="close-menu"
-          class="absolute top-4 right-6 w-6 h-6 cursor-pointer flex items-center justify-center"
+        <ul
+          class="container px-6 transition-all duration-700 delay-300 ease-in-out"
         >
-          <span class="block w-6 h-[3px] bg-hitam rotate-45 absolute"></span>
-          <span class="block w-6 h-[3px] bg-hitam -rotate-45 absolute"></span>
-        </span>
+          <li>
+            <a
+              href="/src/about.html"
+              class="block py-3 hover:bg- softWhite font-satoshi"
+              >Aboutus</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/features.html"
+              class="block py-3 hover:bg- softWhite font-satoshi"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/pricing.html"
+              class="block py-3 hover:bg- softWhite font-satoshi"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/blog.html"
+              class="block py-3 hover:bg- softWhite font-satoshi"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/contactUs.html"
+              class="block py-3 hover:bg- softWhite font-satoshi"
+              >Contact Us</a
+            >
+          </li>
 
-        <li>
-          <a
-            href="/index.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Home</a
-          >
-        </li>
-        <li>
-          <a
-            href="/src/about.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Aboutus</a
-          >
-        </li>
-        <li>
-          <a
-            href="/src/features.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Features</a
-          >
-        </li>
-        <li>
-          <a
-            href="/src/pricing.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Pricing</a
-          >
-        </li>
-        <li>
-          <a
-            href="/src/blog.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Blog</a
-          >
-        </li>
-        <li>
-          <a
-            href="/src/contactUs.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Contact Us</a
-          >
-        </li>
-
-        <div class="flex gap-6 px-6 py-3">
-          <p class="py-[14px] text-sm font-satoshi">Login</p>
-          <button
-            class="flex font-satoshi items-center gap-1 bg-Biru text-putih px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
-          >
-            Get Started
-          </button>
-        </div>
-      </ul>
+          <div class="flex gap-6 px-6 py-3 flex-col">
+            <a href="/src/login.html">
+              <p class="py-[14px] text-sm font-satoshi text-center">Login</p>
+            </a>
+            <button
+              class="flex justify-center font-satoshi items-center gap-1 bg-blue text-white px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-lightBlue"
+            >
+              Get Started
+            </button>
+          </div>
+        </ul>
+      </div>
     </header>
 
     <section class="container flex text-left relative flex-col pt-[75px]">
@@ -192,7 +182,7 @@
             data-aos-delay="0"
             data-aos-mirror="false"
             data-aos-once="true"
-            class="text-[32px] lg:text-[64px] md:text-5xl text-hitam font-medium font-satoshi justify-start text-center md:text-start lg:text-start"
+            class="text-[32px] lg:text-[64px] md:text-5xl text-black font-medium font-satoshi justify-start text-center md:text-start lg:text-start md:leading-[70px] leading-[40px]"
           >
             Modern Solution For Restaurant Management
           </h1>
@@ -207,7 +197,7 @@
               data-aos-delay="0"
               data-aos-mirror="false"
               data-aos-once="true"
-              class="font-satoshi md:text-base text-sm font-normal leading-[22px] tracking-tight text-abu flex items-end justify-between max-w-[415px] text-center md:text-start lg:text-start"
+              class="font-satoshi md:text-base text-sm font-normal leading-[22px] tracking-tight text-mediumGray flex items-end justify-between max-w-[415px] text-center md:text-start lg:text-start"
             >
               We are a dedicated team committed to providing modern solutions to
               simplify and streamline restaurant operational processes.
@@ -219,7 +209,7 @@
                 data-aos-delay="0"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                class="text-hitam md:text-base text-sm font-bold flex flex-row-reverse font-satoshi"
+                class="text-black md:text-base text-sm font-bold flex flex-row-reverse font-satoshi"
               >
                 <img
                   data-aos="fade-left"
@@ -249,7 +239,7 @@
               data-aos-delay="0"
               data-aos-mirror="false"
               data-aos-once="true"
-              class="text-Biru text-base font-medium"
+              class="text-blue text-base font-medium"
             >
               Achievment
             </p>
@@ -259,7 +249,7 @@
               data-aos-delay="0"
               data-aos-mirror="false"
               data-aos-once="true"
-              class="md:text-[40px] text-[32px] font-medium text-hitam pt-[10px] pb-[16px]"
+              class="md:text-[40px] text-[32px] font-medium text-black pt-[10px] pb-[16px] md:leading-[48px] leading-10"
             >
               Achievements That Drive Us Forward
             </h2>
@@ -269,12 +259,23 @@
               data-aos-delay="0"
               data-aos-mirror="false"
               data-aos-once="true"
-              class="text-base font-normal text-abuGelap pb-8"
+              class="text-base font-normal text-darkGray pb-8 md:flex hidden"
             >
               Since the beginning, we’ve been committed to simplifying
               restaurant operations. Our dedication has led us to achieve
               remarkable milestones, reflecting our passion for delivering
               efficient and reliable solutions.
+            </p>
+            <p
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-delay="0"
+              data-aos-mirror="false"
+              data-aos-once="true"
+              class="text-base font-normal text-darkGray pb-8 md:hidden flex"
+            >
+              Since the beginning, we’ve been committed to simplifying
+              restaurant operations
             </p>
           </div>
           <div
@@ -286,12 +287,12 @@
               data-aos-delay="0"
               data-aos-mirror="false"
               data-aos-once="true"
-              class="border-putih_pudar border rounded-xl py-[30px] px-[30px] max-w-[260px] w-full"
+              class="border-white_pudar border rounded-xl py-[30px] px-[30px] max-w-[260px] w-full"
             >
-              <h3 class="text-lg font-medium text-hitam">
+              <h3 class="text-lg font-medium text-black">
                 500+ Transactions Processed
               </h3>
-              <p class="text-sm font-normal text-abuGelap">
+              <p class="text-sm font-normal text-darkGray">
                 We've successfully handled over 500 restaurant transactions,
                 ensuring smooth and accurate operations.
               </p>
@@ -303,12 +304,12 @@
               data-aos-delay="0"
               data-aos-mirror="false"
               data-aos-once="true"
-              class="border-putih_pudar border rounded-xl py-[30px] px-[30px] max-w-[260px] w-full"
+              class="border-white_pudar border rounded-xl py-[30px] px-[30px] max-w-[260px] w-full"
             >
-              <h3 class="text-lg font-medium text-hitam">
+              <h3 class="text-lg font-medium text-black">
                 95% Customer Satisfaction Rate
               </h3>
-              <p class="text-sm font-normal text-abuGelap">
+              <p class="text-sm font-normal text-darkGray">
                 Restaurant owners value our platform, with 95% of users
                 reporting improved operational efficiency.
               </p>
@@ -356,7 +357,7 @@
           data-aos-delay="0"
           data-aos-mirror="false"
           data-aos-once="true"
-          class="text-[16px] text-Biru flex font-medium justify-center"
+          class="text-[16px] text-blue flex font-medium justify-center"
         >
           Our Values
         </p>
@@ -371,7 +372,7 @@
           <h3 class="md:text-[40px] text-[27px] font-medium text-center">
             Principles That Drive Us Forward
           </h3>
-          <p class="text-[16px] font-normal text-center pt-2">
+          <p class="text-[16px] font-normal text-center pt-2 text-darkGray">
             We are a team of experienced professionals in technology and the
             culinary industry, to provide the best solutions for your
             restaurant.
@@ -388,19 +389,48 @@
           data-aos-delay="0"
           data-aos-mirror="false"
           data-aos-once="true"
-          class="mx-auto lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transitio duration-500 ease-in-out p-4 group"
+          class="mx-auto lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transitio duration-500 ease-in-out p-4 group"
         >
           <div class="pl-[30px] pb-4">
-            <img src="/frame-about1.svg" alt="icon1" class="w-[52px]" />
+            <svg
+              width="52"
+              height="52"
+              viewBox="0 0 52 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="52" height="52" rx="10" fill="#F8FAFF" />
+              <path
+                d="M27 26C27.2 25 27.7 24.3 28.5 23.5C29.5 22.6 30 21.3 30 20C30 18.4087 29.3679 16.8826 28.2426 15.7574C27.1174 14.6321 25.5913 14 24 14C22.4087 14 20.8826 14.6321 19.7574 15.7574C18.6321 16.8826 18 18.4087 18 20C18 21 18.2 22.2 19.5 23.5C20.2 24.2 20.8 25 21 26"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="transition-all duration-300 group-hover:stroke-[#2865FF] stroke-black"
+              />
+              <path
+                d="M21 30H27"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="transition-all duration-300 group-hover:stroke-[#2865FF] stroke-black"
+              />
+              <path
+                d="M22 34H26"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="transition-all duration-300 group-hover:stroke-[#2865FF] stroke-black"
+              />
+            </svg>
           </div>
           <div class="px-[30px]">
             <h3
-              class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white"
+              class="text-lg font-medium text-black group-hover:text-white group-active:text-white"
             >
               Innovation First
             </h3>
             <p
-              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white"
+              class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white"
             >
               We are always looking for new ways to improve restaurant
               efficiency.
@@ -414,19 +444,31 @@
           data-aos-delay="0"
           data-aos-mirror="false"
           data-aos-once="true"
-          class="mx-auto lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition duration-500 ease-in-out p-4 group"
+          class="mx-auto lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition duration-500 ease-in-out p-4 group"
         >
           <div class="pl-[30px] pb-4">
-            <img src="/frame-about2.svg" alt="icon2" class="w-[52px]" />
+            <svg
+              width="52"
+              height="52"
+              viewBox="0 0 52 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="52" height="52" rx="10" fill="#F8FAFF" />
+              <path
+                d="M28.4847 19.2268C28.0685 19.2298 27.6552 19.25 27.2188 19.367C26.7431 19.4958 26.2919 19.7018 25.883 19.9768C25.3085 19.6393 24.752 19.3618 24.2188 19.2965C23.5565 19.2148 22.9415 19.259 22.2267 19.274C21.3793 19.2913 20.8265 19.724 19.9295 20.0705C19.0333 20.4155 17.879 20.75 16.25 20.75H15.5V27.9688L15.9222 28.1795L17.3045 28.8598L22.2267 34.3438L22.25 34.367C22.8125 34.9235 23.5715 35.0615 24.242 35.0233C24.9132 34.9858 25.5433 34.7893 26.0465 34.4848C27.1543 33.8165 30.1715 31.7188 30.1715 31.7188L30.242 31.6715L30.2892 31.625C30.6462 31.2703 30.8255 30.8375 30.9455 30.383L33.8278 28.9295L35.984 28.2035L36.5 28.0385V20.75H35.75C34.4892 20.7594 33.2389 20.5204 32.0705 20.0465C31.1735 19.6963 30.629 19.268 29.7725 19.25C29.315 19.241 28.9002 19.2238 28.4847 19.2268ZM28.5072 20.7268C28.8448 20.7238 29.2347 20.7418 29.7267 20.75C29.8055 20.753 30.5262 21.0605 31.5312 21.4535C32.381 21.7873 33.5615 22.0835 35 22.1795V26.9608L33.2653 27.5473H33.2188L33.1715 27.5698L30.899 28.7188C30.7784 28.3707 30.5868 28.0515 30.3365 27.7813L30.2892 27.7108L27.1017 23.7973L26.633 23.2108L26.0465 23.6795L24.0312 25.3205C23.3548 25.7893 22.8065 25.6543 22.25 25.391C22.0887 25.3145 22.0978 25.2913 21.9688 25.2035L25.391 22.367L25.4375 22.3205C26.4537 21.3125 27.0785 20.9638 27.617 20.8205C27.887 20.747 28.1705 20.7298 28.5072 20.7268ZM23.282 20.75C23.5322 20.7399 23.7829 20.7477 24.032 20.7733C24.2285 20.7965 24.4513 20.9638 24.6418 21.0313C24.5653 21.1018 24.5097 21.1423 24.4303 21.2188L24.3837 21.266L20.282 24.6635L19.649 25.1795L20.2115 25.7653C20.2115 25.7653 20.7538 26.3518 21.5945 26.75C22.4353 27.1483 23.7335 27.374 24.899 26.5625L24.9462 26.5153L26.399 25.3205L29.165 28.7188L29.1882 28.766L29.2115 28.7885C29.7065 29.2783 29.6952 30.0485 29.2115 30.5473C29.2055 30.5525 29.2175 30.5645 29.2115 30.5698C29.2055 30.5735 29.1065 30.632 29.0945 30.641L28.1097 29.3045L26.891 30.1955L27.8525 31.484C27.4625 31.748 27.287 31.886 26.8678 32.1643L25.8605 30.8045L24.641 31.6955L25.6025 32.984C25.517 33.0365 25.3415 33.1543 25.274 33.1955C25.037 33.3388 24.5795 33.5 24.1722 33.5233C23.789 33.5443 23.4958 33.4558 23.3525 33.3358L23.3293 33.3125L18.3133 27.758L18.2195 27.6403L17 27.0313V22.1795C18.4325 22.0858 19.622 21.8015 20.4688 21.4768C21.4707 21.0928 22.1863 20.7763 22.2733 20.7733L23.282 20.75Z"
+                class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]"
+              />
+            </svg>
           </div>
           <div class="px-[30px]">
             <h3
-              class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white"
+              class="text-lg font-medium text-black group-hover:text-white group-active:text-white"
             >
               Transparency & Trust
             </h3>
             <p
-              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white"
+              class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white"
             >
               We build relationships based on openness and trust.
             </p>
@@ -439,19 +481,31 @@
           data-aos-delay="0"
           data-aos-mirror="false"
           data-aos-once="true"
-          class="mx-auto lg:max-w-[291px] md:max-w-[271px] duration-500 ease-in-out max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition p-4 group"
+          class="mx-auto lg:max-w-[291px] md:max-w-[271px] duration-500 ease-in-out max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition p-4 group"
         >
           <div class="pl-[30px] pb-4">
-            <img src="/frame-about3.svg" alt="icon3" class="w-[52px]" />
+            <svg
+              width="52"
+              height="52"
+              viewBox="0 0 52 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="52" height="52" rx="10" fill="#F8FAFF" />
+              <path
+                d="M20 22.25C20 21.9545 20.0582 21.6619 20.1713 21.389C20.2843 21.116 20.4501 20.8679 20.659 20.659C20.8679 20.4501 21.116 20.2843 21.389 20.1713C21.6619 20.0582 21.9545 20 22.25 20C22.5455 20 22.8381 20.0582 23.111 20.1713C23.384 20.2843 23.6321 20.4501 23.841 20.659C24.0499 20.8679 24.2157 21.116 24.3287 21.389C24.4418 21.6619 24.5 21.9545 24.5 22.25C24.5 22.8467 24.2629 23.419 23.841 23.841C23.419 24.2629 22.8467 24.5 22.25 24.5C21.6533 24.5 21.081 24.2629 20.659 23.841C20.2371 23.419 20 22.8467 20 22.25ZM22.25 18.5C21.2554 18.5 20.3016 18.8951 19.5983 19.5983C18.8951 20.3016 18.5 21.2554 18.5 22.25C18.5 23.2446 18.8951 24.1984 19.5983 24.9017C20.3016 25.6049 21.2554 26 22.25 26C23.2446 26 24.1984 25.6049 24.9017 24.9017C25.6049 24.1984 26 23.2446 26 22.25C26 21.2554 25.6049 20.3016 24.9017 19.5983C24.1984 18.8951 23.2446 18.5 22.25 18.5ZM29.75 23C29.75 22.6022 29.908 22.2206 30.1893 21.9393C30.4706 21.658 30.8522 21.5 31.25 21.5C31.6478 21.5 32.0294 21.658 32.3107 21.9393C32.592 22.2206 32.75 22.6022 32.75 23C32.75 23.3978 32.592 23.7794 32.3107 24.0607C32.0294 24.342 31.6478 24.5 31.25 24.5C30.8522 24.5 30.4706 24.342 30.1893 24.0607C29.908 23.7794 29.75 23.3978 29.75 23ZM31.25 20C30.4544 20 29.6913 20.3161 29.1287 20.8787C28.5661 21.4413 28.25 22.2044 28.25 23C28.25 23.7956 28.5661 24.5587 29.1287 25.1213C29.6913 25.6839 30.4544 26 31.25 26C32.0456 26 32.8087 25.6839 33.3713 25.1213C33.9339 24.5587 34.25 23.7956 34.25 23C34.25 22.2044 33.9339 21.4413 33.3713 20.8787C32.8087 20.3161 32.0456 20 31.25 20ZM16.25 29.75C16.25 29.1533 16.4871 28.581 16.909 28.159C17.331 27.7371 17.9033 27.5 18.5 27.5H26C26.5967 27.5 27.169 27.7371 27.591 28.159C28.0129 28.581 28.25 29.1533 28.25 29.75V29.918C28.2497 29.9868 28.2447 30.0554 28.235 30.1235C28.1497 30.8507 27.8791 31.5439 27.449 32.1365C26.6285 33.269 25.0685 34.25 22.25 34.25C19.4315 34.25 17.873 33.269 17.0495 32.1365C16.62 31.5437 16.3498 30.8506 16.265 30.1235C16.2576 30.0552 16.2526 29.9867 16.25 29.918V29.75ZM17.75 29.885V29.8955L17.756 29.969C17.8139 30.4334 17.9883 30.8756 18.263 31.2545C18.752 31.9265 19.817 32.75 22.25 32.75C24.683 32.75 25.748 31.9265 26.237 31.2545C26.5117 30.8756 26.6861 30.4334 26.744 29.969L26.75 29.894V29.75C26.75 29.5511 26.671 29.3603 26.5303 29.2197C26.3897 29.079 26.1989 29 26 29H18.5C18.3011 29 18.1103 29.079 17.9697 29.2197C17.829 29.3603 17.75 29.5511 17.75 29.75V29.885ZM31.25 32.75C30.368 32.75 29.645 32.615 29.06 32.393C29.2982 31.9515 29.4802 31.4818 29.6015 30.995C30.0035 31.1465 30.5375 31.25 31.25 31.25C32.9285 31.25 33.617 30.677 33.92 30.251C34.0985 30.0033 34.211 29.7142 34.247 29.411L34.25 29.369C34.2484 29.2706 34.2082 29.1767 34.1381 29.1077C34.0679 29.0387 33.9734 29 33.875 29H29.675C29.5638 28.4562 29.3332 27.9439 29 27.5H33.875C34.91 27.5 35.75 28.34 35.75 29.375V29.4005C35.749 29.4552 35.745 29.5098 35.738 29.564C35.6761 30.1266 35.4705 30.6638 35.141 31.124C34.508 32.0105 33.3215 32.75 31.25 32.75Z"
+                class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]"
+              />
+            </svg>
           </div>
           <div class="px-[30px]">
             <h3
-              class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white"
+              class="text-lg font-medium text-black group-hover:text-white group-active:text-white"
             >
               Customer - Centric
             </h3>
             <p
-              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white"
+              class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white"
             >
               Customer needs are our top priority at every step we take.
             </p>
@@ -464,19 +518,31 @@
           data-aos-delay="0"
           data-aos-mirror="false"
           data-aos-once="true"
-          class="mx-auto lg:max-w-[291px] md:max-w-[271px] duration-500 ease-in-out max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition p-4 group"
+          class="mx-auto lg:max-w-[291px] md:max-w-[271px] duration-500 ease-in-out max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition p-4 group"
         >
           <div class="pl-[30px] pb-4">
-            <img src="/frame-about4.svg" alt="icon4" class="w-[52px]" />
+            <svg
+              width="52"
+              height="52"
+              viewBox="0 0 52 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="52" height="52" rx="10" fill="#F8FAFF" />
+              <path
+                d="M20 29V27H22.175C22.0917 27.3333 22.0377 27.6667 22.013 28C21.9883 28.3333 21.9923 28.6667 22.025 29H20ZM20 34C18.6167 34 17.4377 33.5123 16.463 32.537C15.4883 31.5617 15.0007 30.3827 15 29V20C14.45 20 13.9793 19.8043 13.588 19.413C13.1967 19.0217 13.0007 18.5507 13 18V16C13 15.45 13.196 14.9793 13.588 14.588C13.98 14.1967 14.4507 14.0007 15 14H25C25.55 14 26.021 14.196 26.413 14.588C26.805 14.98 27.0007 15.4507 27 16V18C27 18.55 26.8043 19.021 26.413 19.413C26.0217 19.805 25.5507 20.0007 25 20V23.025C24.6 23.275 24.2333 23.5667 23.9 23.9C23.5667 24.2333 23.275 24.6 23.025 25H20V23H23V20H17V29C17 29.8333 17.2917 30.5417 17.875 31.125C18.4583 31.7083 19.1667 32 20 32C20.5 32 20.9543 31.8917 21.363 31.675C21.7717 31.4583 22.1173 31.1583 22.4 30.775C22.5333 31.1083 22.6833 31.425 22.85 31.725C23.0167 32.025 23.2167 32.3167 23.45 32.6C23 33.0333 22.4833 33.375 21.9 33.625C21.3167 33.875 20.6833 34 20 34ZM15 18H25V16H15V18ZM28.5 31C29.2 31 29.7917 30.7583 30.275 30.275C30.7583 29.7917 31 29.2 31 28.5C31 27.8 30.7583 27.2083 30.275 26.725C29.7917 26.2417 29.2 26 28.5 26C27.8 26 27.2083 26.2417 26.725 26.725C26.2417 27.2083 26 27.8 26 28.5C26 29.2 26.2417 29.7917 26.725 30.275C27.2083 30.7583 27.8 31 28.5 31ZM33.6 35L30.9 32.3C30.5333 32.5333 30.15 32.7083 29.75 32.825C29.35 32.9417 28.9333 33 28.5 33C27.25 33 26.1877 32.5627 25.313 31.688C24.4383 30.8133 24.0007 29.7507 24 28.5C23.9993 27.2493 24.437 26.187 25.313 25.313C26.189 24.439 27.2513 24.0013 28.5 24C29.7487 23.9987 30.8113 24.4363 31.688 25.313C32.5647 26.1897 33.002 27.252 33 28.5C33 28.9333 32.9417 29.35 32.825 29.75C32.7083 30.15 32.5333 30.5333 32.3 30.9L35 33.6L33.6 35Z"
+                class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]"
+              />
+            </svg>
           </div>
           <div class="px-[30px]">
             <h3
-              class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white"
+              class="text-lg font-medium text-black group-hover:text-white group-active:text-white"
             >
               Continuous Improvemen
             </h3>
             <p
-              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white"
+              class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white"
             >
               Always learning, growing and adapting to market needs.
             </p>
@@ -495,7 +561,7 @@
           data-aos-delay="0"
           data-aos-mirror="false"
           data-aos-once="true"
-          class="text-[16px] text-Biru flex font-medium justify-center"
+          class="text-[16px] text-blue flex font-medium justify-center"
         >
           Meet Our Team
         </p>
@@ -510,7 +576,7 @@
           <h3 class="md:text-[40px] text-[27px] font-medium text-center">
             The People Behind MPOS Restaurant
           </h3>
-          <p class="text-[16px] font-normal text-center pt-2">
+          <p class="text-[16px] font-normal text-center pt-2 text-darkGray">
             We are a team of experienced professionals in technology and the
             culinary industry, to provide the best solutions for your
             restaurant.
@@ -536,7 +602,7 @@
                 class="relative rounded-[20px] overflow-hidden shadow-lg group transition-transform duration-300 hover:scale-110 transform-gpu"
               >
                 <div
-                  class="absolute inset-0 z-0 transition-all duration-150 bg-abuPudar group-hover:bg-abuGelap"
+                  class="absolute inset-0 z-0 transition-all duration-150 bg-softGray group-hover:bg-darkGray"
                 ></div>
                 <img
                   src="/user-about1.png"
@@ -544,13 +610,13 @@
                   class="relative object-cover w-full h-full"
                 />
                 <div
-                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-whiteBg"
                 >
                   <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
-                    <h3 class="text-lg font-bold font-satoshi text-putih_bg">
+                    <h3 class="text-lg font-bold font-satoshi text-whiteBg">
                       Alexander Arnold
                     </h3>
-                    <p class="text-base text-putih_bg">Manager</p>
+                    <p class="text-base text-whiteBg">Manager</p>
                   </div>
                 </div>
                 <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
@@ -573,7 +639,7 @@
                 class="relative rounded-[20px] overflow-hidden shadow-lg group transition-transform duration-300 hover:scale-110 transform-gpu"
               >
                 <div
-                  class="absolute inset-0 z-0 transition-all duration-150 bg-abuPudar group-hover:bg-abuGelap"
+                  class="absolute inset-0 z-0 transition-all duration-150 bg-softGray group-hover:bg-darkGray"
                 ></div>
                 <img
                   src="/user-about2.png"
@@ -581,13 +647,13 @@
                   class="relative object-cover w-full h-full"
                 />
                 <div
-                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-whiteBg"
                 >
                   <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
-                    <h3 class="text-lg font-bold font-satoshi text-putih_bg">
+                    <h3 class="text-lg font-bold font-satoshi text-whiteBg">
                       Alexander Arnold
                     </h3>
-                    <p class="text-base text-putih_bg">Manager</p>
+                    <p class="text-base text-whiteBg">Manager</p>
                   </div>
                 </div>
                 <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
@@ -610,7 +676,7 @@
                 class="relative rounded-[20px] overflow-hidden shadow-lg group transition-transform duration-300 hover:scale-110 transform-gpu"
               >
                 <div
-                  class="absolute inset-0 z-0 transition-all duration-150 bg-abuPudar group-hover:bg-abuGelap"
+                  class="absolute inset-0 z-0 transition-all duration-150 bg-softGray group-hover:bg-darkGray"
                 ></div>
                 <img
                   src="/user-about3.png"
@@ -618,13 +684,13 @@
                   class="relative object-cover w-full h-full"
                 />
                 <div
-                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-whiteBg"
                 >
                   <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
-                    <h3 class="text-lg font-bold font-satoshi text-putih_bg">
+                    <h3 class="text-lg font-bold font-satoshi text-whiteBg">
                       Alexander Arnold
                     </h3>
-                    <p class="text-base text-putih_bg">Manager</p>
+                    <p class="text-base text-whiteBg">Manager</p>
                   </div>
                 </div>
                 <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
@@ -647,7 +713,7 @@
                 class="relative rounded-[20px] overflow-hidden shadow-lg group transition-transform duration-300 hover:scale-110 transform-gpu"
               >
                 <div
-                  class="absolute inset-0 z-0 transition-all duration-150 bg-abuPudar group-hover:bg-abuGelap"
+                  class="absolute inset-0 z-0 transition-all duration-150 bg-softGray group-hover:bg-darkGray"
                 ></div>
                 <img
                   src="/user-about4.png"
@@ -655,13 +721,13 @@
                   class="relative object-cover w-full h-full"
                 />
                 <div
-                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-whiteBg"
                 >
                   <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
-                    <h3 class="text-lg font-bold font-satoshi text-putih_bg">
+                    <h3 class="text-lg font-bold font-satoshi text-whiteBg">
                       Alexander Arnold
                     </h3>
-                    <p class="text-base text-putih_bg">Manager</p>
+                    <p class="text-base text-whiteBg">Manager</p>
                   </div>
                 </div>
                 <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
@@ -684,7 +750,7 @@
                 class="relative rounded-[20px] overflow-hidden shadow-lg group transition-transform duration-300 hover:scale-110 transform-gpu"
               >
                 <div
-                  class="absolute inset-0 z-0 transition-all duration-150 bg-abuPudar group-hover:bg-abuGelap"
+                  class="absolute inset-0 z-0 transition-all duration-150 bg-softGray group-hover:bg-darkGray"
                 ></div>
                 <img
                   src="/user-about1.png"
@@ -692,13 +758,13 @@
                   class="relative object-cover w-full h-full"
                 />
                 <div
-                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-whiteBg"
                 >
                   <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
-                    <h3 class="text-lg font-bold font-satoshi text-putih_bg">
+                    <h3 class="text-lg font-bold font-satoshi text-whiteBg">
                       Alexander Arnold
                     </h3>
-                    <p class="text-base text-putih_bg">Manager</p>
+                    <p class="text-base text-whiteBg">Manager</p>
                   </div>
                 </div>
                 <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
@@ -721,7 +787,7 @@
                 class="relative rounded-[20px] overflow-hidden shadow-lg group transition-transform duration-300 hover:scale-110 transform-gpu"
               >
                 <div
-                  class="absolute inset-0 z-0 transition-all duration-150 bg-abuPudar group-hover:bg-abuGelap"
+                  class="absolute inset-0 z-0 transition-all duration-150 bg-softGray group-hover:bg-darkGray"
                 ></div>
                 <img
                   src="/user-about2.png"
@@ -729,13 +795,13 @@
                   class="relative object-cover w-full h-full"
                 />
                 <div
-                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-whiteBg"
                 >
                   <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
-                    <h3 class="text-lg font-bold font-satoshi text-putih_bg">
+                    <h3 class="text-lg font-bold font-satoshi text-whiteBg">
                       Alexander Arnold
                     </h3>
-                    <p class="text-base text-putih_bg">Manager</p>
+                    <p class="text-base text-whiteBg">Manager</p>
                   </div>
                 </div>
                 <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
@@ -758,7 +824,7 @@
                 class="relative rounded-[20px] overflow-hidden shadow-lg group transition-transform duration-300 hover:scale-110 transform-gpu"
               >
                 <div
-                  class="absolute inset-0 z-0 transition-all duration-150 bg-abuPudar group-hover:bg-abuGelap"
+                  class="absolute inset-0 z-0 transition-all duration-150 bg-softGray group-hover:bg-darkGray"
                 ></div>
                 <img
                   src="/user-about3.png"
@@ -766,13 +832,13 @@
                   class="relative object-cover w-full h-full"
                 />
                 <div
-                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-whiteBg"
                 >
                   <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
-                    <h3 class="text-lg font-bold font-satoshi text-putih_bg">
+                    <h3 class="text-lg font-bold font-satoshi text-whiteBg">
                       Alexander Arnold
                     </h3>
-                    <p class="text-base text-putih_bg">Manager</p>
+                    <p class="text-base text-whiteBg">Manager</p>
                   </div>
                 </div>
                 <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
@@ -795,7 +861,7 @@
                 class="relative rounded-[20px] overflow-hidden shadow-lg group transition-transform duration-300 hover:scale-110 transform-gpu"
               >
                 <div
-                  class="absolute inset-0 z-0 transition-all duration-150 bg-abuPudar group-hover:bg-abuGelap"
+                  class="absolute inset-0 z-0 transition-all duration-150 bg-softGray group-hover:bg-darkGray"
                 ></div>
                 <img
                   src="/user-about4.png"
@@ -803,13 +869,13 @@
                   class="relative object-cover w-full h-full"
                 />
                 <div
-                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-hitam to-transparent text-putih_bg"
+                  class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-whiteBg"
                 >
                   <div class="flex flex-col pb-[22px] pt-[48px] px-[21px]">
-                    <h3 class="text-lg font-bold font-satoshi text-putih_bg">
+                    <h3 class="text-lg font-bold font-satoshi text-whiteBg">
                       Alexander Arnold
                     </h3>
-                    <p class="text-base text-putih_bg">Manager</p>
+                    <p class="text-base text-whiteBg">Manager</p>
                   </div>
                 </div>
                 <div class="absolute bottom-3 right-4 flex space-x-3 pb-[22px]">
@@ -839,12 +905,14 @@
           class="bg-cover absolute w-full h-full"
         />
         <div class="container flex justify-center z-50">
-          <div class="max-w-[942px] w-full text-putih pt-[78px] pb-[100px]">
+          <div
+            class="max-w-[942px] w-full text-white pt-[78px] pb-[100px] font-satoshi"
+          >
             <h2
               data-aos="fade-up"
               data-aos-duration="400"
               data-aos-delay="0"
-              data-aos-mirror="false"
+              data-aos-mirror="true"
               data-aos-once="true"
               class="flex md:text-[40px] text-3xl font-medium justify-center text-center"
             >
@@ -854,9 +922,9 @@
               data-aos="fade-right"
               data-aos-duration="500"
               data-aos-delay="0"
-              data-aos-mirror="false"
+              data-aos-mirror="true"
               data-aos-once="true"
-              class="flex text-center md:text-base text-sm font-normal pt-6 pb-8"
+              class="flex text-center md:text-base text-sm font-extralight pt-6 pb-8"
             >
               Manage orders, monitor transactions, and improve your business
               efficiency with Xank MPOS. Start a faster and safer restaurant
@@ -866,12 +934,12 @@
               data-aos="fade-up"
               data-aos-duration="400"
               data-aos-delay="0"
-              data-aos-mirror="false"
+              data-aos-mirror="true"
               data-aos-once="true"
               class="items-center justify-center flex"
             >
               <button
-                class="font-satoshi items-center gap-1 bg-putih text-Biru px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-putih_bg"
+                class="font-satoshi items-center gap-1 bg-white text-blue px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-whiteBg"
               >
                 Request a demo
               </button>
@@ -881,12 +949,12 @@
       </div>
     </section>
 
-    <footer class="bg-hitam">
+    <footer class="bg-black">
       <div
         data-aos="fade-up"
         data-aos-duration="400"
         data-aos-delay="0"
-        data-aos-mirror="false"
+        data-aos-mirror="true"
         data-aos-once="true"
         class="container mx-auto flex flex-col gap-3"
       >
@@ -897,11 +965,11 @@
             <div class="flex flex-col gap-4 md:pb-8 pb-9">
               <div class="flex items-center gap-3">
                 <img src="/logo.svg" alt="Logo Mpos" class="w-10" />
-                <span class="text-2xl font-semibold font-inter text-putih_bg"
+                <span class="text-2xl font-semibold font-inter text-whiteBg"
                   >Mpos</span
                 >
               </div>
-              <p class="text-putih_bg max-w-md font-satoshi">
+              <p class="text-whiteBg max-w-md font-satoshi leading-[26px]">
                 Xank Mpos is a web-based restaurant management solution.
                 Facilitates efficient transaction and report management. All in
                 one practical and easy-to-use dashboard.
@@ -909,31 +977,27 @@
               <div class="flex flex-col">
                 <div class="flex gap-1">
                   <img src="/email.svg" alt="icon email" class="w-8" />
-                  <p
-                    class="text-sm font-normal font-satoshi py-1 text-putih_bg"
-                  >
+                  <p class="text-sm font-normal font-satoshi py-1 text-whiteBg">
                     Mpos@gmail.com
                   </p>
                 </div>
 
                 <div class="flex gap-1">
                   <img src="/telpon.svg" alt="icon telpon" class="w-8" />
-                  <p
-                    class="text-sm font-normal font-satoshi py-1 text-putih_bg"
-                  >
+                  <p class="text-sm font-normal font-satoshi py-1 text-whiteBg">
                     (123) 1234567
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="flex flex-row md:gap-0 lg:gap-0 gap-7">
+            <div class="flex flex-col md:flex-row md:gap-0 lg:gap-0 gap-[60px]">
               <div class="flex flex-col">
-                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                <p class="text-base font-bold font-satoshi text-whiteBg pb-6">
                   Navigation
                 </p>
                 <ul
-                  class="text-base font-normal font-satoshi text-putih_bg flex flex-col"
+                  class="text-base font-normal font-satoshi text-whiteBg flex flex-col"
                 >
                   <li><a href="#" class="pb-[6px]">Home</a></li>
                   <li><a href="#" class="pb-[6px]">Features</a></li>
@@ -944,10 +1008,10 @@
               </div>
 
               <div class="flex flex-col md:px-[128px] px-0">
-                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                <p class="text-base font-bold font-satoshi text-whiteBg pb-6">
                   About Us
                 </p>
-                <ul class="text-base font-normal font-satoshi text-putih_bg">
+                <ul class="text-base font-normal font-satoshi text-whiteBg">
                   <li><a href="#" class="pb-[6px]">Our Story</a></li>
                   <li><a href="#" class="pb-[6px]">Career</a></li>
                   <li><a href="#" class="pb-[6px]">News & Blog</a></li>
@@ -955,7 +1019,7 @@
               </div>
 
               <div class="flex flex-col">
-                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                <p class="text-base font-bold font-satoshi text-whiteBg pb-6">
                   Social media
                 </p>
                 <ul class="flex gap-4 lg:flex-nowrap md:flex-wrap flex-wrap">
@@ -1001,17 +1065,17 @@
         </div>
 
         <div
-          class="flex flex-col md:flex-row justify-between text-putih_bg text-sm pt-4 font-satoshi pb-6"
+          class="flex flex-col md:flex-row justify-between text-whiteBg text-sm md:pt-4 pt-[60px] font-satoshi pb-6 md:items-start items-center gap-3 md:gap-0"
         >
           <p>&copy; 2022 mpos. All rights reserved.</p>
           <ul class="flex gap-4">
             <li>
-              <a href="#" class="hover:text-putih cursor-pointer"
+              <a href="#" class="hover:text-white cursor-pointer"
                 >Privacy policy</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-putih cursor-pointer"
+              <a href="#" class="hover:text-white cursor-pointer"
                 >Term of use</a
               >
             </li>

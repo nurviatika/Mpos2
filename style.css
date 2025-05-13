@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
+body {
   overflow-x: hidden;
 }
 
-#site-header .navigation-wrapper{
+#site-header .navigation-wrapper {
   @apply h-20 bg-sky-500 flex items-center justify-center text-3xl font-bold text-white;
 }
 
@@ -15,12 +14,12 @@ body{
   min-height: calc(100vh - 240px);
 }
 
-#site-footer .footer-wrapper{
+#site-footer .footer-wrapper {
   @apply h-40 bg-sky-700 flex items-center justify-center text-3xl font-bold text-white;
 }
 
 .card-info {
-  @apply flex flex-col justify-between h-full items-start
+  @apply flex flex-col justify-between h-full items-start;
 }
 
 .logo-marquee .swiper-wrapper {
@@ -40,7 +39,6 @@ body{
 
 .latest-blog li {
   position: relative;
-
 }
 .latest-blog li::before {
   content: "";
@@ -49,7 +47,7 @@ body{
   top: 0;
   width: 2px;
   height: 100%;
-  background:#050810;
+  background: #050810;
   /* opacity: 0; */
   transform: scaleY(0);
   transition: all 500ms ease;
@@ -63,4 +61,21 @@ body{
 .swiper-pagination-bullet-active {
   width: 32px !important;
   border-radius: 12px !important;
+}
+
+.menu-icon path {
+  transform-origin: center;
+}
+
+.menu-icon.open #line1 {
+  transform: rotate(45deg) translateY(5px);
+}
+
+.menu-icon.open #line2 {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.menu-icon.open #line3 {
+  transform: rotate(-45deg) translateY(-5px);
 }

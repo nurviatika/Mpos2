@@ -12,142 +12,160 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>         
   </head>
   <body>
-    <header
-    >
-    <nav
-    id="navbar"
-    class="bg-putih_bg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
-    >
-      <div class="container flex justify-between items-center w-full">
-        <a href="/">
-          <div
-            class="flex items-center gap-[10px] font-bold text-hitam text-2xl font-satoshi"
+    <header>
+      <nav
+        id="navbar"
+        class="bg-whiteBg py-[38px] flex justify-center items-center fixed w-full z-[9999999] top-0 h-16 transition-all duration-300"
+      >
+        <div class="container flex justify-between items-center w-full">
+          <a href="/">
+            <div
+              class="flex items-center gap-[10px] font-bold text-black text-2xl font-satoshi"
+            >
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20 0.5C17.6634 0.5 15.7692 2.39418 15.7692 4.73077V10.2859L11.8411 6.3578C10.1889 4.70558 7.51013 4.70558 5.85791 6.3578C4.2057 8.01002 4.20569 10.6888 5.85791 12.341L9.78613 16.2692H4.23077C1.89418 16.2692 0 18.1634 0 20.5C0 22.8366 1.89418 24.7308 4.23077 24.7308H9.78613L5.85793 28.659C4.20571 30.3112 4.20571 32.99 5.85793 34.6422C7.51015 36.2944 10.1889 36.2944 11.8411 34.6422L15.7692 30.7141V36.2692C15.7692 38.6058 17.6634 40.5 20 40.5C22.3366 40.5 24.2308 38.6058 24.2308 36.2692V30.7139L28.159 34.6421C29.8112 36.2943 32.49 36.2943 34.1422 34.6421C35.7944 32.9899 35.7944 30.3111 34.1422 28.6589L30.2141 24.7308H35.7692C38.1058 24.7308 40 22.8366 40 20.5C40 18.1634 38.1058 16.2692 35.7692 16.2692H30.2141L34.1422 12.3411C35.7944 10.6889 35.7944 8.01013 34.1422 6.35791C32.49 4.70569 29.8112 4.70569 28.159 6.35791L24.2308 10.2861V4.73077C24.2308 2.39418 22.3366 0.5 20 0.5ZM19.9997 25.8851C22.9735 25.8851 25.3843 23.4743 25.3843 20.5005C25.3843 17.5267 22.9735 15.1159 19.9997 15.1159C17.0258 15.1159 14.6151 17.5267 14.6151 20.5005C14.6151 23.4743 17.0258 25.8851 19.9997 25.8851Z"
+                  fill="#2865FF"
+                />
+              </svg>
+
+              <span>Mpos</span>
+            </div>
+          </a>
+          <ul
+            class="md:hidden hidden lg:flex gap-10 text-black text-sm font-satoshi"
           >
-          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.5C17.6634 0.5 15.7692 2.39418 15.7692 4.73077V10.2859L11.8411 6.3578C10.1889 4.70558 7.51013 4.70558 5.85791 6.3578C4.2057 8.01002 4.20569 10.6888 5.85791 12.341L9.78613 16.2692H4.23077C1.89418 16.2692 0 18.1634 0 20.5C0 22.8366 1.89418 24.7308 4.23077 24.7308H9.78613L5.85793 28.659C4.20571 30.3112 4.20571 32.99 5.85793 34.6422C7.51015 36.2944 10.1889 36.2944 11.8411 34.6422L15.7692 30.7141V36.2692C15.7692 38.6058 17.6634 40.5 20 40.5C22.3366 40.5 24.2308 38.6058 24.2308 36.2692V30.7139L28.159 34.6421C29.8112 36.2943 32.49 36.2943 34.1422 34.6421C35.7944 32.9899 35.7944 30.3111 34.1422 28.6589L30.2141 24.7308H35.7692C38.1058 24.7308 40 22.8366 40 20.5C40 18.1634 38.1058 16.2692 35.7692 16.2692H30.2141L34.1422 12.3411C35.7944 10.6889 35.7944 8.01013 34.1422 6.35791C32.49 4.70569 29.8112 4.70569 28.159 6.35791L24.2308 10.2861V4.73077C24.2308 2.39418 22.3366 0.5 20 0.5ZM19.9997 25.8851C22.9735 25.8851 25.3843 23.4743 25.3843 20.5005C25.3843 17.5267 22.9735 15.1159 19.9997 15.1159C17.0258 15.1159 14.6151 17.5267 14.6151 20.5005C14.6151 23.4743 17.0258 25.8851 19.9997 25.8851Z" fill="#2865FF"/>
-          </svg>
-            
-            <span>Mpos</span>
+            <li>
+              <a
+                href="/src/about.html"
+                class="hover:text-black"
+                >Aboutus</a
+              >
+            </li>
+            <li>
+              <a href="/src/features.html" class="hover:text-black">Features</a>
+            </li>
+            <li>
+              <a href="/src/pricing.html" class="hover:text-black">Pricing</a>
+            </li>
+            <li><a href="/src/blog.html" class="hover:text-black">Blog</a></li>
+            <li>
+              <a href="/src/contactUs.html" class="hover:text-black"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <div class="flex gap-6">
+            <a href="/src/login.html">
+              <p
+                class="py-[14px] text-sm font-satoshi hidden lg:flex md:hidden"
+              >
+                Login
+              </p>
+            </a>
+            <button
+              class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-blue text-white px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-lightBlue"
+            >
+              Get Started
+            </button>
           </div>
-        </a>
+          <svg
+            id="menu-toggle"
+            class="menu-icon lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer"
+            viewBox="0 0 16 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="line1"
+              d="M1 1H15"
+              class="transition-all duration-300"
+              stroke="#111"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+            <path
+              d="M0.800781 6.00006L9.80078 6.00006"
+              id="line2"
+              class="transition-all duration-300"
+              stroke="#111111"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+            <path
+              id="line3"
+              d="M1 11H15"
+              class="transition-all duration-300"
+              stroke="#111"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </nav>
+      <div
+        class="lg:hidden z-[99999999] fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-mediumGray text-sm font-medium transform -translate-y-full opacity-0 pointer-events-none transition-all duration-700 ease-in-out"
+        id="nav-links"
+      >
         <ul
-          class="md:hidden hidden lg:flex gap-10 text-hitam text-sm font-satoshi"
+          class="container px-6 transition-all duration-700 delay-300 ease-in-out"
         >
           <li>
             <a
-              href="/index.html"
-              class="hover:text-abu text-hitam font-semibold"
-              >Home</a
+              href="/src/about.html"
+              class="block py-3 hover:bg- softWhite font-satoshi"
+              >Aboutus</a
             >
           </li>
-          <li><a href="/src/about.html" class="hover:text-hitam">Aboutus</a></li>
-          <li><a href="/src/features.html" class="hover:text-hitam">Features</a></li>
-          <li><a href="/src/pricing.html" class="hover:text-hitam">Pricing</a></li>
-          <li><a href="/src/blog.html" class="hover:text-hitam">Blog</a></li>
-          <li><a href="/src/contactUs.html" class="hover:text-hitam">Contact Us</a></li>
+          <li>
+            <a
+              href="/src/features.html"
+              class="block py-3 hover:bg- softWhite font-satoshi"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/pricing.html"
+              class="block py-3 hover:bg- softWhite font-satoshi"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/blog.html"
+              class="block py-3 hover:bg- softWhite font-satoshi"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/contactUs.html"
+              class="block py-3 hover:bg- softWhite font-satoshi"
+              >Contact Us</a
+            >
+          </li>
+
+          <div class="flex gap-6 px-6 py-3 flex-col">
+            <a href="/src/login.html">
+              <p class="py-[14px] text-sm font-satoshi text-center">Login</p>
+            </a>
+            <button
+              class="flex justify-center font-satoshi items-center gap-1 bg-blue text-white px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-lightBlue"
+            >
+              Get Started
+            </button>
+          </div>
         </ul>
-
-        <div class="flex gap-6">
-          <a href="/src/login.html">
-            <p class="py-[14px] text-sm font-satoshi hidden lg:flex md:hidden">
-              Login
-            </p>
-          </a>
-          <button
-            class="hidden font-satoshi lg:flex md:hidden items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
-          >
-            Get Started
-          </button>
-        </div>
-
-        <svg
-          id="menu-toggle"
-          class="lg:hidden md:flex flex flex-col justify-between h-5 w-7 cursor-pointer"
-          width="16"
-          height="12"
-          viewBox="0 0 16 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.00195 1.20007L14.602 1.20007"
-            stroke="#111111"
-            stroke-width="1.6"
-            stroke-linecap="round"
-          />
-          <path
-            d="M0.800781 6.00006L9.80078 6.00006"
-            stroke="#111111"
-            stroke-width="1.6"
-            stroke-linecap="round"
-          />
-          <path
-            d="M0.8125 10.8H14.4127"
-            stroke="#111111"
-            stroke-width="1.6"
-            stroke-linecap="round"
-          />
-        </svg>
       </div>
-    </nav>
-      <ul
-        id="nav-links"
-        class="lg:hidden z-[99999999] fixed top-0 right-0 w-full h-[100vh] bg-white shadow-lg py-8 text-abu text-sm font-medium transform -translate-y-full transition-transform duration-300 ease-in-out"
-      >
-        <span
-          id="close-menu"
-          class="absolute top-4 right-6 w-6 h-6 cursor-pointer flex items-center justify-center"
-        >
-          <span class="block w-6 h-[3px] bg-hitam rotate-45 absolute"></span>
-          <span class="block w-6 h-[3px] bg-hitam -rotate-45 absolute"></span>
-        </span>
-
-        <li>
-          <a
-            href="/index.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Home</a
-          >
-        </li>
-        <li>
-          <a
-            href="/src/about.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Aboutus</a
-          >
-        </li>
-        <li>
-          <a
-            href="/src/features.html"
-            class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Features</a
-          >
-        </li>
-        <li>
-          <a href="/src/pricing.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Pricing</a
-          >
-        </li>
-        <li>
-          <a href="/src/blog.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Blog</a
-          >
-        </li>
-        <li>
-          <a href="/src/contactUs.html" class="block px-6 py-3 hover:bg-semiPutih font-satoshi"
-            >Contact Us</a
-          >
-        </li>
-
-        <div class="flex gap-6 px-6 py-3">
-          <p class="py-[14px] text-sm font-satoshi">Login</p>
-          <button
-            class="flex font-satoshi items-center gap-1 bg-Biru text-putih px-6 py-[10px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
-          >
-            Get Started
-          </button>
-        </div>
-      </ul>
     </header>
 
     <section
@@ -157,7 +175,7 @@
           class="flex gap-2 md:flex-row flex-col justify-between w-full md:pt-[75px] py-10 md:pb-[81px]  ">
           <div class="max-w-[634px] gap-5">
             <h1 data-aos="fade-left" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"
-              class="text-[32px] lg:text-[64px] md:text-5xl text-hitam font-medium font-satoshi justify-start text-center md:text-start lg:text-start"
+              class="text-[32px] lg:text-[64px] md:text-5xl text-black font-medium font-satoshi justify-start text-center md:text-start lg:text-start"
             >
               Manage Restaurant Easier & Faster!
             </h1>
@@ -165,7 +183,7 @@
           <div class="flex">
             <div class="flex gap-2 lg:items-start md:items-start items-center justify-end flex-col">
               <p data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"
-                class="font-satoshi md:text-base text-sm font-normal leading-[22px] tracking-tight text-abu flex items-end justify-between max-w-[552px] text-center md:text-start lg:text-start"
+                class="font-satoshi md:text-base text-sm font-normal leading-[22px] tracking-tight text-mediumGray flex items-end justify-between max-w-[552px] text-center md:text-start lg:text-start"
               >
                 MPOS is a complete solution for managing restaurants
                 efficiently. From recording transactions, real-time stock
@@ -174,7 +192,7 @@
               </p>
               <div class="flex gap-[5px] items-start md:pt-5 pt-2">
                 <button data-aos="fade-left" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"
-                  class="text-hitam md:text-base text-sm font-bold flex flex-row-reverse font-satoshi"
+                  class="text-black md:text-base text-sm font-bold flex flex-row-reverse font-satoshi"
                 >
                   <img data-aos="fade-left" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" src="/get_started.svg" alt="icon mulai" class="items-end" />
                   Get Started
@@ -185,11 +203,11 @@
         </div>
         <img data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true" src="/Dashboard_2.webp" alt="image_dashboard" class="w-full object-cover object-center" fetchpriority="high" loading="eager"/>
       </div>
-      <div class="bg-Biru flex justify-between">
+      <div class="bg-blue flex justify-between">
         <div class="container">
           <div class="flex justify-between md:flex-row flex-col lg:gap-0 md:gap-4 gap-0">
             <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="flex justify-center md:justify-start py-[35px] max-w-none md:max-w-[210px]">
-              <h3 class=" text-[40px]  text-putih md:text-[28px] text-center md:text-left">
+              <h3 class=" text-[40px]  text-white md:text-[28px] text-center md:text-left">
                 Trusted by  <span class="font-semibold"> 100+</span> Restaurants
               </h3>
             </div>
@@ -198,22 +216,22 @@
               <div class="flex md:flex-row flex-col gap-y-4 md:gap-y-0 md:gap-x-20  lg:gap-x-10 gap-x-10 font-satoshi lg:text-start md:text-start text-center ">
                 <div class="flex justify-around md:gap-x-20  lg:gap-x-10 gap-x-10 font-satoshi lg:text-start md:text-start text-center ">
                   <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="card-info">
-                    <h3 class="md:text-2xl text-lg w-full text-center md:text-start font-medium text-putih">10,000+</h3>
-                    <p class="md:text-sm text-xs text-putih">Transactions Processed</p>
+                    <h3 class="md:text-2xl text-lg w-full text-center md:text-start font-medium text-white">10,000+</h3>
+                    <p class="md:text-sm text-xs text-white">Transactions Processed</p>
                   </div>
                   <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="card-info">
-                    <h3 class="md:text-2xl text-lg font-medium text-putih text-center md:text-start w-full">50%</h3>
-                    <p class="md:text-sm text-xs text-putih">Increased Efficiency</p>
+                    <h3 class="md:text-2xl text-lg font-medium text-white text-center md:text-start w-full">50%</h3>
+                    <p class="md:text-sm text-xs text-white">Increased Efficiency</p>
                   </div>
                 </div>
                 <div class="flex justify-around md:gap-x-20  lg:gap-x-10 gap-x-10 font-satoshi lg:text-start md:text-start text-center md:pb-0 pb-4">
                   <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="card-info">
-                    <h3 class="md:text-2xl text-lg w-full text-center md:text-start font-medium text-putih">29K+</h3>
-                    <p class="md:text-sm text-xs text-putih">Active User</p>
+                    <h3 class="md:text-2xl text-lg w-full text-center md:text-start font-medium text-white">29K+</h3>
+                    <p class="md:text-sm text-xs text-white">Active User</p>
                   </div>
                   <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="card-info">
-                    <h3 class="md:text-2xl text-lg font-medium text-putih text-center md:text-start w-full">4.7</h3>
-                    <p class="md:text-sm text-xs text-putih">Review</p>
+                    <h3 class="md:text-2xl text-lg font-medium text-white text-center md:text-start w-full">4.7</h3>
+                    <p class="md:text-sm text-xs text-white">Review</p>
                   </div>
                 </div>
               </div>
@@ -254,7 +272,7 @@
 
     <section class="container flex flex-col items-center md:py-[100px] py-[50px]">
       <div class="max-w-[544px] md:pb-[75px]">
-        <p data-aos="zoom-out" data-aos-duration="300" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-[16px] text-Biru flex font-medium justify-center">
+        <p data-aos="zoom-out" data-aos-duration="300" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-[16px] text-blue flex font-medium justify-center">
           Feature
         </p>
         <div data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true">
@@ -269,66 +287,87 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-start gap-5 mt-10 w-[100%] px-4">
-        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true" class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition duration-500 ease-in-out p-4 group">
-          <div class="pl-[30px] pb-4">
-            <img src="/fea1.svg" alt="icon1" class="w-[52px]" />
+        <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true"  class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition duration-500 ease-in-out p-4 group">
+          <div class="max-w-[231px]">
+            <div class=" pb-4">
+              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.53125" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="#F8FAFF"/>
+                <path d="M19.9746 26.5316V18.4303" stroke="currentColor" stroke-width="1.62025" stroke-linecap="round" stroke-linejoin="round" class="transition-all duration-300 group-hover:stroke-[#2865FF]"/>
+                <path d="M24.834 26.5315V13.5695" stroke="currentColor" stroke-width="1.62025" stroke-linecap="round" stroke-linejoin="round" class="transition-all duration-300 group-hover:stroke-[#2865FF]"/>
+                <path d="M15.1133 26.5315V23.291" stroke="currentColor" stroke-width="1.62025" stroke-linecap="round" stroke-linejoin="round" class="transition-all duration-300 group-hover:stroke-[#2865FF]"/>
+              </svg>
+            </div>
+            <div class="gap-[5px] flex flex-col">
+              <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
+                Comprehensive Analytics Dashboard
+              </h3>
+              <p
+                class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
+                Monitor restaurant performance in real-time with order summaries,
+                total revenue, and analytical graphs.
+              </p>
+            </div>
           </div>
-          <div class="px-[30px]">
-            <h3 class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white">
-              Comprehensive Analytics Dashboard
-            </h3>
-            <p
-              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white">
-              Monitor restaurant performance in real-time with order summaries,
-              total revenue, and analytical graphs.
-            </p>
+        </div>
+        
+        <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true"  class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition duration-500 ease-in-out p-4 group">
+          <div class="max-w-[231px]">
+            <div class=" pb-4">
+              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.556641" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="white"/>
+                <path d="M18.5092 30.4181C18.3206 30.2946 21.5744 23.4575 21.4626 23.1571C21.3508 22.8567 17.8997 21.7611 17.7315 21.2332C17.5633 20.7053 24.5434 12.7686 24.7271 12.9222C24.9099 13.0758 21.6852 19.9587 21.7727 20.1832C21.8612 20.4068 25.3969 21.5481 25.5039 22.1071C25.6118 22.6661 18.6969 30.5415 18.5092 30.4181Z" class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]" />
+              </svg>  
+            </div>
+            <div class="gap-[5px] flex flex-col">
+              <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
+                Fast & Efficient Ordering System
+              </h3>
+              <p
+                class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
+                  Faster ordering process with easy-to-access product display and quantity adjustment features.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true"  class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition duration-500 ease-in-out p-4 group">
-          <div class="pl-[30px] pb-4">
-            <img src="/fea2.svg" alt="icon2" class="w-[52px]" />
-          </div>
-          <div class="px-[30px]">
-            <h3 class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white">
-              Fast & Efficient Ordering System
-            </h3>
-            <p
-              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white">
-              Faster ordering process with easy-to-access product display and quantity adjustment features.
-            </p>
-          </div>
-        </div>
-
-        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true" class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition duration-500 ease-in-out p-4 group">
-          <div class="pl-[30px] pb-4">
-            <img src="/fea3.svg" alt="icon3" class="w-[52px]" />
-          </div>
-          <div class="px-[30px]">
-            <h3 class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white">
-              Flexible Product Management
-            </h3>
-            <p
-              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white">
-              Easily manage food and beverage menus, including price and stock updates.
-            </p>
+        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true" class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition duration-500 ease-in-out p-4 group">
+          <div class="max-w-[231px]">
+            <div class=" pb-4">
+              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.582031" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="#F8FAFF"/>
+                <path d="M25.5244 15.0686C25.7421 15.0686 25.9503 15.112 26.1475 15.1995L26.291 15.2737C26.4267 15.3555 26.5429 15.4613 26.6396 15.5901L27.916 17.136L27.9941 17.2356C28.0668 17.3378 28.1246 17.4484 28.166 17.5676H28.165C28.2199 17.7251 28.248 17.8904 28.248 18.0618V20.054L28.1348 20.0627C28.0625 20.068 27.9925 20.0746 27.9248 20.0833L27.7295 20.1135C27.6054 20.137 27.4811 20.1718 27.3584 20.218L27.1943 20.2805V18.3958H24.1973V23.0696L24.1611 23.1047L23.5996 23.6663L23.5215 23.6272L21.6445 22.6936L19.2686 23.8821L19.0928 23.97V18.3958H16.0957V26.843C16.0957 26.9596 16.132 27.0472 16.2002 27.1155L16.2549 27.1604C16.3138 27.1995 16.3855 27.22 16.4736 27.22H21.6416V28.2737H16.4736C16.1281 28.2737 15.824 28.1663 15.5674 27.9534L15.4609 27.8557C15.1831 27.5779 15.043 27.2375 15.043 26.843V18.0139C15.043 17.8431 15.0697 17.68 15.125 17.5266L15.1719 17.4143C15.2066 17.3404 15.2484 17.2698 15.2969 17.2024L15.374 17.1038L16.6348 15.5911C16.7633 15.4192 16.925 15.2877 17.1182 15.1995L17.2646 15.1418C17.414 15.0925 17.5708 15.0686 17.7344 15.0686H25.5244ZM28.2812 21.7366C28.3338 21.7366 28.3862 21.7412 28.4385 21.7512L28.5947 21.7961L28.6729 21.8313C28.749 21.87 28.8179 21.9202 28.8789 21.9817H28.8799L29.6289 22.7463L29.6357 22.7542L29.7334 22.8909C29.7618 22.9377 29.7858 22.9859 29.8057 23.0354H29.8066C29.8471 23.1345 29.8681 23.2361 29.8682 23.3391C29.8682 23.3903 29.8631 23.4417 29.8535 23.4924L29.8105 23.6428C29.7718 23.7457 29.7123 23.8425 29.6338 23.9319L25.292 28.2737H23.3301V26.3108L23.3662 26.2756L27.6865 21.9758L27.7559 21.9133C27.8267 21.855 27.9024 21.811 27.9834 21.7844H27.9844L28.1318 21.7483C28.1813 21.7403 28.2314 21.7366 28.2812 21.7366ZM24.291 26.7161V27.3137H24.8896L27.5762 24.6204L27.2803 24.3215L27.2783 24.3196L26.9941 24.0159L24.291 26.7161ZM20.1465 22.2532L21.5908 21.5315L21.6455 21.5042L21.6992 21.5315L23.1436 22.2532V18.3958H20.1465V22.2532ZM17.6699 16.1301L17.5898 16.1575C17.5351 16.1827 17.4881 16.2154 17.4482 16.2561L16.541 17.343H26.7324L25.8271 16.2561C25.8065 16.2359 25.7843 16.2178 25.7607 16.2014L25.6836 16.1575C25.6319 16.1335 25.5791 16.1214 25.5244 16.1213H17.75C17.723 16.1213 17.6964 16.1243 17.6699 16.1301Z"
+                class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]"/>
+              </svg> 
+            </div>
+            <div class="gap-[5px] flex flex-col">
+              <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
+                Flexible Product Management
+              </h3>
+              <p class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
+                Easily manage food and beverage menus, including price and stock updates.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true" class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-abuPudar py-[30px] rounded-[10px] hover:bg-Biru hover:text-white transition duration-500 ease-in-out p-4 group">
-          <div class="pl-[30px] pb-4">
-            <img src="/fea4.svg" alt="icon4" class="w-[52px]" />
+        <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true" class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition duration-500 ease-in-out p-4 group">
+          <div class="max-w-[231px]">
+            <div class=" pb-4">
+              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.328125" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="#F8FAFF"/>
+                <path d="M17.7448 13.1643C17.1003 13.1643 16.4821 13.4204 16.0263 13.8761C15.5705 14.3319 15.3145 14.9501 15.3145 15.5947V27.7466C15.3145 28.3912 15.5705 29.0093 16.0263 29.4651C16.4821 29.9209 17.1003 30.177 17.7448 30.177H25.036C25.6805 30.177 26.2987 29.9209 26.7545 29.4651C27.2103 29.0093 27.4664 28.3912 27.4664 27.7466V18.5282C27.4659 18.0449 27.2736 17.5816 26.9317 17.2401L23.3918 13.6978C23.2225 13.5285 23.0215 13.3943 22.8002 13.3028C22.579 13.2113 22.3419 13.1642 22.1025 13.1643H17.7448ZM16.5296 15.5947C16.5296 15.2724 16.6577 14.9633 16.8856 14.7354C17.1135 14.5075 17.4225 14.3795 17.7448 14.3795H21.3904V17.4175C21.3904 17.9009 21.5824 18.3645 21.9243 18.7064C22.2661 19.0482 22.7298 19.2403 23.2132 19.2403H26.2512V27.7466C26.2512 28.0689 26.1231 28.378 25.8952 28.6059C25.6673 28.8337 25.3583 28.9618 25.036 28.9618H17.7448C17.4225 28.9618 17.1135 28.8337 16.8856 28.6059C16.6577 28.378 16.5296 28.0689 16.5296 27.7466V15.5947ZM25.9996 18.0251H23.2132C23.052 18.0251 22.8975 17.9611 22.7836 17.8471C22.6696 17.7332 22.6056 17.5786 22.6056 17.4175V14.631L25.9996 18.0251Z" class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]"/>
+              </svg>
+            </div>
+            <div class="gap-[5px] flex flex-col">
+              <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
+                Automatic Financial Reports
+              </h3>
+              <p class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
+                Get accurate and automatic financial reports to monitor income and expenses.
+              </p>
+            </div>
           </div>
-          <div class="px-[30px]">
-            <h3 class="text-lg font-medium text-hitam group-hover:text-white group-active:text-white">
-              Automatic Financial Reports
-            </h3>
-            <p
-              class="text-sm font-normal text-abuGelap group-hover:text-white group-active:text-white">
-              Get accurate and automatic financial reports to monitor income and expenses.
-            </p>
-          </div>
-        </div>
+        </div> 
       </div>
     </section>
 
@@ -338,15 +377,15 @@
       </div>
       <div class="lg:max-w-[454px] md:w-full w-full lg:py-[100px] md:py-[80px] py-0  ">
         <div data-aos="fade-right" data-aos-duration="300" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="pb-[10px]">
-          <p class="text-Biru text-base">Try It Now!</p>
+          <p class="text-blue text-base">Try It Now!</p>
         </div>
         <div class="pt-[10px] md:pb-[28px] pb-4">
           <h3 data-aos="fade-up" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"
-            class="text-semiHitam md:text-[40px] text-3xl font-medium md:leading-[48px] leading-8 pb-4"
+            class="text-pureBlack md:text-[40px] text-3xl font-medium md:leading-[48px] leading-8 pb-4"
           >
             Boost Your Productivity with Our High-Speed Platform
           </h3>
-          <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-base text-abuGelap">
+          <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-base text-darkGray">
             Download now and experience seamless access to a platform built for
             speed and efficiency. Designed to elevate your workflow, it helps
             you accomplish more in less time—effortlessly.
@@ -354,20 +393,10 @@
         </div>
         <div class="flex gap-6">
           <button data-aos="fade-right" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" 
-            class="hidden font-satoshi md:flex items-center gap-1 bg-Biru text-putih px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-biruMuda"
+            class="hidden font-satoshi md:flex items-center gap-1 bg-blue text-white px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-lightBlue"
           >
             Download Now
           </button>
-          <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="py-[14px]">
-            <a href="#"
-              class="text-hitam text-sm font-bold flex flex-row-reverse font-satoshi"
-            >
-              <img data-aos="fade-right" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  src="/get_started.svg" alt="icon_mulai" class="items-end" />
-              <span>
-                Load more
-              </span>
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -375,16 +404,15 @@
     <section class="container flex gap-5 md:py-[100px] py-[50px] flex-col overflow-x-hidden">
       <div class="flex justify-between w-full max-w-[1440px] md:flex-row flex-col">
         <div class="max-w-[706px]">
-          <p data-aos="fade-right" data-aos-duration="300" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-Biru text-base">Testimonial</p>
+          <p data-aos="fade-right" data-aos-duration="300" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-blue text-base">Testimonial</p>
           <div class="pt-[10px] pb-[28px]">
             <h3 data-aos="fade-right" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"
-              class="text-semiHitam md:text-[40px] text-3xl font-medium leading-[48px] md:pb-4 pb-2"
+              class="text-pureBlack md:text-[40px] text-3xl font-medium leading-[48px] md:pb-4 pb-2"
             >
               What they say about us
             </h3>
-            <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-base text-abuGelap">
-              Discover how Xank-MPOS helps restaurants manage stock,
-              transactions and reports easily and accurately.
+            <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-base text-darkGray">
+              Discover how Xank-MPOS helps restaurants manage stock,transactions and reports easily <br> and accurately.
             </p>
           </div>
         </div>
@@ -398,17 +426,17 @@
         <div class="swiper-wrapper">
 
           <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="swiper-slide max-w-[966px] w-full ">
-            <div class="flex font-satoshi bg-abuPudar rounded-[20px] md:flex-row flex-col">
+            <div class="flex font-satoshi bg-softGray rounded-[20px] md:flex-row flex-col">
               <img src="/user1.png" alt="image user" class="object-cover h-[372px] md:h-full object-top rounded-3xl md:rounded-none">
               <img src="/icon-user.svg" alt="icon user" class="-ml-10 lg:w-[90px] md:w-16 md:flex hidden">
               <div class="flex flex-col max-w-[457px] py-[25px] pl-8 pr-10">
                 <img src="/rate-user.svg" alt="icon rate" class="w-[120px]">
-                <p class="text-semiHitam text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
+                <p class="text-pureBlack text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
                   Since using Xank-MPOS, the process of recording orders in my restaurant has become much more efficient...
                 </p>
                 <div>
-                  <p class="text-hitam text-base font-bold">Alexander Arnold Steven</p>
-                  <p class="text-abuGelap text-base font-normal">Restaurant Owner</p>
+                  <p class="text-black text-base font-bold">Alexander Arnold Steven</p>
+                  <p class="text-darkGray text-base font-normal">Restaurant Owner</p>
                 </div>
               </div>
 
@@ -416,17 +444,17 @@
           </div>
 
           <div data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="swiper-slide max-w-[966px] w-full ">
-            <div class="flex font-satoshi bg-abuPudar rounded-[20px] md:flex-row flex-col">
+            <div class="flex font-satoshi bg-softGray rounded-[20px] md:flex-row flex-col">
               <img src="/user2.png" alt="image user" class="object-cover h-[372px] md:h-full object-top rounded-3xl md:rounded-none">
               <img src="/icon-user.svg" alt="icon user" class="-ml-10 lg:w-[90px] md:w-16 md:flex hidden">
               <div class="flex flex-col max-w-[457px] py-[25px] pl-8 pr-10">
                 <img src="/rate-user.svg" alt="icon rate" class="w-[120px]">
-                <p class="text-semiHitam text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
+                <p class="text-pureBlack text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
                   Since using Xank-MPOS, the process of recording orders in my restaurant has become much more efficient...
                 </p>
                 <div>
-                  <p class="text-hitam text-base font-bold">Alexander Arnold Steven</p>
-                  <p class="text-abuGelap text-base font-normal">Restaurant Owner</p>
+                  <p class="text-black text-base font-bold">Alexander Arnold Steven</p>
+                  <p class="text-darkGray text-base font-normal">Restaurant Owner</p>
                 </div>
               </div>
 
@@ -434,17 +462,17 @@
           </div>
 
           <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="swiper-slide max-w-[966px] w-full ">
-            <div class="flex font-satoshi bg-abuPudar rounded-[20px] md:flex-row flex-col">
+            <div class="flex font-satoshi bg-softGray rounded-[20px] md:flex-row flex-col">
               <img src="/user1.png" alt="image user" class="object-cover h-[372px] md:h-full object-top rounded-3xl md:rounded-none">
               <img src="/icon-user.svg" alt="icon user" class="-ml-10 lg:w-[90px] md:w-16 md:flex hidden">
               <div class="flex flex-col max-w-[457px] py-[25px] pl-8 pr-10">
                 <img src="/rate-user.svg" alt="icon rate" class="w-[120px]">
-                <p class="text-semiHitam text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
+                <p class="text-pureBlack text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
                   Since using Xank-MPOS, the process of recording orders in my restaurant has become much more efficient...
                 </p>
                 <div>
-                  <p class="text-hitam text-base font-bold">Alexander Arnold Steven</p>
-                  <p class="text-abuGelap text-base font-normal">Restaurant Owner</p>
+                  <p class="text-black text-base font-bold">Alexander Arnold Steven</p>
+                  <p class="text-darkGray text-base font-normal">Restaurant Owner</p>
                 </div>
               </div>
 
@@ -452,17 +480,17 @@
           </div>
 
           <div data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="swiper-slide max-w-[966px] w-full ">
-            <div class="flex font-satoshi bg-abuPudar rounded-[20px] md:flex-row flex-col">
+            <div class="flex font-satoshi bg-softGray rounded-[20px] md:flex-row flex-col">
               <img src="/user2.png" alt="image user" class="object-cover h-[372px] md:h-full object-top rounded-3xl md:rounded-none">
               <img src="/icon-user.svg" alt="icon user" class="-ml-10 lg:w-[90px] md:w-16 md:flex hidden">
               <div class="flex flex-col max-w-[457px] py-[25px] pl-8 pr-10">
                 <img src="/rate-user.svg" alt="icon rate" class="w-[120px]">
-                <p class="text-semiHitam text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
+                <p class="text-pureBlack text-base pt-4 lg:pb-[190px] md:pb-20 pb-24 font-light">
                   Since using Xank-MPOS, the process of recording orders in my restaurant has become much more efficient...
                 </p>
                 <div>
-                  <p class="text-hitam text-base font-bold">Alexander Arnold Steven</p>
-                  <p class="text-abuGelap text-base font-normal">Restaurant Owner</p>
+                  <p class="text-black text-base font-bold">Alexander Arnold Steven</p>
+                  <p class="text-darkGray text-base font-normal">Restaurant Owner</p>
                 </div>
               </div>
 
@@ -474,19 +502,19 @@
 
     <section class="container flex md:py-[100px] py-[50px] justify-between lg:flex-row md:flex-col flex-col lg:gap-0 md:gap-14 gap-14">
       <div class="lg:max-w-[519px] md:w-full w-full">
-        <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-Biru text-base">FAQ</p>
-        <div class="pt-[10px] md:pb-[28px] pb-5">
+        <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-blue text-base">FAQ</p>
+        <div class="pt-[10px] md:pb-[28px] pb-5 pr-[26px]">
           <h3 data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"
-            class="text-semiHitam md:text-[40px] text-[36px] font-medium leading-[48px] pb-4"
+            class="text-pureBlack md:text-[40px] text-[36px] font-medium leading-[48px] pb-4"
           >
           All Answers about Xank MPOS in One Place
           </h3>
-          <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-base text-abuGelap">
+          <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="text-base text-darkGray">
             Still have questions? Here are answers to the most common questions about our platform
           </p>
         </div>
         <div data-aos="fade-right" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  src="/get_started.svg" alt="icon_mulai" class="flex gap-6 ">
-          <button class="text-hitam text-sm font-bold flex flex-row-reverse font-satoshi">
+          <button class="text-black text-sm font-bold flex flex-row-reverse font-satoshi">
             <img data-aos="fade-right" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  src="/get_started.svg" alt="icon_mulai" src="/get_started.svg" alt="icon mulai" class="items-end" /> 
             Contact Us
           </button>
@@ -496,15 +524,15 @@
       <div class=" max-w-[590px] w-full">
         <div class="faq-item">
           <div  class="flex justify-between items-center pb-4 cursor-pointer" onclick="toggleFAQ(this)">
-            <h3 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-hitam">
+            <h3 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-black">
              What is Xank MPOS?
             </h3>
             <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="flex items-center ml-4">
               <img src="/plus.svg" alt="icon toggle" class="w-[14px] transition-all duration-300">
             </div>
           </div>
-          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-abuPudar rounded-[10px] ">
-            <p class="text-base font-normal text-hitam px-5 py-[10px]">
+          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-softGray rounded-[10px] ">
+            <p class="text-base font-normal text-black px-5 py-[10px]">
               Xank Mpos is a web-based restaurant management system that makes it easy to record transactions, monitor orders in real-time, and manage data securely in one intuitive dashboard.
             </p>
           </div>
@@ -512,15 +540,15 @@
 
         <div class="faq-item ">
           <div class="flex justify-between items-center py-4 cursor-pointer" onclick="toggleFAQ(this)">
-            <h3 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-hitam">
+            <h3 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-black">
               Are the available doctors trained and licensed?
             </h3>
             <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="flex items-center ml-4">
               <img src="/plus.svg" alt="icon toggle" class="w-[14px] transition-all duration-300">
             </div>
           </div>
-          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-abuPudar rounded-[10px] ">
-            <p class="text-base font-normal text-hitam px-5 py-[10px]">
+          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-softGray rounded-[10px] ">
+            <p class="text-base font-normal text-black px-5 py-[10px]">
               Xank Mpos is a web-based restaurant management system that makes it easy to record transactions, monitor orders in real-time, and manage data securely in one intuitive dashboard.
             </p>
           </div>
@@ -528,15 +556,15 @@
 
         <div class="faq-item">
           <div class="flex justify-between items-center py-4 cursor-pointer" onclick="toggleFAQ(this)">
-            <h3 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-hitam">
+            <h3 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-black">
               Can Xank MPOS be used on various devices?
             </h3>
             <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="flex items-center ml-4">
               <img src="/plus.svg" alt="icon toggle" class="w-[14px] transition-all duration-300">
             </div>
           </div>
-          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-abuPudar rounded-[10px] ">
-            <p class="text-base font-normal text-hitam px-5 py-[10px]">
+          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-softGray rounded-[10px] ">
+            <p class="text-base font-normal text-black px-5 py-[10px]">
               Xank Mpos is a web-based restaurant management system that makes it easy to record transactions, monitor orders in real-time, and manage data securely in one intuitive dashboard.
             </p>
           </div>
@@ -545,15 +573,15 @@
 
         <div class="faq-item ">
           <div class="flex justify-between items-center py-4 cursor-pointer" onclick="toggleFAQ(this)">
-            <h3 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-hitam">
+            <h3 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-black">
               How secure is data on Xank MPOS?
             </h3>
             <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="flex items-center ml-4">
               <img src="/plus.svg" alt="icon toggle" class="w-[14px] transition-all duration-300">
             </div>
           </div>
-          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-abuPudar rounded-[10px] ">
-            <p class="text-base font-normal text-hitam px-5 py-[10px]">
+          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-softGray rounded-[10px] ">
+            <p class="text-base font-normal text-black px-5 py-[10px]">
               Xank Mpos is a web-based restaurant management system that makes it easy to record transactions, monitor orders in real-time, and manage data securely in one intuitive dashboard.
             </p>
           </div>
@@ -561,15 +589,15 @@
 
         <div class="faq-item ">
           <div class="flex justify-between items-center py-4 cursor-pointer" onclick="toggleFAQ(this)">
-            <h3 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-hitam">
+            <h3 data-aos="zoom-in" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="font-bold md:text-xl text-lg leading-10 tracking-tighter font-lato text-black">
               How much does a Xank MPOS subscription cost?
             </h3>
             <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true"  class="flex items-center ml-4">
               <img src="/plus.svg" alt="icon toggle" class="w-[14px] transition-all duration-300">
             </div>
           </div>
-          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-abuPudar rounded-[10px] ">
-            <p class="text-base font-normal text-hitam px-5 py-[10px]">
+          <div class="faq-content hidden transition-all duration-300 ease-in-out bg-softGray rounded-[10px] ">
+            <p class="text-base font-normal text-black px-5 py-[10px]">
               Xank Mpos is a web-based restaurant management system that makes it easy to record transactions, monitor orders in real-time, and manage data securely in one intuitive dashboard.
             </p>
           </div>
@@ -581,16 +609,16 @@
       <div class=" flex justify-center relative">
         <img src="/bg-about.png" alt="" class="bg-cover absolute w-full h-full">
         <div class="container flex justify-center z-50">
-          <div class="max-w-[942px] w-full text-putih pt-[78px] pb-[100px]">
+          <div class="max-w-[942px] w-full text-white pt-[78px] pb-[100px] font-satoshi">
             <h2  data-aos="fade-up" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="flex md:text-[40px] text-3xl font-medium justify-center text-center">
               Optimize Your Restaurant Operations Now!
             </h2>
-            <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="flex text-center md:text-base text-sm font-normal pt-6 pb-8">
+            <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="flex text-center md:text-base text-sm font-extralight pt-6 pb-8">
               Manage orders, monitor transactions, and improve your business efficiency with Xank MPOS. Start a faster and safer restaurant management experience today!
             </p>
             <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="items-center justify-center flex">
               <button
-              class="font-satoshi items-center gap-1 bg-putih text-Biru px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-putih_bg">
+              class="font-satoshi items-center gap-1 bg-white text-blue px-6 py-[14px] rounded-lg text-sm font-medium transition hover:bg-whiteBg">
               Request a demo
               </button>
             </div>
@@ -598,10 +626,9 @@
          
         </div>
       </div>
-
     </section>
 
-    <footer class="bg-hitam">
+    <footer class="bg-black">
       <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0"  data-aos-mirror="true" data-aos-once="true" class="container mx-auto flex flex-col gap-3 ">
         <div class="flex flex-col">
           <div 
@@ -609,34 +636,34 @@
             <div class="flex flex-col gap-4 md:pb-8 pb-9">
               <div class="flex items-center gap-3">
                 <img src="/logo.svg" alt="Logo Mpos" class="w-10" />
-                <span class="text-2xl font-semibold font-inter text-putih_bg">Mpos</span>
+                <span class="text-2xl font-semibold font-inter text-whiteBg">Mpos</span>
               </div>
-              <p class="text-putih_bg max-w-md font-satoshi ">
+              <p class="text-whiteBg max-w-md font-satoshi leading-[26px] ">
                 Xank Mpos is a web-based restaurant management solution. Facilitates efficient transaction and report management. All in one practical and easy-to-use dashboard.
               </p>
               <div class="flex flex-col">
                 <div class="flex gap-1">
                   <img src="/email.svg" alt="icon email" class="w-8">
-                  <p class="text-sm font-normal font-satoshi py-1 text-putih_bg" >
+                  <p class="text-sm font-normal font-satoshi py-1 text-whiteBg" >
                     Mpos@gmail.com
                   </p>
                 </div>
     
                 <div class="flex gap-1">
                   <img src="/telpon.svg" alt="icon telpon" class="w-8">
-                  <p class="text-sm font-normal font-satoshi py-1 text-putih_bg">
+                  <p class="text-sm font-normal font-satoshi py-1 text-whiteBg">
                     (123) 1234567
                   </p>
                 </div>
               </div>
             </div>
             
-            <div class="flex flex-row  md:gap-0 lg:gap-0 gap-7 ">
+            <div class="flex flex-col md:flex-row  md:gap-0 lg:gap-0 gap-[60px] ">
               <div class="flex flex-col">
-                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                <p class="text-base font-bold font-satoshi text-whiteBg pb-6">
                   Navigation
                 </p>
-                <ul class="text-base font-normal font-satoshi text-putih_bg flex flex-col">
+                <ul class="text-base font-normal font-satoshi text-whiteBg flex flex-col">
                   <li><a href="#" class="pb-[6px]">Home</a></li> 
                   <li><a href="#" class="pb-[6px]">Features</a></li> 
                   <li><a href="#" class="pb-[6px]">Pricing</a></li> 
@@ -646,10 +673,10 @@
               </div>
 
               <div class="flex flex-col md:px-[128px] px-0">
-                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                <p class="text-base font-bold font-satoshi text-whiteBg pb-6">
                   About Us
                 </p>
-                <ul class="text-base font-normal font-satoshi text-putih_bg">
+                <ul class="text-base font-normal font-satoshi text-whiteBg">
                   <li><a href="#" class="pb-[6px]">Our Story</a></li> 
                   <li><a href="#" class="pb-[6px]">Career</a></li> 
                   <li><a href="#" class="pb-[6px]">News & Blog</a></li> 
@@ -657,7 +684,7 @@
               </div>
 
               <div class="flex flex-col">
-                <p class="text-base font-bold font-satoshi text-putih_bg pb-6">
+                <p class="text-base font-bold font-satoshi text-whiteBg pb-6">
                   Social media
                 </p>
                 <ul class="flex gap-4 lg:flex-nowrap md:flex-wrap flex-wrap">
@@ -702,11 +729,11 @@
           </div>
         </div>
   
-        <div class="flex flex-col md:flex-row justify-between text-putih_bg text-sm pt-4 font-satoshi pb-6">
+        <div class="flex flex-col md:flex-row justify-between text-whiteBg text-sm md:pt-4 pt-[60px] font-satoshi pb-6 md:items-start items-center gap-3 md:gap-0">
           <p>&copy; 2022 mpos. All rights reserved.</p>
           <ul class="flex gap-4">
-            <li><a href="#" class="hover:text-putih cursor-pointer">Privacy policy</a></li> 
-            <li><a href="#" class="hover:text-putih cursor-pointer">Term of use</a></li> 
+            <li><a href="#" class="hover:text-white cursor-pointer">Privacy policy</a></li> 
+            <li><a href="#" class="hover:text-white cursor-pointer">Term of use</a></li> 
           </ul>
         </div>
       </div>

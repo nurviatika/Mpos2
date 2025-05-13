@@ -136,7 +136,7 @@ function displayBlogs(page) {
           <h3 class="text-base font-medium font-satoshi leading-5 pt-[15px] pb-[8px]">
             ${blog.title}
           </h3>
-          <p class="text-abuGelap md:text-sm text-xs">
+          <p class="text-darkGray md:text-sm text-xs">
             By ${blog.author} | ${blog.category} | ${blog.created_at}
           </p>
         </div>
@@ -151,7 +151,7 @@ function setupPagination() {
   const prevBtn = document.createElement("button");
   prevBtn.innerHTML = "←";
   prevBtn.className =
-    "w-7 h-7 border-none hover:border rounded-full text-sm hover:bg-Biru hover:text-white";
+    "w-7 h-7 border-none hover:border rounded-full text-sm hover:bg-blue hover:text-white";
   prevBtn.disabled = currentPage === 1;
   prevBtn.addEventListener("click", () => {
     if (currentPage > 1) {
@@ -167,8 +167,8 @@ function setupPagination() {
     pageButton.innerText = i;
     pageButton.className = `w-7 h-7 flex items-center justify-center rounded-full border-none hover:border text-sm ${
       i === currentPage
-        ? "bg-Biru text-white"
-        : "bg-putih_bg text-hitam hover:bg-Biru hover:text-white"
+        ? "bg-blue text-white"
+        : "bg-whiteBg text-black hover:bg-blue hover:text-white"
     }`;
     pageButton.addEventListener("click", () => {
       currentPage = i;
@@ -181,7 +181,7 @@ function setupPagination() {
   const nextBtn = document.createElement("button");
   nextBtn.innerHTML = "→";
   nextBtn.className =
-    "w-7 h-7 border-none hover:border rounded-full text-sm hover:bg-Biru hover:text-white";
+    "w-7 h-7 border-none hover:border rounded-full text-sm hover:bg-blue hover:text-white";
   nextBtn.disabled = currentPage === pageCount;
   nextBtn.addEventListener("click", () => {
     if (currentPage < pageCount) {
