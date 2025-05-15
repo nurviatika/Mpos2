@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (menuToggle && navLinks) {
     menuToggle.addEventListener("click", function () {
-      navLinks.classList.toggle("-translate-y-full");
-      navLinks.classList.toggle("translate-y-[4rem]");
+      navLinks.classList.toggle("translate-x-full");
+      // navLinks.classList.toggle("translate-y-[4rem]");
       navbar.classList.toggle("menu-active");
-      navLinks.classList.toggle("opacity-0");
-      navLinks.classList.toggle("opacity-100");
+      // navLinks.classList.toggle("opacity-0");
+      // navLinks.classList.toggle("opacity-100");
       navLinks.classList.toggle("pointer-events-none");
       navLinks.classList.toggle("pointer-events-auto");
     });

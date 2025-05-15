@@ -111,7 +111,7 @@
         </div>
       </nav>
       <div
-        class="lg:hidden z-[99999999] fixed top-0 right-0 w-full h-[100vh] bg-whiteBg shadow-lg py-8 text-mediumGray text-sm font-medium transform -translate-y-full opacity-0 pointer-events-none transition-all duration-700 ease-in-out"
+        class="translate-y-[4rem] lg:hidden z-[99999999] fixed top-0 right-0 w-full h-[100vh] bg-whiteBg shadow-lg py-8 text-mediumGray text-sm font-medium transform translate-x-full pointer-events-none transition-all duration-700 ease-in-out"
         id="nav-links"
       >
         <ul
@@ -242,322 +242,333 @@
         data-aos-delay="0"
         data-aos-mirror="true"
         data-aos-once="true"
-        class="group h-[569px] flex flex-col justify-between group-hover:text-white text-pureBlack bg-softGray rounded-lg w-full lg:max-w-[391px] md:max-w-[300px] hover:bg-blue hover:text-white transition py-9 px-10 font-satoshi"
       >
-        <div class="lg:max-w-[316px] md:max-w-[200px]">
-          <p class="text-base font-normal font-satosh">Starter Plans</p>
-          <h3 class="text-[40px] font-medium py-[40px] group-hover:text-white">
-            $15,27<span class="text-2xl font-normal">/mo</span>
-          </h3>
-          <p class="text-sm font-normal pb-4">
-            Perfect for small restaurants taking their first step toward
-            efficient operations.
-          </p>
+        <div
+          class="group h-[569px] flex flex-col justify-between group-hover:text-white text-pureBlack bg-softGray rounded-lg w-full hover:bg-blue hover:text-white py-9 px-10 font-satoshi transition-all duration-300 ease-in-out"
+        >
+          <div class="font-satoshi">
+            <p class="text-base font-normal">Starter Plans</p>
+            <h3
+              class="text-[40px] font-medium py-[40px] group-hover:text-white"
+            >
+              $15,27<span class="text-2xl font-normal">/mo</span>
+            </h3>
+            <p class="text-sm font-normal pb-4">
+              Perfect for small restaurants taking their first step toward
+              efficient operations.
+            </p>
 
-          <div class="flex flex-col gap-2">
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi">
-                Basic stock management
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi leading-6">
-                Monthly report
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p
-                class="text-base font-normal font-satoshi group-hover:text-white"
-              >
-                Support via email
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi">1 user admin</p>
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal">Basic stock management</p>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal leading-6">Monthly report</p>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal group-hover:text-white">
+                  Support via email
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal">1 user admin</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="flex justify-center">
-          <button
-            class="bg-blue group-hover:bg-white group-hover:text-blue text-white text-center py-[14px] text-sm rounded-lg whitespace-nowrap w-full"
-          >
-            Start Now
-          </button>
-        </div>
-      </div>
-
-      <div
-        data-aos="fade-down"
-        data-aos-duration="500"
-        data-aos-delay="0"
-        data-aos-mirror="true"
-        data-aos-once="true"
-        class="group h-[569px] flex flex-col justify-between group-hover:text-white text-pureBlack font-satoshi bg-softGray rounded-lg w-full lg:max-w-[391px] md:max-w-[300px] hover:bg-blue hover:text-white transition py-9 px-10"
-      >
-        <div class="lg:max-w-[316px] md:max-w-[200px]">
-          <p class="text-base font-normal font-satoshi">Bussines Plan</p>
-          <h3 class="text-[40px] font-medium py-[40px] group-hover:text-white">
-            $30,53 <span class="text-2xl font-normal">/mo</span>
-          </h3>
-          <p class="text-sm font-normal pb-4">
-            Ideal for small restaurants at the beginning of their journey.
-          </p>
-
-          <div class="flex flex-col gap-2">
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi">
-                All Starter features
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi leading-6">
-                Multi-location management
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p
-                class="text-base font-normal font-satoshi group-hover:text-white"
-              >
-                Daily & monthly reports
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi">Priority support</p>
-            </div>
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi">3 user admins</p>
-            </div>
+          <div class="flex justify-center">
+            <button
+              class="bg-blue group-hover:bg-white group-hover:text-blue text-white text-center py-[14px] text-sm rounded-lg whitespace-nowrap w-full"
+            >
+              Start Now
+            </button>
           </div>
-        </div>
-        <div class="flex justify-center">
-          <button
-            class="bg-blue group-hover:bg-white group-hover:text-blue text-white text-center py-[14px] text-sm rounded-lg whitespace-nowrap w-full"
-          >
-            Start Now
-          </button>
         </div>
       </div>
 
       <div
         data-aos="fade-up"
-        data-aos-duration="600"
+        data-aos-duration="400"
         data-aos-delay="0"
         data-aos-mirror="true"
         data-aos-once="true"
-        class="group h-[569px] flex flex-col justify-between group-hover:text-white text-pureBlack font-satoshi bg-softGray rounded-lg w-full lg:max-w-[391px] md:max-w-[300px] hover:bg-blue hover:text-white transition py-9 px-10"
       >
-        <div class="lg:max-w-[316px] md:max-w-[200px]">
-          <p class="text-base font-normal font-satoshi">Pro</p>
-          <h3 class="text-[40px] font-medium py-[40px] group-hover:text-white">
-            Custom
-          </h3>
-          <p class="text-sm font-normal pb-4">
-            For large restaurants that require complete control.
-          </p>
+        <div
+          class="group h-[569px] flex flex-col justify-between group-hover:text-white text-pureBlack bg-softGray rounded-lg w-full hover:bg-blue hover:text-white py-9 px-10 font-satoshi transition-all duration-300 ease-in-out"
+        >
+          <div class="font-satoshi">
+            <p class="text-base font-normal">Bussines Plan</p>
+            <h3
+              class="text-[40px] font-medium py-[40px] group-hover:text-white"
+            >
+              $30,53 <span class="text-2xl font-normal">/mo</span>
+            </h3>
+            <p class="text-sm font-normal pb-4">
+              Ideal for small restaurants at the beginning of their journey.
+            </p>
 
-          <div class="flex flex-col gap-2">
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi">
-                All Business features
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi leading-6">
-                Custom integrations
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p
-                class="text-base font-normal font-satoshi group-hover:text-white"
-              >
-                Real-time reporting
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi">24/7 support</p>
-            </div>
-
-            <div class="flex gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
-                  class="fill-black group-hover:fill-white"
-                />
-              </svg>
-              <p class="text-base font-normal font-satoshi">
-                Unlimited user admin
-              </p>
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal font-satoshi">
+                  All Starter features
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal font-satoshi leading-6">
+                  Multi-location management
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p
+                  class="text-base font-normal font-satoshi group-hover:text-white"
+                >
+                  Daily & monthly reports
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal font-satoshi">
+                  Priority support
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal font-satoshi">3 user admins</p>
+              </div>
             </div>
           </div>
+          <div class="flex justify-center">
+            <button
+              class="bg-blue group-hover:bg-white group-hover:text-blue text-white text-center py-[14px] text-sm rounded-lg whitespace-nowrap w-full"
+            >
+              Start Now
+            </button>
+          </div>
         </div>
-        <div class="flex justify-center">
-          <button
-            class="bg-blue group-hover:bg-white group-hover:text-blue text-white text-center py-[14px] text-sm rounded-lg whitespace-nowrap w-full"
-          >
-            Start Now
-          </button>
+      </div>
+
+      <div
+        data-aos="fade-up"
+        data-aos-duration="400"
+        data-aos-delay="0"
+        data-aos-mirror="true"
+        data-aos-once="true"
+      >
+        <div
+          class="group h-[569px] flex flex-col justify-between group-hover:text-white text-pureBlack bg-softGray rounded-lg w-full hover:bg-blue hover:text-white py-9 px-10 font-satoshi transition-all duration-300 ease-in-out"
+        >
+          <div class="font-satoshi">
+            <p class="text-base font-normal">Pro</p>
+            <h3
+              class="text-[40px] font-medium py-[40px] group-hover:text-white"
+            >
+              Custom
+            </h3>
+            <p class="text-sm font-normal pb-4">
+              For large restaurants that require complete control.
+            </p>
+
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal font-satoshi">
+                  All Business features
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal font-satoshi leading-6">
+                  Custom integrations
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p
+                  class="text-base font-normal font-satoshi group-hover:text-white"
+                >
+                  Real-time reporting
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal font-satoshi">24/7 support</p>
+              </div>
+
+              <div class="flex gap-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.54813 17.3076L4.57812 12.3376L5.29213 11.6246L9.54813 15.8806L18.7041 6.72461L19.4171 7.43861L9.54813 17.3076Z"
+                    class="fill-black group-hover:fill-white"
+                  />
+                </svg>
+                <p class="text-base font-normal font-satoshi">
+                  Unlimited user admin
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="bg-blue group-hover:bg-white group-hover:text-blue text-white text-center py-[14px] text-sm rounded-lg whitespace-nowrap w-full"
+            >
+              Start Now
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -1479,7 +1490,7 @@
             class="flex border-t pt-[70px] lg:flex-row md:flex-col flex-col justify-between"
           >
             <div
-              class="flex flex-col gap-4 md:pb-8 pb-9 lg:max-w-[388px] md:w-full w-full"
+              class="flex flex-col gap-4 lg:pb-0 md:pb-8 pb-[60px] lg:max-w-[388px] md:w-full w-full"
             >
               <div class="flex items-center gap-3">
                 <img src="/logo.svg" alt="Logo Mpos" class="w-10" />
@@ -1515,7 +1526,7 @@
                   Navigation
                 </p>
                 <ul
-                  class="text-base font-normal font-satoshi text-whiteBg flex flex-col"
+                  class="text-base font-normal font-satoshi text-whiteBg gap-[6px] flex flex-col"
                 >
                   <li><a href="#" class="pb-[6px]">Home</a></li>
                   <li><a href="#" class="pb-[6px]">Features</a></li>
@@ -1529,7 +1540,9 @@
                 <p class="text-base font-bold font-satoshi text-whiteBg pb-6">
                   About Us
                 </p>
-                <ul class="text-base font-normal font-satoshi text-whiteBg">
+                <ul
+                  class="text-base font-normal font-satoshi text-whiteBg flex flex-col gap-[6px]"
+                >
                   <li><a href="#" class="pb-[6px]">Our Story</a></li>
                   <li><a href="#" class="pb-[6px]">Career</a></li>
                   <li><a href="#" class="pb-[6px]">News & Blog</a></li>

@@ -112,7 +112,7 @@
         </div>
       </nav>
       <div
-        class="lg:hidden z-[99999999] fixed top-0 right-0 w-full h-[100vh] bg-whiteBg shadow-lg py-8 text-mediumGray text-sm font-medium transform -translate-y-full opacity-0 pointer-events-none transition-all duration-700 ease-in-out"
+         class="translate-y-[4rem] lg:hidden z-[99999999] fixed top-0 right-0 w-full h-[100vh] bg-whiteBg shadow-lg py-8 text-mediumGray text-sm font-medium transform translate-x-full pointer-events-none transition-all duration-700 ease-in-out"
         id="nav-links"
       >
         <ul
@@ -287,86 +287,128 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-start gap-5 mt-10 w-[100%] px-4">
-        <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true"  class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition duration-500 ease-in-out p-4 group">
-          <div class="max-w-[231px]">
-            <div class=" pb-4">
-              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.53125" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="#F8FAFF"/>
-                <path d="M19.9746 26.5316V18.4303" stroke="currentColor" stroke-width="1.62025" stroke-linecap="round" stroke-linejoin="round" class="transition-all duration-300 group-hover:stroke-[#2865FF]"/>
-                <path d="M24.834 26.5315V13.5695" stroke="currentColor" stroke-width="1.62025" stroke-linecap="round" stroke-linejoin="round" class="transition-all duration-300 group-hover:stroke-[#2865FF]"/>
-                <path d="M15.1133 26.5315V23.291" stroke="currentColor" stroke-width="1.62025" stroke-linecap="round" stroke-linejoin="round" class="transition-all duration-300 group-hover:stroke-[#2865FF]"/>
-              </svg>
-            </div>
-            <div class="gap-[5px] flex flex-col">
-              <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
-                Comprehensive Analytics Dashboard
-              </h3>
-              <p
-                class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
-                Monitor restaurant performance in real-time with order summaries,
-                total revenue, and analytical graphs.
-              </p>
+        <div class="h-auto "
+            data-aos="fade-down" 
+            data-aos-duration="400" 
+            data-aos-delay="0" 
+            data-aos-mirror="true" 
+            data-aos-once="true"  >
+          <div 
+            class="h-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition-all duration-300 ease-in-out p-4 group"
+          >
+            <div class="  flex flex-col justify-between">
+              <div class="pb-4">
+                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.53125" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="#F8FAFF"/>
+                  <path d="M19.9746 26.5316V18.4303" 
+                        stroke="currentColor" 
+                        stroke-width="1.62025" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        class="transition-colors duration-300 group-hover:stroke-[#2865FF]" />
+                  <path d="M24.834 26.5315V13.5695" 
+                        stroke="currentColor" 
+                        stroke-width="1.62025" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        class="transition-colors duration-300 group-hover:stroke-[#2865FF]" />
+                  <path d="M15.1133 26.5315V23.291" 
+                        stroke="currentColor" 
+                        stroke-width="1.62025" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="transition-colors duration-300 group-hover:stroke-[#2865FF]" 
+                  />
+                </svg>
+              </div>
+              <div class="gap-[5px] flex flex-col">
+                <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white transition-colors duration-300">
+                  Comprehensive Analytics Dashboard
+                </h3>
+                <p class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white transition-colors duration-300">
+                  Monitor restaurant performance in real-time with order summaries,
+                  total revenue, and analytical graphs.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        
-        <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true"  class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition duration-500 ease-in-out p-4 group">
-          <div class="max-w-[231px]">
-            <div class=" pb-4">
-              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.556641" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="white"/>
-                <path d="M18.5092 30.4181C18.3206 30.2946 21.5744 23.4575 21.4626 23.1571C21.3508 22.8567 17.8997 21.7611 17.7315 21.2332C17.5633 20.7053 24.5434 12.7686 24.7271 12.9222C24.9099 13.0758 21.6852 19.9587 21.7727 20.1832C21.8612 20.4068 25.3969 21.5481 25.5039 22.1071C25.6118 22.6661 18.6969 30.5415 18.5092 30.4181Z" class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]" />
-              </svg>  
-            </div>
-            <div class="gap-[5px] flex flex-col">
-              <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
-                Fast & Efficient Ordering System
-              </h3>
-              <p
-                class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
+
+        <div class="h-auto"
+          data-aos="fade-down" 
+          data-aos-duration="400" 
+          data-aos-delay="0" 
+          data-aos-mirror="true" 
+          data-aos-once="true"  >
+          <div class="h-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition-all duration-300 ease-in-out p-4 group">
+            <div class="flex flex-col justify-between">
+              <div class=" pb-4">
+                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.556641" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="white"/>
+                  <path d="M18.5092 30.4181C18.3206 30.2946 21.5744 23.4575 21.4626 23.1571C21.3508 22.8567 17.8997 21.7611 17.7315 21.2332C17.5633 20.7053 24.5434 12.7686 24.7271 12.9222C24.9099 13.0758 21.6852 19.9587 21.7727 20.1832C21.8612 20.4068 25.3969 21.5481 25.5039 22.1071C25.6118 22.6661 18.6969 30.5415 18.5092 30.4181Z" class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]" />
+                </svg>  
+              </div>
+              <div class="gap-[5px] flex flex-col">
+                <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
+                  Fast & Efficient Ordering System
+                </h3>
+                <p
+                  class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
                   Faster ordering process with easy-to-access product display and quantity adjustment features.
-              </p>
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true" class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition duration-500 ease-in-out p-4 group">
-          <div class="max-w-[231px]">
-            <div class=" pb-4">
-              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.582031" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="#F8FAFF"/>
-                <path d="M25.5244 15.0686C25.7421 15.0686 25.9503 15.112 26.1475 15.1995L26.291 15.2737C26.4267 15.3555 26.5429 15.4613 26.6396 15.5901L27.916 17.136L27.9941 17.2356C28.0668 17.3378 28.1246 17.4484 28.166 17.5676H28.165C28.2199 17.7251 28.248 17.8904 28.248 18.0618V20.054L28.1348 20.0627C28.0625 20.068 27.9925 20.0746 27.9248 20.0833L27.7295 20.1135C27.6054 20.137 27.4811 20.1718 27.3584 20.218L27.1943 20.2805V18.3958H24.1973V23.0696L24.1611 23.1047L23.5996 23.6663L23.5215 23.6272L21.6445 22.6936L19.2686 23.8821L19.0928 23.97V18.3958H16.0957V26.843C16.0957 26.9596 16.132 27.0472 16.2002 27.1155L16.2549 27.1604C16.3138 27.1995 16.3855 27.22 16.4736 27.22H21.6416V28.2737H16.4736C16.1281 28.2737 15.824 28.1663 15.5674 27.9534L15.4609 27.8557C15.1831 27.5779 15.043 27.2375 15.043 26.843V18.0139C15.043 17.8431 15.0697 17.68 15.125 17.5266L15.1719 17.4143C15.2066 17.3404 15.2484 17.2698 15.2969 17.2024L15.374 17.1038L16.6348 15.5911C16.7633 15.4192 16.925 15.2877 17.1182 15.1995L17.2646 15.1418C17.414 15.0925 17.5708 15.0686 17.7344 15.0686H25.5244ZM28.2812 21.7366C28.3338 21.7366 28.3862 21.7412 28.4385 21.7512L28.5947 21.7961L28.6729 21.8313C28.749 21.87 28.8179 21.9202 28.8789 21.9817H28.8799L29.6289 22.7463L29.6357 22.7542L29.7334 22.8909C29.7618 22.9377 29.7858 22.9859 29.8057 23.0354H29.8066C29.8471 23.1345 29.8681 23.2361 29.8682 23.3391C29.8682 23.3903 29.8631 23.4417 29.8535 23.4924L29.8105 23.6428C29.7718 23.7457 29.7123 23.8425 29.6338 23.9319L25.292 28.2737H23.3301V26.3108L23.3662 26.2756L27.6865 21.9758L27.7559 21.9133C27.8267 21.855 27.9024 21.811 27.9834 21.7844H27.9844L28.1318 21.7483C28.1813 21.7403 28.2314 21.7366 28.2812 21.7366ZM24.291 26.7161V27.3137H24.8896L27.5762 24.6204L27.2803 24.3215L27.2783 24.3196L26.9941 24.0159L24.291 26.7161ZM20.1465 22.2532L21.5908 21.5315L21.6455 21.5042L21.6992 21.5315L23.1436 22.2532V18.3958H20.1465V22.2532ZM17.6699 16.1301L17.5898 16.1575C17.5351 16.1827 17.4881 16.2154 17.4482 16.2561L16.541 17.343H26.7324L25.8271 16.2561C25.8065 16.2359 25.7843 16.2178 25.7607 16.2014L25.6836 16.1575C25.6319 16.1335 25.5791 16.1214 25.5244 16.1213H17.75C17.723 16.1213 17.6964 16.1243 17.6699 16.1301Z"
-                class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]"/>
-              </svg> 
-            </div>
-            <div class="gap-[5px] flex flex-col">
-              <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
-                Flexible Product Management
-              </h3>
-              <p class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
-                Easily manage food and beverage menus, including price and stock updates.
-              </p>
+        <div class="h-auto" 
+          data-aos="fade-down" 
+          data-aos-duration="400" 
+          data-aos-delay="0" 
+          data-aos-mirror="true" 
+          data-aos-once="true"  >
+          <div 
+            class="h-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition-all duration-300 ease-in-out p-4 group">
+            <div class=" flex flex-col justify-between">
+              <div class="pb-4">
+                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.582031" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="#F8FAFF"/>
+                  <path d="M25.5244 15.0686C25.7421 15.0686 25.9503 15.112 26.1475 15.1995L26.291 15.2737C26.4267 15.3555 26.5429 15.4613 26.6396 15.5901L27.916 17.136L27.9941 17.2356C28.0668 17.3378 28.1246 17.4484 28.166 17.5676H28.165C28.2199 17.7251 28.248 17.8904 28.248 18.0618V20.054L28.1348 20.0627C28.0625 20.068 27.9925 20.0746 27.9248 20.0833L27.7295 20.1135C27.6054 20.137 27.4811 20.1718 27.3584 20.218L27.1943 20.2805V18.3958H24.1973V23.0696L24.1611 23.1047L23.5996 23.6663L23.5215 23.6272L21.6445 22.6936L19.2686 23.8821L19.0928 23.97V18.3958H16.0957V26.843C16.0957 26.9596 16.132 27.0472 16.2002 27.1155L16.2549 27.1604C16.3138 27.1995 16.3855 27.22 16.4736 27.22H21.6416V28.2737H16.4736C16.1281 28.2737 15.824 28.1663 15.5674 27.9534L15.4609 27.8557C15.1831 27.5779 15.043 27.2375 15.043 26.843V18.0139C15.043 17.8431 15.0697 17.68 15.125 17.5266L15.1719 17.4143C15.2066 17.3404 15.2484 17.2698 15.2969 17.2024L15.374 17.1038L16.6348 15.5911C16.7633 15.4192 16.925 15.2877 17.1182 15.1995L17.2646 15.1418C17.414 15.0925 17.5708 15.0686 17.7344 15.0686H25.5244ZM28.2812 21.7366C28.3338 21.7366 28.3862 21.7412 28.4385 21.7512L28.5947 21.7961L28.6729 21.8313C28.749 21.87 28.8179 21.9202 28.8789 21.9817H28.8799L29.6289 22.7463L29.6357 22.7542L29.7334 22.8909C29.7618 22.9377 29.7858 22.9859 29.8057 23.0354H29.8066C29.8471 23.1345 29.8681 23.2361 29.8682 23.3391C29.8682 23.3903 29.8631 23.4417 29.8535 23.4924L29.8105 23.6428C29.7718 23.7457 29.7123 23.8425 29.6338 23.9319L25.292 28.2737H23.3301V26.3108L23.3662 26.2756L27.6865 21.9758L27.7559 21.9133C27.8267 21.855 27.9024 21.811 27.9834 21.7844H27.9844L28.1318 21.7483C28.1813 21.7403 28.2314 21.7366 28.2812 21.7366ZM24.291 26.7161V27.3137H24.8896L27.5762 24.6204L27.2803 24.3215L27.2783 24.3196L26.9941 24.0159L24.291 26.7161ZM20.1465 22.2532L21.5908 21.5315L21.6455 21.5042L21.6992 21.5315L23.1436 22.2532V18.3958H20.1465V22.2532ZM17.6699 16.1301L17.5898 16.1575C17.5351 16.1827 17.4881 16.2154 17.4482 16.2561L16.541 17.343H26.7324L25.8271 16.2561C25.8065 16.2359 25.7843 16.2178 25.7607 16.2014L25.6836 16.1575C25.6319 16.1335 25.5791 16.1214 25.5244 16.1213H17.75C17.723 16.1213 17.6964 16.1243 17.6699 16.1301Z"
+                  class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]"/>
+                </svg> 
+              </div>
+              <div class="gap-[5px] flex flex-col">
+                <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
+                  Flexible Product Management
+                </h3>
+                <p class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
+                  Easily manage food and beverage menus, including price and stock updates.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true" class="lg:max-w-[291px] md:max-w-[271px] max-w-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition duration-500 ease-in-out p-4 group">
-          <div class="max-w-[231px]">
-            <div class=" pb-4">
-              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.328125" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="#F8FAFF"/>
-                <path d="M17.7448 13.1643C17.1003 13.1643 16.4821 13.4204 16.0263 13.8761C15.5705 14.3319 15.3145 14.9501 15.3145 15.5947V27.7466C15.3145 28.3912 15.5705 29.0093 16.0263 29.4651C16.4821 29.9209 17.1003 30.177 17.7448 30.177H25.036C25.6805 30.177 26.2987 29.9209 26.7545 29.4651C27.2103 29.0093 27.4664 28.3912 27.4664 27.7466V18.5282C27.4659 18.0449 27.2736 17.5816 26.9317 17.2401L23.3918 13.6978C23.2225 13.5285 23.0215 13.3943 22.8002 13.3028C22.579 13.2113 22.3419 13.1642 22.1025 13.1643H17.7448ZM16.5296 15.5947C16.5296 15.2724 16.6577 14.9633 16.8856 14.7354C17.1135 14.5075 17.4225 14.3795 17.7448 14.3795H21.3904V17.4175C21.3904 17.9009 21.5824 18.3645 21.9243 18.7064C22.2661 19.0482 22.7298 19.2403 23.2132 19.2403H26.2512V27.7466C26.2512 28.0689 26.1231 28.378 25.8952 28.6059C25.6673 28.8337 25.3583 28.9618 25.036 28.9618H17.7448C17.4225 28.9618 17.1135 28.8337 16.8856 28.6059C16.6577 28.378 16.5296 28.0689 16.5296 27.7466V15.5947ZM25.9996 18.0251H23.2132C23.052 18.0251 22.8975 17.9611 22.7836 17.8471C22.6696 17.7332 22.6056 17.5786 22.6056 17.4175V14.631L25.9996 18.0251Z" class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]"/>
-              </svg>
+  
+        <div class="h-auto" 
+          data-aos="fade-down" data-aos-duration="400" data-aos-delay="0" data-aos-mirror="true" data-aos-once="true" >
+          <div class="h-full w-full bg-softGray py-[30px] rounded-[10px] hover:bg-blue hover:text-white transition-all duration-300 ease-in-out p-4 group">
+            <div class=" flex flex-col justify-between">
+              <div class=" pb-4">
+                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.328125" y="0.607544" width="42.1266" height="42.1266" rx="8.10126" fill="#F8FAFF"/>
+                  <path d="M17.7448 13.1643C17.1003 13.1643 16.4821 13.4204 16.0263 13.8761C15.5705 14.3319 15.3145 14.9501 15.3145 15.5947V27.7466C15.3145 28.3912 15.5705 29.0093 16.0263 29.4651C16.4821 29.9209 17.1003 30.177 17.7448 30.177H25.036C25.6805 30.177 26.2987 29.9209 26.7545 29.4651C27.2103 29.0093 27.4664 28.3912 27.4664 27.7466V18.5282C27.4659 18.0449 27.2736 17.5816 26.9317 17.2401L23.3918 13.6978C23.2225 13.5285 23.0215 13.3943 22.8002 13.3028C22.579 13.2113 22.3419 13.1642 22.1025 13.1643H17.7448ZM16.5296 15.5947C16.5296 15.2724 16.6577 14.9633 16.8856 14.7354C17.1135 14.5075 17.4225 14.3795 17.7448 14.3795H21.3904V17.4175C21.3904 17.9009 21.5824 18.3645 21.9243 18.7064C22.2661 19.0482 22.7298 19.2403 23.2132 19.2403H26.2512V27.7466C26.2512 28.0689 26.1231 28.378 25.8952 28.6059C25.6673 28.8337 25.3583 28.9618 25.036 28.9618H17.7448C17.4225 28.9618 17.1135 28.8337 16.8856 28.6059C16.6577 28.378 16.5296 28.0689 16.5296 27.7466V15.5947ZM25.9996 18.0251H23.2132C23.052 18.0251 22.8975 17.9611 22.7836 17.8471C22.6696 17.7332 22.6056 17.5786 22.6056 17.4175V14.631L25.9996 18.0251Z" class="fill-current transition-transform duration-300 group-hover:text-[#2865FF]"/>
+                </svg>
+              </div>
+              <div class="gap-[5px] flex flex-col">
+                <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
+                  Automatic Financial Reports
+                </h3>
+                <p class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
+                  Get accurate and automatic financial reports to monitor income and expenses.
+                </p>
+              </div>
             </div>
-            <div class="gap-[5px] flex flex-col">
-              <h3 class="text-lg font-medium text-black group-hover:text-white group-active:text-white">
-                Automatic Financial Reports
-              </h3>
-              <p class="text-sm font-normal text-darkGray group-hover:text-white group-active:text-white">
-                Get accurate and automatic financial reports to monitor income and expenses.
-              </p>
-            </div>
-          </div>
+          </div> 
         </div> 
       </div>
     </section>
@@ -633,7 +675,7 @@
         <div class="flex flex-col">
           <div 
             class="flex  border-t pt-[70px] lg:flex-row md:flex-col flex-col justify-between">
-            <div class="flex flex-col gap-4 md:pb-8 pb-9 lg:max-w-[388px] md:w-full w-full">
+            <div class="flex flex-col gap-4 lg:pb-0 md:pb-8 pb-[60px] lg:max-w-[388px] md:w-full w-full">
               <div class="flex items-center gap-3">
                 <img src="/logo.svg" alt="Logo Mpos" class="w-10" />
                 <span class="text-2xl font-semibold font-inter text-whiteBg">Mpos</span>
@@ -663,7 +705,7 @@
                 <p class="text-base font-bold font-satoshi text-whiteBg pb-6">
                   Navigation
                 </p>
-                <ul class="text-base font-normal font-satoshi text-whiteBg flex flex-col">
+                <ul class="text-base font-normal font-satoshi text-whiteBg gap-[6px] flex flex-col">
                   <li><a href="#" class="pb-[6px]">Home</a></li> 
                   <li><a href="#" class="pb-[6px]">Features</a></li> 
                   <li><a href="#" class="pb-[6px]">Pricing</a></li> 
@@ -676,7 +718,7 @@
                 <p class="text-base font-bold font-satoshi text-whiteBg pb-6">
                   About Us
                 </p>
-                <ul class="text-base font-normal font-satoshi text-whiteBg">
+                <ul class="text-base font-normal font-satoshi text-whiteBg flex flex-col gap-[6px]">
                   <li><a href="#" class="pb-[6px]">Our Story</a></li> 
                   <li><a href="#" class="pb-[6px]">Career</a></li> 
                   <li><a href="#" class="pb-[6px]">News & Blog</a></li> 
